@@ -133,9 +133,13 @@ Called me RainMaker, chief cartographer and lead explorer for **The Language Atl
 <!-- *   **[Optional: Links to Expedition Logs on LinkedIn, Personal Cartography Site, etc.]** -->
 
 ---
-
-
+<!-- 
 ```mermaid
+%% Current Mermaid version
+info
+``` -->
+```mermaid
+
 ---
 title: "CongLeSolutionX"
 author: "Cong Le"
@@ -145,7 +149,6 @@ copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   theme: base
 ---
-%%%%%%%% Mermaid version v11.4.1-b.14
 %%{
   init: {
     'flowchart': { 'htmlLabels': false },
