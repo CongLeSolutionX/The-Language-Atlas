@@ -7,15 +7,10 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
 
-
-
 # Scenic Visual Tour: Gallery of DOT & Graphviz Concepts
-
-
 > This content is dual-licensed under your choice of the following licenses:
 > 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
 > 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
-
 
 
 This gallery provides a quick visual summary of key concepts related to the DOT language and its use with Graphviz, primarily using Mermaid diagrams to illustrate the ideas as discussed throughout this regional guide.
@@ -23,16 +18,45 @@ This gallery provides a quick visual summary of key concepts related to the DOT 
 ## 1. Basic Graph Components
 
 ```mermaid
+---
+title: "CHANGE_ME_DADDY"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#D5F5E3',
+      'primaryTextColor': '#145A32',
+      'lineColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '15px'
+    }
+  }
+}%%
 graph LR
-    A[Node A] --> B[Node B]
-    B -- Undirected --- C[Node C]
+    A["Node A"] --> B["Node B"]
+    B -- Undirected --- C["Node C"]
     A --> C
-    D[Node D / Vertex]
+    D["Node D /<br/> Vertex"]
 
-    subgraph "Elements"
-        N((Node/Vertex))
-        DE(--- Directed Edge --->)
-        UE(--- Undirected Edge ---)
+    subgraph Elements["Elements"]
+        N(("Node/Vertex"))
+        DE("--- Directed Edge --->")
+        UE("--- Undirected Edge ---")
     end
     style A fill:#87CEEB,stroke:#333
     style B fill:#87CEEB,stroke:#333
@@ -46,18 +70,44 @@ graph LR
 ## 2. DOT Attribute Scopes
 
 ```mermaid
+---
+title: "CHANGE_ME_DADDY"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#D5E3',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '20px'
+    }
+  }
+}%%
 mindmap
-  root((DOT Attributes Scope))
-    Graph Global (`graph [...]`)
-      ::icon(fa fa-globe)
-      Default Node (`node [...]`)
-      Default Edge (`edge [...]`)
-    Subgraph / Cluster (`subgraph cluster_X [...]`)
-      ::icon(fa fa-object-group)
-      Overrides Global for elements within
-    Individual Element (`node_id [...]`, `A->B [...]`)
-      ::icon(fa fa-paint-brush)
-      Highest precedence, overrides all defaults
+root(("DOT Attributes Scope"))
+  Graph_Global("Graph Global<br/>('graph [...]')")
+  ::icon(fa fa-globe)
+    Default_Node("Default Node<br/>('node [...]')")
+    Default_Edge("Default Edge<br/>('edge [...]')")
+    
+  Subgraph_Cluster("Subgraph /<br/> Cluster<br/>('subgraph cluster_X [...]')")
+  ::icon(fa fa-object-group)
+    Overrides_Global_for_elements_within["Overrides Global for elements within"]
+    
+  Individual_Element("Individual Element<br/>('node_id [...]',<br/> 'A->B [...]')")
+  ::icon(fa fa-paint-brush)
+    Highest_precedence_overrides_all_defaults["Highest precedence, overrides all defaults"]
 ```
 *Caption: Attributes can be defined at graph, default node/edge, subgraph/cluster, or individual element levels, with specific overrides.*
 
@@ -66,22 +116,49 @@ mindmap
 ## 3. Subgraphs vs. Clusters
 
 ```mermaid
+---
+title: "CHANGE_ME_DADDY"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#58D68D',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#E622',
+      'secondaryColor': '#E22F',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '15px'
+    }
+  }
+}%%
 graph TD
     A["Main Graph"] --> SB1{"subgraph sg1<br/>(Logical)"}
     A --> SB2{"subgraph cluster_c1<br/>(Visual Box)"}
 
     subgraph Key_Differences["Key Differences"]
+    style Key_Differences fill:#2D22,stroke:#333,stroke-width:2px
         SGS["'subgraph name {...}'<br/>Logical Grouping, Affects Rank"]
         CLS["'subgraph cluster_name {...}'<br/>Visual Box, Hierarchy"]
     end
 
     subgraph sg1_Visual["sg1"]
+    style sg1_Visual fill:#f221,stroke:#333,stroke-width:2px
       N1["Node A"]
       N2["Node B"]
     end
 
     subgraph cluster_c1_Visual["cluster_c1"]
-    style cluster_c1_Visual fill:#f9f,stroke:#333,stroke-width:2px
+    style cluster_c1_Visual fill:#f922,stroke:#333,stroke-width:2px
         C1["Node C"]
         C2["Node D"]
         C1 --> C2
@@ -95,6 +172,35 @@ graph TD
 ## 4. DOT Syntax Core Structure
 
 ```mermaid
+---
+title: "CHANGE_ME_DADDY"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#D5F5E3',
+      'primaryTextColor': '#145A32',
+      'lineColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '15px'
+    }
+  }
+}%%
 graph LR
     A["Graph Type Keyword<br/>(digraph/graph)"] --> B["Optional 'strict'"]
     B --> C["Optional Graph Name"]
@@ -109,13 +215,42 @@ graph LR
 ## 5. Record Shapes and Ports
 
 ```mermaid
+---
+title: "CHANGE_ME_DADDY"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#D5F5E3',
+      'primaryTextColor': '#145A32',
+      'lineColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '15px'
+    }
+  }
+}%%
 graph TD
     subgraph Record_Node_Example["Record Node Example"]
-        R1["nodeR["shape=record, label=\'<f0> Data | <f1> Pointer | { SubA | <sB> SubB }\'];"]
+        R1["nodeR[shape=record,<br/> label=\'<f0> Data | <f1> Pointer | { SubA | <sB> SubB }\']"]
     end
     subgraph Edge_to_Port["Edge to Port"]
-        E1["nodeR:f1 -> anotherNode;"]
-        E2["nodeR:sB -> thirdNode;"]
+        E1["nodeR:f1 -> anotherNode"]
+        E2["nodeR:sB -> thirdNode"]
     end
 ```
 *Caption: Record shapes allow structured nodes with fields (ports) that edges can connect to specifically.*
@@ -125,6 +260,35 @@ graph TD
 ## 6. HTML-Like Labels
 
 ```mermaid
+---
+title: "CHANGE_ME_DADDY"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#D5F5E3',
+      'primaryTextColor': '#145A32',
+      'lineColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '15px'
+    }
+  }
+}%%
 graph LR
     A["Node with HTML Label"] --> B["'shape=plaintext' (often)<br/>'label=<...HTML content...>'"]
     B --> C["'<TABLE>', '<FONT>', '<BR/>', '<IMG>', etc.<br/>(Subset of HTML)"]
@@ -138,6 +302,35 @@ graph LR
 ## 7. Graphviz Processing Pipeline
 
 ```mermaid
+---
+title: "CHANGE_ME_DADDY"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#D5F5E3',
+      'primaryTextColor': '#145A32',
+      'lineColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '15px'
+    }
+  }
+}%%
 flowchart TD
     Input[".dot File"] --> Parser{"Parser"}
     Parser --> LE_Select{"Layout Engine Select"}
@@ -152,26 +345,50 @@ flowchart TD
 ## 8. Common Graphviz Layout Engines
 
 ```mermaid
+---
+title: "CHANGE_ME_DADDY"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#D5E3',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '20px'
+    }
+  }
+}%%
 mindmap
 root(("Layout Engines"))
-    dot("dot")
-    ::icon(fa fa-sitemap)
-      Hierarchical
-      DAGs
-    neato("neato")
-    ::icon(fa fa-project-diagram)
-      Spring model
-      Undirected
-    fdp("fdp")
-    ::icon(fa fa-share-alt-square)
-      Force-directed
-      Undirected
-    twopi("twopi")
-    ::icon(fa fa-bullseye)
-      Radial
-    circo("circo")
-    ::icon(fa fa-circle-notch)
-      Circular
+  dot("dot")
+  ::icon(fa fa-sitemap)
+    Hierarchical
+    DAGs
+  neato("neato")
+  ::icon(fa fa-project-diagram)
+    Spring model
+    Undirected
+  fdp("fdp")
+  ::icon(fa fa-share-alt-square)
+    Force-directed
+    Undirected
+  twopi("twopi")
+  ::icon(fa fa-bullseye)
+    Radial
+  circo("circo")
+  ::icon(fa fa-circle-notch)
+    Circular
 ```
 *Caption: Key Graphviz layout engines and their typical applications.*
 
@@ -181,12 +398,7 @@ This concludes our scenic tour. These visualizations aim to reinforce the core c
 
 And with that, Fellow Explorer, the initial charting of the **DOT Language Region** is largely complete according to the Atlas's structure!
 
-Each file aims to be a "map" or "guide" for its respective topic, employing Mermaid.js for visual aids directly within the Markdown, fulfilling the cartographic goals set out in the README. This structure allows for both deep dives into specific landmarks and a broader overview of the linguistic terrain.
-
-This expedition has yielded a comprehensive set of charts and logs for future navigators of the DOT language.
-
-
-
+Each file aims to be a "map" or "guide" for its respective topic, employing `Mermaid.js` for visual aids directly within the Markdown, fulfilling the cartographic goals set out in the README. This structure allows for both deep dives into specific landmarks and a broader overview of the linguistic terrain.
 
 
 ---
