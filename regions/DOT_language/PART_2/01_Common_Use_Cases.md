@@ -99,11 +99,14 @@ While specialized tools exist for many of these use cases (e.g., dedicated UML m
 
 ---
 
+
+
 <!-- 
 ```mermaid
 %% Current Mermaid version
 info
-```  -->
+```
+-->
 
 
 ```mermaid
@@ -119,7 +122,7 @@ config:
 %%{
   init: {
     'flowchart': { 'htmlLabels': false },
-    'fontFamily': 'Brush Script MT',
+    'fontFamily': 'Bradley Hand',
     'themeVariables': {
       'primaryColor': '#fc82',
       'primaryTextColor': '#F8B229',
@@ -132,11 +135,12 @@ config:
   }
 }%%
 flowchart LR
-    My_Meme@{ img: "https://github.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/blob/Designing_graphic_syntax/MY_MEME_ICONS/Orange-Cloud-Search-Icon-Base-Color-Black-1024x1024.png?raw=true", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "on" }
+    My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/Designing_graphic_syntax/MY_MEME/My-meme-icon-design.png", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "on" }
 
-    Closing_quote@{ shape: braces, label: "Math and code work together to bring interactive art to life!" }
+    Closing_quote@{ shape: braces, label: "I'll leave this Earth empty-handed anyway!<br/>YOLO" }
 
 My_Meme ~~~ Closing_quote
+
 
 ```
 
