@@ -128,7 +128,9 @@ Please consult the [LICENSE](./LICENSE) and [LICENSE-CC-BY](./LICENSE-CC-BY) scr
 
 ## 👨‍🎨 The Cartographer (About Me)
 
-Called me RainMaker, chief cartographer and lead explorer for **The Language Atlas**. My passion lies in coding and design pattern recognition and the art of translating complex digital landscapes into understandable visual narratives. This atlas was born from a personal quest to quest my thirst in learning new things and exploring more new methods to interact with the machines meaningfully.
+Called me **RainMaker**, chief cartographer and lead explorer for **The Language Atlas**. My passion lies in coding, designing algorithm architectures, recognizing emergent patterns, and the art of translating complex digital landscapes into understandable visual narratives.
+
+This atlas was born from a personal quest to quench my thirst in learning new things and exploring more new methods to interact with the machines meaningfully.
 <!-- *   **GitHub Basecamp:** `@[YourGitHubHandle]` -->
 <!-- *   **[Optional: Links to Expedition Logs on LinkedIn, Personal Cartography Site, etc.]** -->
 
