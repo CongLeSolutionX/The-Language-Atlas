@@ -13,6 +13,7 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 > 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
 > 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
 
+
 ---
 
 <!-- 
@@ -32,10 +33,11 @@ copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   theme: base
 ---
+%%%%%%%% Mermaid version v11.4.1-b.14
 %%{
   init: {
     'flowchart': { 'htmlLabels': false },
-    'fontFamily': 'Brush Script MT',
+    'fontFamily': 'Bradley Hand',
     'themeVariables': {
       'primaryColor': '#fc82',
       'primaryTextColor': '#F8B229',
@@ -48,11 +50,12 @@ config:
   }
 }%%
 flowchart LR
-    My_Meme@{ img: "https://github.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/blob/Designing_graphic_syntax/MY_MEME_ICONS/Orange-Cloud-Search-Icon-Base-Color-Black-1024x1024.png?raw=true", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "on" }
+    My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/Designing_graphic_syntax/MY_MEME/My-meme-icon-design.png", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "on" }
 
-    Closing_quote@{ shape: braces, label: "Math and code work together to bring interactive art to life!" }
+    Closing_quote@{ shape: braces, label: "I'll leave this Earth empty-handed anyway!<br/>YOLO" }
 
 My_Meme ~~~ Closing_quote
+
 
 ```
 
