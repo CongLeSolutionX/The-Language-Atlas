@@ -59,36 +59,65 @@ Attributes are assigned to nodes in square brackets `[]` immediately following t
  * 
  */
 digraph NodeAttributes {
-    nodeA [label="Start Point", shape=box, color=blue, style=filled, fillcolor=lightblue];
-    nodeB [shape=ellipse, label="Process\nStep", fontsize=10];
-    nodeC [label="End", shape=diamond, style=bold, color=red];
+    nodeA [label="Start Point", shape=box, color=blue, style=filled, fillcolor=lightblue]
+    nodeB [shape=ellipse, label="Process\nStep", fontsize=10]
+    nodeC [label="End", shape=diamond, style=bold, color=red]
 
-    nodeA -> nodeB -> nodeC;
+    nodeA -> nodeB -> nodeC
 }
 ```
 
 ```mermaid
+---
+title: "Basic Terminology"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#D5F5E3',
+      'primaryTextColor': '#145A32',
+      'lineColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '15px'
+    }
+  }
+}%%
 graph LR
-    subgraph "Node Definition Syntax"
-        direction LR
-        A[NodeID] --> B["[AttributeList (Optional)]"]
-        B --> C[";"]
+    subgraph Node_Definition_Syntax["Node Definition Syntax"]
+    direction LR
+      A["NodeID"] --> B["[AttributeList<br/>(Optional)]"]
+      B --> C[";"]
     end
 
     subgraph "Example Node with Attributes"
-        N1["nodeA [label=\"My Label\", shape=box, style=filled, fillcolor=yellow];"]
+      N1["nodeA [label=\'My Label\', shape=box, style=filled, fillcolor=yellow]"]
     end
 
-    subgraph "Common Node Attributes"
-        SA["shape (box, ellipse, circle, diamond, triangle, plaintext, record, Mrecord, etc.)"]
-        LA["label (display text, can use \\n for newlines)"]
-        CO["color (border color)"]
-        FI["fillcolor (fill color, requires style=filled)"]
-        ST["style (filled, dashed, dotted, bold, rounded)"]
+    subgraph Common_Node_Attributes["Common Node Attributes"]
+        SA["shape<br/>(box, ellipse, circle, diamond, triangle, plaintext, record, Mrecord, etc.)"]
+        LA["label<br/>(display text, can use \\n for newlines)"]
+        CO["color<br/>(border color)"]
+        FI["fillcolor<br/>(fill color, requires style=filled)"]
+        ST["style<br/>(filled, dashed, dotted, bold, rounded)"]
         FO["fontname, fontsize, fontcolor"]
         WD["width, height (in inches, can be fixedsize=true)"]
-        IM["image (path to image file to display in node)"]
-        UR["URL (for clickable nodes in SVG output)"]
+        IM["image<br/>(path to image file to display in node)"]
+        UR["URL<br/>(for clickable nodes in SVG output)"]
     end
 ```
 
