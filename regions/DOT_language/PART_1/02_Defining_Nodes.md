@@ -105,10 +105,19 @@ The default shape is often `ellipse`.
 Nodes are automatically created if they appear in an edge statement and haven't been explicitly defined. They will use default node attributes.
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph ImplicitNodes {
-    configuredNode [shape=box];
-    configuredNode -> implicitNodeA; // implicitNodeA created with defaults
-    implicitNodeA -> implicitNodeB [label="Edge creates B"]; // implicitNodeB also created
+    configuredNode [shape=box]
+    configuredNode -> implicitNodeA // implicitNodeA created with defaults
+    implicitNodeA -> implicitNodeB [label="Edge creates B"] // implicitNodeB also created
 }
 ```
 

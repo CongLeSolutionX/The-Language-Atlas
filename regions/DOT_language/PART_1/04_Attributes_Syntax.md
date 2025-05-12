@@ -89,6 +89,15 @@ Attributes can be set at different levels, forming a hierarchy of defaults:
 **Precedence Example:**
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph AttributePrecedence {
     // Graph-level defaults
     graph [fontname="Arial"];

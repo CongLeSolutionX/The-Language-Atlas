@@ -95,6 +95,15 @@ A DOT file typically starts by declaring the type of graph:
 
 ````
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 // Example of a simple directed graph
 digraph MyFirstGraph {
     // Nodes and edges will be defined here

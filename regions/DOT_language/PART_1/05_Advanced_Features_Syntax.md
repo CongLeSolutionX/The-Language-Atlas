@@ -30,6 +30,15 @@ Record shapes allow nodes to be displayed as structures with fields, similar to 
 
 **Syntax for `label` with record shapes:**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph RecordShapes {
     nodeR [
         shape=record,
@@ -78,6 +87,15 @@ For even more advanced formatting within nodes (and sometimes edges or graph lab
 
 **Example:**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph HTMLLabels {
     nodeHTML [
         shape=plaintext, // Often used with HTML labels to let HTML define the visuals
@@ -120,6 +138,15 @@ Syntax: `node_id:compass_point`
 
 **Example:**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph NodePorts {
     A [shape=circle];
     B [shape=circle];
@@ -144,6 +171,15 @@ Within a subgraph, the `rank` attribute can influence the vertical or horizontal
 
 **Example:**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph RankControl {
     rankdir=TB; // Top to Bottom ranking
 

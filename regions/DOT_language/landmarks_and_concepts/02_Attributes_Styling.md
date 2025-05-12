@@ -92,12 +92,22 @@ Here's a table of some frequently used attributes:
 | `height`    | Node            | Minimum height of a node in inches.       | `_0.5_`                           |
 | `URL`       | Graph, Node, Edge | Hyperlink for clickable diagrams (SVG).   | `"https://example.com"`         |
 
+
 *(Note: Numerical values for attributes like `fontsize`, `width`, `height` often do not need quotes unless they contain special characters. String values always need quotes.)*
 
 **HTML-Like Labels:** For more complex node labels, DOT supports a subset of HTML-like syntax within the `label` attribute, allowing for tables, font specifications, and structured content within a node. This is specified by surrounding the label value with `<` and `>`.
 
 Example:
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph HtmlLabel {
     nodeA [label=<
         <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
