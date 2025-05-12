@@ -92,16 +92,16 @@ config:
   }
 }%%
 graph TD
-    subgraph "Record Shapes"
-        RS["shape=record / Mrecord"] --> RSL["Label defines fields/ports"]
+    subgraph Record_Shapes["Record Shapes"]
+        RS["shape=record /<br/> Mrecord"] --> RSL["Label defines fields/ports"]
         RSL --> RSH["'|' for horizontal separation"]
         RSL --> RSV["'{...|...}' for vertical nesting"]
         RSL --> RSP["'<portName> Text' defines a port"]
-        RS --> RSE["Edges can connect to ports: `node:portName -> ...`"]
+        RS --> RSE["Edges can connect to ports:<br/> 'node:portName -> ...'"]
     end
     R1["node [shape=record, label=\'<f0> Left | <f1> Middle | <f2> Right\'];"]
     R2["node [shape=Mrecord, label=\'Top | {<pA> NestA | <pB> NestB} | Bottom\'];"]
-    RSE --> ExR["myNode:f1 -> anotherNode:pA;"]
+    RSE --> ExR["myNode:f1 -> anotherNode:pA"]
 ```
 
 ----
@@ -148,8 +148,8 @@ digraph HTMLLabels {
             </TABLE>
         >
     ];
-    anotherNode [label="Connects to Role"];
-    nodeHTML:role_port -> anotherNode;
+    anotherNode [label="Connects to Role"]
+    nodeHTML:role_port -> anotherNode
 }
 ```
 
@@ -177,12 +177,12 @@ Syntax: `node_id:compass_point`
  * 
  */
 digraph NodePorts {
-    A [shape=circle];
-    B [shape=circle];
-    C [shape=record, label="<p1> Port1 | <p2> Port2"];
+    A [shape=circle]
+    B [shape=circle]
+    C [shape=record, label="<p1> Port1 | <p2> Port2"]
 
-    A:e -> B:w [label="East to West"];  // Using compass points
-    B:s -> C:p1 [label="South to Port1"]; // Compass to named port
+    A:e -> B:w [label="East to West"]  // Using compass points
+    B:s -> C:p1 [label="South to Port1"] // Compass to named port
 }
 ```
 
@@ -210,29 +210,32 @@ Within a subgraph, the `rank` attribute can influence the vertical or horizontal
  * 
  */
 digraph RankControl {
-    rankdir=TB; // Top to Bottom ranking
+    rankdir=TB // Top to Bottom ranking
 
     subgraph cluster_input {
-        label="Inputs";
-        rank=source;
-        inputA; inputB;
+        label="Inputs"
+        rank=source
+        inputA
+        inputB
     }
     subgraph cluster_processing {
-        label="Processing Layer";
-        rank=same; // Try to align proc1 and proc2
-        proc1; proc2;
+        label="Processing Layer"
+        rank=same // Try to align proc1 and proc2
+        proc1
+        proc2
     }
     subgraph cluster_output {
-        label="Outputs";
-        rank=sink;
-        outputX; outputY;
+        label="Outputs"
+        rank=sink
+        outputX
+        outputY
     }
 
-    inputA -> proc1;
-    inputB -> proc2;
-    proc1 -> outputX;
-    proc2 -> outputY;
-    proc1 -> proc2 [style=invis]; // Invisible edge to help rank=same if needed
+    inputA -> proc1
+    inputB -> proc2
+    proc1 -> outputX
+    proc2 -> outputY
+    proc1 -> proc2 [style=invis] // Invisible edge to help rank=same if needed
 }
 ```
 

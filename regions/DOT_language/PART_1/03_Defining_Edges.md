@@ -123,7 +123,7 @@ config:
     'fontFamily': 'Monaco',
     'themeVariables': {
       'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -134,32 +134,32 @@ config:
   }
 }%%
 graph LR
-    subgraph "Edge Definition Syntax"
-        direction LR
-        S[SourceNode] --> Arrow["(-> or --)"]
-        Arrow --> T[TargetNode]
-        T --> AL["[AttributeList (Optional)]"]
-        AL --> SC[";"]
+    subgraph Edge_Definition_Syntax["Edge Definition Syntax"]
+    direction LR
+      S[SourceNode] --> Arrow["(-> or --)"]
+      Arrow --> T[TargetNode]
+      T --> AL["[AttributeList<br/>(Optional)]"]
+      AL --> SC[";"]
     end
 
-    subgraph "Example Edge with Attributes"
-        N1["A -> B [label=\"Connects To\", color=green, style=bold];"]
+    subgraph Example_Edge_with_Attributes["Example Edge with Attributes"]
+        N1["A -> B [label=\'Connects To\', color=green, style=bold];"]
     end
 
-    subgraph "Common Edge Attributes"
-        LAE["label (display text for the edge)"]
-        COE["color (edge line color)"]
-        STE["style (solid, dashed, dotted, bold)"]
-        PWE["penwidth (thickness of the edge line)"]
-        AHE["arrowhead (normal, dot, vee, curve, inv, diamond, etc.)"]
-        ATE["arrowtail (same options as arrowhead, for start of edge)"]
-        ARS["arrowsize (multiplier for arrowhead/tail size)"]
-        DIE["dir (forward, back, both, none - for custom arrow display)"]
-        CSE["constraint (true/false - whether edge influences node ranking/layout)"]
-        LNE["len (preferred edge length in inches - for neato/fdp)"]
-        WTE["weight (higher weight often means shorter, straighter edges)"]
-        FOE["fontname, fontsize, fontcolor (for edge labels)"]
-        URE["URL (for clickable edges in SVG output)"]
+    subgraph Common_Edge_Attributes["Common Edge Attributes"]
+        LAE["label<br/>(display text for the edge)"]
+        COE["color<br/>(edge line color)"]
+        STE["style<br/>(solid, dashed, dotted, bold)"]
+        PWE["penwidth<br/>(thickness of the edge line)"]
+        AHE["arrowhead<br/>(normal, dot, vee, curve, inv, diamond, etc.)"]
+        ATE["arrowtail<br/>(same options as arrowhead, for start of edge)"]
+        ARS["arrowsize<br/>(multiplier for arrowhead/tail size)"]
+        DIE["dir<br/>(forward, back, both, none - for custom arrow display)"]
+        CSE["constraint<br/>(true/false - whether edge influences node ranking/layout)"]
+        LNE["len<br/>(preferred edge length in inches - for neato/fdp)"]
+        WTE["weight<br/>(higher weight often means shorter, straighter edges)"]
+        FOE["fontname, fontsize, fontcolor<br/>(for edge labels)"]
+        URE["URL<br/>(for clickable edges in SVG output)"]
     end
 ```
 
