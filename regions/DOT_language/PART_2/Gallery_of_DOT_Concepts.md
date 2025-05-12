@@ -36,8 +36,8 @@ config:
     'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryColor': '#D5E3',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -58,10 +58,10 @@ graph LR
         DE("--- Directed Edge --->")
         UE("--- Undirected Edge ---")
     end
-    style A fill:#87CEEB,stroke:#333
-    style B fill:#87CEEB,stroke:#333
-    style C fill:#87CEEB,stroke:#333
-    style D fill:#87CEEB,stroke:#333
+    style A fill:#87CB,stroke:#333
+    style B fill:#87CB,stroke:#333
+    style C fill:#87CB,stroke:#333
+    style D fill:#87CB,stroke:#333
 ```
 *Caption: Fundamental building blocks: nodes (entities) and edges (relationships).*
 
@@ -84,10 +84,10 @@ config:
   init: {
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#D5E3',
+      'primaryColor': '#D511E3',
       'primaryTextColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
-      'secondaryColor': '#EBDEF0',
+      'secondaryColor': '#EBD3',
       'secondaryTextColor': '#6C3483',
       'secondaryBorderColor': '#A569BD',
       'fontSize': '20px'
@@ -131,7 +131,7 @@ config:
   init: {
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#58D68D',
+      'primaryColor': '#568D',
       'primaryTextColor': '#F8B229',
       'primaryBorderColor': '#E622',
       'secondaryColor': '#E22F',
@@ -190,8 +190,8 @@ config:
     'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryColor': '#D5E3',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -233,8 +233,8 @@ config:
     'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryColor': '#D5E3',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -278,8 +278,8 @@ config:
     'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryColor': '#D5E3',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -320,8 +320,8 @@ config:
     'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryColor': '#D5E3',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
