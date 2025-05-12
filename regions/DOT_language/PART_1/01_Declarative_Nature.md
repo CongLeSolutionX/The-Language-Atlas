@@ -50,26 +50,26 @@ config:
   }
 }%%
 mindmap
-  root((DOT: A Declarative Language))
-    Focus on "WHAT"
-      Description of graph elements
-        Nodes (entities)
-        Edges (relationships)
-        Attributes (properties, styles)
-        Subgraphs/Clusters (groupings)
-      Desired state or structure of the graph
-    NOT "HOW"
-      No explicit drawing commands (e.g., "draw line from x1,y1 to x2,y2")
-      No layout algorithms specified *by the DOT user directly in statements*
-      No step-by-step instructions for rendering
+  root(("DOT:<br/>A Declarative Language"))
+    Focus_on_WHAT("Focus on 'WHAT'")
+      Description_of_graph_elements["Description of graph elements"]
+        Nodes["Nodes<br/>(entities)"]
+        Edges["Edges<br/>(relationships)"]
+        Attributes["Attributes<br/>(properties, styles)"]
+        Subgraphs_Clusters["Subgraphs/<br/>Clusters<br/>(groupings)"]
+      Desired_state_or_structure_of_the_graph["Desired state or structure of the graph"]
+    NOT_HOW("NOT 'HOW'")
+      No_explicit_drawing_commands["No explicit drawing commands<br/>(e.g., 'draw line from x1,y1 to x2,y2')"]
+      No_layout_algorithms_specified["No layout algorithms specified *by the DOT user directly in statements*"]
+      No_step_by_step_instructions_for_rendering["No step-by-step instructions for rendering"]
 
-    Analogy
-      Architectural Blueprint vs. Construction Instructions
-        DOT is the blueprint: defines rooms, connections, materials (nodes, edges, attributes).
-        Graphviz is the construction crew: interprets blueprint and builds the house (renders the graph).
-      Ordering a Meal vs. Giving a Recipe
-        DOT is ordering: "I want a graph with nodes A, B, C, where A connects to B..."
-        Graphviz is the chef: takes the order and prepares the meal.
+    Analogy("Analogy")
+      Architectural_Blueprint_vs_Construction_Instructions["Architectural Blueprint<br/>vs.<br/>Construction Instructions"]
+        DOT_is_the_blueprint[" DOT is the blueprint: defines rooms, connections, materials<br/>(nodes, edges, attributes)"]
+        Graphviz_is_the_construction_crew["Graphviz is the construction crew:<br/>interprets blueprint and builds the house <br/>(renders the graph)"]
+      Ordering_a_Meal_vs_Giving_a_Recipe["Ordering a Meal vs. Giving a Recipe"]
+        DOT_is_ordering["DOT is ordering:<br/>'I want a graph with nodes A, B, C, where A connects to B...'"]
+        Graphviz_is_the_chef["Graphviz is the chef:<br/> takes the order and prepares the meal"]
 ```
 
 ----

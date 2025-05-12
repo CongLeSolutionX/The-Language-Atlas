@@ -21,6 +21,8 @@ Graphviz is not a single layout algorithm but a suite of tools, each providing d
 
 The engine is typically chosen by the command used (e.g., `dot`, `neato`) or sometimes via a `-Kengine` flag.
 
+---
+
 ## Common Layout Engines
 
 ```mermaid
