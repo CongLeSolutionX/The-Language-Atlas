@@ -51,46 +51,46 @@ config:
   }
 }%%
 mindmap
-  root((Graphviz Layout Engines))
-    dot
-      ::icon(fa fa-sitemap)
-      Default for hierarchical or layered drawings of directed graphs.
-      Excellent for DAGs (Directed Acyclic Graphs), flowcharts, hierarchies (org charts, call graphs).
-      Arranges nodes in ranks/levels.
-      Minimizes edge crossings and tries to point edges in the main flow direction (e.g., top-to-bottom, left-to-right).
-      Attributes: `rankdir`, `ranksep`, `nodesep`.
-    neato
-      ::icon(fa fa-project-diagram)
-      "Network Embellisher, After Tom Sawyer's Outhouse"
-      Uses "spring model" or "energy minimization" algorithms (e.g., Kamada-Kawai).
-      Treats edges as springs and nodes as repelling objects. Finds a layout with minimal energy.
-      Good for undirected graphs where structure is more important than flow.
-      Suitable for visualizing networks, social graphs.
-      Attributes: `len` (optimal edge length), `epsilon` (convergence threshold).
-    fdp
-      ::icon(fa fa-share-alt-square)
-      Force-Directed Placement. Similar to `neato` but uses a different force-directed algorithm (Fruchterman-Reingold).
-      Also good for large undirected graphs.
-      May handle larger graphs better than `neato` in some cases.
-    twopi
-      ::icon(fa fa-bullseye)
-      Radial layouts. Places nodes in concentric circles around a central root.
-      Root node is chosen (or can be specified with `root` attribute).
-      Good for showing distance from a central item.
-    circo
-      ::icon(fa fa-circle-notch)
-      Circular layouts. Identifies biconnected components (maximal subgraphs where removal of any single vertex leaves it connected) and circular structures.
-      Arranges nodes in circles or ellipses.
-      Suitable for certain network topologies, like ring networks.
-    sfdp
-      ::icon(fa fa-cubes)
-      Scalable Force-Directed Placement. A multiscale version of `fdp` for laying out very large graphs.
-    patchwork
-      ::icon(fa fa-th-large)
-      Draws the graph as a squarified treemap. The graph must be a tree. Node sizes correspond to `area` attribute.
-    osage
-      ::icon(fa fa-object-group)
-      Draws graph using a "cluster" layout algorithm.
+root((Graphviz Layout Engines))
+  dot
+  ::icon(fa fa-sitemap)
+    Default_for_hierarchical_or_layered_drawings["Default for hierarchical or layered drawings of directed graphs"]
+    Excellent_for_DAGs["Excellent for DAGs (Directed Acyclic Graphs),<br/> flowcharts,<br/> hierarchies<br/>(org charts, call graphs)"]
+    Arranges_nodes_in_ranks_levels["Arranges nodes in ranks/levels"]
+    Minimizes_edge_crossings["Minimizes edge crossings and tries to point edges in the main flow direction<br/>(e.g., top-to-bottom, left-to-right)"]
+    Attributes["Attributes:<br/>'rankdir', 'ranksep', 'nodesep'"]
+  neato
+  ::icon(fa fa-project-diagram)
+    Network_Embellisher_After_Tom_Sawyer_Outhouse["Network Embellisher, After Tom Sawyer's Outhouse"]
+    Uses_spring_model_or_energy_minimization_algorithms["Uses 'spring model' or 'energy minimization' algorithms<br/>(e.g., Kamada-Kawai)"]
+    Treats_edges_as_springs_and_nodes_as_repelling_objects["Treats edges as springs and nodes as repelling objects.<br/>Finds a layout with minimal energy"]
+    Good for undirected graphs where structure is more important than flow
+    Suitable_for_visualizing_networks["Suitable for visualizing networks, social graphs"]
+    Attributes["Attributes:<br/> 'len' (optimal edge length),<br/> 'epsilon' (convergence threshold)"]
+  fdp
+  ::icon(fa fa-share-alt-square)
+    Force_Directed_Placement["Force-Directed Placement.<br/> Similar to 'neato' but uses a different force-directed algorithm<br/>(Fruchterman-Reingold)"]
+    Also_good_for_large_undirected_graphs["Also good for large undirected graphs"]
+    May_handle_larger_graphs["May handle larger graphs better than 'neato' in some cases"]
+  twopi
+  ::icon(fa fa-bullseye)
+    Radial_layouts["Radial layouts.<br/>Places nodes in concentric circles around a central root"]
+    Root_node_is_chosen["Root node is chosen<br/>(or can be specified with 'root' attribute)"]
+    Good_for_showing_distance_from_a_central_item["Good for showing distance from a central item"]
+  circo
+  ::icon(fa fa-circle-notch)
+    Circular_layouts["Circular layouts.<br/>Identifies biconnected components<br/>(maximal subgraphs where removal of any single vertex leaves it connected<br/> and circular structures"]
+    Arranges_nodes_in_circles_or_ellipses["Arranges nodes in circles or ellipses"]
+    Suitable_for_certain_network_topologies["Suitable for certain network topologies, like ring networks"]
+  sfdp
+  ::icon(fa fa-cubes)
+    Scalable_Force_Directed_Placement["Scalable Force-Directed Placement.<br/>A multiscale version of 'fdp' for laying out very large graphs"]
+  patchwork
+  ::icon(fa fa-th-large)
+    Draws_the_graph_as_a_squarified_treemap["Draws the graph as a squarified treemap.<br/>The graph must be a tree.<br/>Node sizes correspond to 'area' attribute"]
+  osage
+  ::icon(fa fa-object-group)
+    Draws_graph_using_a_cluster_layout_algorithm["Draws graph using a 'cluster' layout algorithm"]
 ```
 
 ----
