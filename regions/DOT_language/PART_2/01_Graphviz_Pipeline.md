@@ -43,11 +43,11 @@ config:
     'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#D5F5E3',
+      'primaryColor': '#D5E3',
       'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
-      'secondaryColor': '#EBDEF0',
+      'secondaryColor': '#E2F2',
       'secondaryTextColor': '#6C3483',
       'secondaryBorderColor': '#A569BD',
       'fontSize': '15px'
@@ -55,25 +55,25 @@ config:
   }
 }%%
 flowchart TD
-    A["DOT File (.dot)"] -- "Input" --> B{Graphviz Parser};
-    B -- "Abstract Graph Representation" --> C{Layout Engine Selection};
-    C -- "e.g., dot, neato, fdp, circo, twopi" --> D[Layout Engine];
-    D -- "Graph with Coordinates & Styles" --> E{Renderer};
-    E -- "e.g., SVG, PNG, PDF, PostScript" --> F["Output Image/File"];
+    A["DOT File<br/>(.dot)"] -- "input" --> B{"Graphviz Parser"}
+    B -- "Abstract Graph Representation" --> C{"Layout Engine Selection"}
+    C -- "e.g., dot, neato, fdp, circo, twopi" --> D["Layout Engine"]
+    D -- "Graph with Coordinates & Styles" --> E{"Renderer"}
+    E -- "e.g., SVG, PNG, PDF, PostScript" --> F["Output Image/File"]
 
-    subgraph "User Interaction / Configuration"
-        direction LR
-        U1["Command-line Invocation (e.g., `dot -Tsvg input.dot -o output.svg`)"] --> C;
-        U1 --> D;
-        U1 --> E;
+    subgraph User_Interaction_Configuration["User Interaction /<br/> Configuration"]
+    direction LR
+      U1["Command-line Invocation<br/>(e.g., 'dot -Tsvg input.dot -o output.svg')"] --> C
+      U1 --> D
+      U1 --> E
     end
 
-    style A fill:#lightyellow,stroke:#333,stroke-width:2px
-    style B fill:#add8e6,stroke:#333,stroke-width:2px
-    style C fill:#ffcccb,stroke:#333,stroke-width:2px
-    style D fill:#90ee90,stroke:#333,stroke-width:2px
-    style E fill:#dda0dd,stroke:#333,stroke-width:2px
-    style F fill:#lightgrey,stroke:#333,stroke-width:2px
+    style A fill:#add8,stroke:#333,stroke-width:2px
+    style B fill:#ade6,stroke:#333,stroke-width:2px
+    style C fill:#fcccb,stroke:#333,stroke-width:2px
+    style D fill:#9e93,stroke:#333,stroke-width:2px
+    style E fill:#da0dd,stroke:#333,stroke-width:2px
+    style F fill:#a0dd,stroke:#333,stroke-width:2px
 ```
 
 **1. DOT File (.dot):**

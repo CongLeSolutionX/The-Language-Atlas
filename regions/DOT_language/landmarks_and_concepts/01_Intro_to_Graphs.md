@@ -40,8 +40,8 @@ config:
     'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryColor': '#D5E3',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -63,10 +63,10 @@ graph LR
         E("--- Edge/Arc ---")
     end
 
-    style A fill:#87CEEB,stroke:#333,stroke-width:2px
-    style B fill:#87CEEB,stroke:#333,stroke-width:2px
-    style C fill:#87CEEB,stroke:#333,stroke-width:2px
-    style D fill:#87CEEB,stroke:#333,stroke-width:2px
+    style A fill:#87CB,stroke:#333,stroke-width:2px
+    style B fill:#87CB,stroke:#333,stroke-width:2px
+    style C fill:#87CB,stroke:#333,stroke-width:2px
+    style D fill:#87CB,stroke:#333,stroke-width:2px
     
 ```
 
