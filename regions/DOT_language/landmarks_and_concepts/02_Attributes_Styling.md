@@ -44,7 +44,7 @@ config:
       'primaryColor': '#D5E3',
       'primaryTextColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
-      'secondaryColor': '#EBDEF0',
+      'secondaryColor': '#EEF2',
       'secondaryTextColor': '#6C3483',
       'secondaryBorderColor': '#A569BD',
       'fontSize': '20px'

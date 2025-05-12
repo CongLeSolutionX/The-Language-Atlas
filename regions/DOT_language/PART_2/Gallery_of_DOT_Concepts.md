@@ -137,6 +137,7 @@ config:
       'secondaryColor': '#E22F',
       'secondaryTextColor': '#6C3483',
       'secondaryBorderColor': '#A569BD',
+      'lineColor': '#F8B229',
       'fontSize': '15px'
     }
   }
@@ -240,6 +241,7 @@ config:
       'secondaryColor': '#EBDEF0',
       'secondaryTextColor': '#6C3483',
       'secondaryBorderColor': '#A569BD',
+      'lineColor': '#F8B229',
       'fontSize': '15px'
     }
   }
