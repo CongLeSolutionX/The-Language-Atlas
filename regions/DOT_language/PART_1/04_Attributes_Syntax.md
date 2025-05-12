@@ -40,6 +40,30 @@ Multiple attributes for a single graph element (graph, node, or edge) are enclos
 *   **Syntax:** `[ attribute1=value1, attribute2=value2, attributeN=valueN ]`
 
 ```mermaid
+---
+title: "CHANGE_ME_DADDY"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#D5E3',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '20px'
+    }
+  }
+}%%
 mindmap
   root((Attribute Assignment))
     Key-Value Pair
@@ -89,6 +113,15 @@ Attributes can be set at different levels, forming a hierarchy of defaults:
 **Precedence Example:**
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph AttributePrecedence {
     // Graph-level defaults
     graph [fontname="Arial"];

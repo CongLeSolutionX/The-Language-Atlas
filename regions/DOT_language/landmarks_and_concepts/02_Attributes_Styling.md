@@ -27,6 +27,30 @@ Attributes can be set at different levels, establishing defaults that can be ove
 4.  **Individual Node/Edge Attributes**: Set properties for a specific node or edge, overriding defaults.
 
 ```mermaid
+---
+title: "CHANGE_ME_DADDY"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#D5E3',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '20px'
+    }
+  }
+}%%
 mindmap
 root(("DOT Attributes"))
     Graph_Attributes("Graph Attributes")
@@ -76,7 +100,7 @@ root(("DOT Attributes"))
 
 Here's a table of some frequently used attributes:
 
-| Attribute   | Applies To      | Description                               Example Value(s)                 |
+| Attribute   | Applies To      | Description                               | Example Value(s)                 |
 |-------------|-----------------|-------------------------------------------|---------------------------------|
 | `label`     | Graph, Node, Edge | Text displayed for the element.             | `"My Node"`, `"Process Data"`   |
 | `shape`     | Node            | Visual shape of the node.                 | `box`, `ellipse`, `record`, `plaintext` |
@@ -84,13 +108,15 @@ Here's a table of some frequently used attributes:
 | `color`     | Node (border), Edge | Color of the border or edge line.       | `red`, `blue`, `#FF0000`         |
 | `fillcolor` | Node            | Fill color (if `style=filled`).         | `lightgrey`, `yellow`           |
 | `fontname`  | Graph, Node, Edge | Font used for labels.                     | `Arial`, `Helvetica`            |
-| `fontsize`  | Graph, Node, Edge | Size of the font for labels.              | `_12_`, `_10_`                     |
+| `fontsize`  | Graph, Node, Edge | Size of the font for labels.              | `12`, `10`                      |
 | `rankdir`   | Graph           | Layout direction (`TB`, `LR`, `BT`, `RL`). | `LR` (Left to Right)            |
 | `arrowhead` | Edge            | Style of the arrow at the target node.    | `normal`, `dot`, `vee`, `empty` |
 | `arrowtail` | Edge            | Style of the arrow at the source node.    | `normal`, `inv`                 |
-| `width`     | Node            | Minimum width of a node in inches.        | `_0.75_`                          |
-| `height`    | Node            | Minimum height of a node in inches.       | `_0.5_`                           |
+| `width`     | Node            | Minimum width of a node in inches.        | `0.75`                          |
+| `height`    | Node            | Minimum height of a node in inches.       | `0.5`                           |
 | `URL`       | Graph, Node, Edge | Hyperlink for clickable diagrams (SVG).   | `"https://example.com"`         |
+
+
 
 *(Note: Numerical values for attributes like `fontsize`, `width`, `height` often do not need quotes unless they contain special characters. String values always need quotes.)*
 
@@ -98,6 +124,15 @@ Here's a table of some frequently used attributes:
 
 Example:
 ```dot
+/*
+ * title: HTML-Like Labels
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph HtmlLabel {
     nodeA [label=<
         <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">

@@ -22,32 +22,61 @@ Edges represent the connections or relationships between nodes in a graph. DOT p
 ## Edge Definition Syntax
 
 *   **Directed Edges (`digraph`):** Use `->` (an arrow) to indicate direction from a source node to a target node.
-    ```dot
-    digraph DirectedEdges {
-        A -> B;         // Edge from A to B
-        B -> C;
-        A -> C;         // Another edge from A
-    }
-    ```
+```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
+digraph DirectedEdges {
+    A -> B // Edge from A to B
+    B -> C
+    A -> C // Another edge from A
+}
+```
 
 *   **Undirected Edges (`graph`):** Use `--` (a double dash) to indicate a connection without inherent direction.
-    ```dot
-    graph UndirectedEdges {
-        A -- B;         // Edge between A and B
-        B -- C;
-        A -- C;
-    }
-    ```
+
+```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
+graph UndirectedEdges {
+    A -- B // Edge between A and B
+    B -- C
+    A -- C
+}
+```
 
 *   **Chaining Edges:** You can chain edge definitions for brevity:
-    ```dot
-    digraph ChainedEdges {
-        A -> B -> C -> D; // Equivalent to A->B; B->C; C->D;
-    }
-    graph ChainedUndirected {
-        X -- Y -- Z;    // Equivalent to X--Y; Y--Z;
-    }
-    ```
+
+```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
+digraph ChainedEdges {
+    A -> B -> C -> D // Equivalent to A->B; B->C; C->D;
+}
+graph ChainedUndirected {
+    X -- Y -- Z    // Equivalent to X--Y; Y--Z;
+}
+```
 
 ----
 
@@ -56,16 +85,54 @@ Edges represent the connections or relationships between nodes in a graph. DOT p
 Similar to nodes, edges can have attributes specified in square brackets `[]` immediately following the edge definition.
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph EdgeAttributes {
-    node [shape=box]; // Default node shape for clarity
+    node [shape=box] // Default node shape for clarity
 
-    A -> B [label="Process 1", color=blue, style=dashed];
-    B -> C [label="Final Step", color=red, arrowhead=vee, penwidth=2.0];
-    C -> A [label="Feedback Loop", style=dotted, constraint=false]; // constraint=false means edge doesn't affect layout ranking
+    A -> B [label="Process 1", color=blue, style=dashed]
+    B -> C [label="Final Step", color=red, arrowhead=vee, penwidth=2.0]
+    C -> A [label="Feedback Loop", style=dotted, constraint=false] // constraint=false means edge doesn't affect layout ranking
 }
 ```
 
 ```mermaid
+---
+title: "Graphviz Processing Pipeline"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#D5F5E3',
+      'primaryTextColor': '#145A32',
+      'lineColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '15px'
+    }
+  }
+}%%
 graph LR
     subgraph "Edge Definition Syntax"
         direction LR
@@ -103,22 +170,44 @@ graph LR
 For nodes with specific connection points (like 'record' shapes or using compass points), you can specify these in the edge definition using a colon `:`.
 
 *   **Record Shapes:** If a node is defined with a `record` shape and has labeled fields (ports), edges can connect to these ports.
-    ```dot
-    digraph RecordPorts {
-        nodeA [shape=record, label="<f0> Field 0 | <f1> Field 1 | <f2> Field 2"];
-        nodeB [shape=box];
-        nodeA:f1 -> nodeB [label="From Field 1"]; // Connects from port f1 of nodeA
-    }
-    ```
+
+```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
+digraph RecordPorts {
+    nodeA [shape=record, label="<f0> Field 0 | <f1> Field 1 | <f2> Field 2"]
+    nodeB [shape=box]
+    nodeA:f1 -> nodeB [label="From Field 1"] // Connects from port f1 of nodeA
+}
+```
 
 *   **Compass Points:** Nodes can be targeted at logical compass points (`n`, `ne`, `e`, `se`, `s`, `sw`, `w`, `nw`, `c` for center).
-    ```dot
-    digraph CompassPoints {
-        A; B;
-        A:e -> B:w [label="East of A to West of B"]; // Connect A's east side to B's west side
-    }
-    ```
-    The actual visual effect depends on the layout engine and node shapes.
+
+```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
+digraph CompassPoints {
+    A
+    B
+    A:e -> B:w [label="East of A to West of B"] // Connect A's east side to B's west side
+}
+```
+
+The actual visual effect depends on the layout engine and node shapes.
 
 Edges are the lifelines of your graph, and effectively styling them greatly enhances the communication of relationships within your diagrams.
 

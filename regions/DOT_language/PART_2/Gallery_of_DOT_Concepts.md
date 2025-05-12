@@ -19,7 +19,7 @@ This gallery provides a quick visual summary of key concepts related to the DOT 
 
 ```mermaid
 ---
-title: "CHANGE_ME_DADDY"
+title: "Basic Graph Components"
 author: "Cong Le"
 version: "1.0"
 license(s): "MIT, CC BY 4.0"
@@ -71,7 +71,7 @@ graph LR
 
 ```mermaid
 ---
-title: "CHANGE_ME_DADDY"
+title: "DOT Attribute Scopes"
 author: "Cong Le"
 version: "1.0"
 license(s): "MIT, CC BY 4.0"
@@ -117,7 +117,7 @@ root(("DOT Attributes Scope"))
 
 ```mermaid
 ---
-title: "CHANGE_ME_DADDY"
+title: "Subgraphs vs. Clusters"
 author: "Cong Le"
 version: "1.0"
 license(s): "MIT, CC BY 4.0"
@@ -173,7 +173,7 @@ graph TD
 
 ```mermaid
 ---
-title: "CHANGE_ME_DADDY"
+title: "DOT Syntax Core Structure"
 author: "Cong Le"
 version: "1.0"
 license(s): "MIT, CC BY 4.0"
@@ -216,7 +216,7 @@ graph LR
 
 ```mermaid
 ---
-title: "CHANGE_ME_DADDY"
+title: "Record Shapes and Ports"
 author: "Cong Le"
 version: "1.0"
 license(s): "MIT, CC BY 4.0"
@@ -261,7 +261,7 @@ graph TD
 
 ```mermaid
 ---
-title: "CHANGE_ME_DADDY"
+title: "HTML-Like Labels"
 author: "Cong Le"
 version: "1.0"
 license(s): "MIT, CC BY 4.0"
@@ -303,7 +303,7 @@ graph LR
 
 ```mermaid
 ---
-title: "CHANGE_ME_DADDY"
+title: "Graphviz Processing Pipeline"
 author: "Cong Le"
 version: "1.0"
 license(s): "MIT, CC BY 4.0"
@@ -346,7 +346,7 @@ flowchart TD
 
 ```mermaid
 ---
-title: "CHANGE_ME_DADDY"
+title: "Common Graphviz Layout Engines"
 author: "Cong Le"
 version: "1.0"
 license(s): "MIT, CC BY 4.0"

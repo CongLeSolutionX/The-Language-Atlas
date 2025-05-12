@@ -30,6 +30,15 @@ Record shapes allow nodes to be displayed as structures with fields, similar to 
 
 **Syntax for `label` with record shapes:**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph RecordShapes {
     nodeR [
         shape=record,
@@ -53,6 +62,35 @@ digraph RecordShapes {
 Ports are identified by `<port_name>` within the label string.
 
 ```mermaid
+---
+title: "Graphviz Processing Pipeline"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#D5F5E3',
+      'primaryTextColor': '#145A32',
+      'lineColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '15px'
+    }
+  }
+}%%
 graph TD
     subgraph "Record Shapes"
         RS["shape=record / Mrecord"] --> RSL["Label defines fields/ports"]
@@ -61,8 +99,8 @@ graph TD
         RSL --> RSP["'<portName> Text' defines a port"]
         RS --> RSE["Edges can connect to ports: `node:portName -> ...`"]
     end
-    R1["node [shape=record, label=\"<f0> Left | <f1> Middle | <f2> Right\"];"]
-    R2["node [shape=Mrecord, label=\"Top | {<pA> NestA | <pB> NestB} | Bottom\"];"]
+    R1["node [shape=record, label=\'<f0> Left | <f1> Middle | <f2> Right\'];"]
+    R2["node [shape=Mrecord, label=\'Top | {<pA> NestA | <pB> NestB} | Bottom\'];"]
     RSE --> ExR["myNode:f1 -> anotherNode:pA;"]
 ```
 
@@ -78,6 +116,15 @@ For even more advanced formatting within nodes (and sometimes edges or graph lab
 
 **Example:**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph HTMLLabels {
     nodeHTML [
         shape=plaintext, // Often used with HTML labels to let HTML define the visuals
@@ -120,6 +167,15 @@ Syntax: `node_id:compass_point`
 
 **Example:**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph NodePorts {
     A [shape=circle];
     B [shape=circle];
@@ -144,6 +200,15 @@ Within a subgraph, the `rank` attribute can influence the vertical or horizontal
 
 **Example:**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph RankControl {
     rankdir=TB; // Top to Bottom ranking
 
