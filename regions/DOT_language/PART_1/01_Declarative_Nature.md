@@ -25,6 +25,30 @@ The DOT language embodies a **declarative programming paradigm**. This is a fund
 In declarative programming, you describe **what** you want to achieve, or **what** something *is*, rather than specifying a step-by-step sequence of instructions (**how** to achieve it). The system (in this case, a Graphviz layout engine) is responsible for figuring out the "how."
 
 ```mermaid
+---
+title: "CHANGE_ME_DADDY"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#D5E3',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '20px'
+    }
+  }
+}%%
 mindmap
   root((DOT: A Declarative Language))
     Focus on "WHAT"

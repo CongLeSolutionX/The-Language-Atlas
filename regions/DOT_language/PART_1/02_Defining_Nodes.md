@@ -23,6 +23,15 @@ Nodes are the fundamental building blocks of any graph, representing entities or
 The simplest way to define a node is by stating its identifier (ID):
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph NodeDefinition {
     nodeA; // Defines a node with the ID "nodeA"
     nodeB;
@@ -40,6 +49,15 @@ If a node ID is used in an edge definition (e.g. `nodeX -> nodeY;`) but not expl
 Attributes are assigned to nodes in square brackets `[]` immediately following the node ID.
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph NodeAttributes {
     nodeA [label="Start Point", shape=box, color=blue, style=filled, fillcolor=lightblue];
     nodeB [shape=ellipse, label="Process\nStep", fontsize=10];
