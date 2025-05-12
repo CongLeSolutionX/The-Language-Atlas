@@ -100,7 +100,7 @@ Here's a table of some frequently used attributes:
 Example:
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: HTML-Like Labels
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY 4.0
