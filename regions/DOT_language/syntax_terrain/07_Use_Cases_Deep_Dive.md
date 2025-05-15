@@ -356,19 +356,20 @@ digraph NetworkTopology {
 These examples showcase just a fraction of what's possible with DOT. The key is to understand your diagram's purpose, choose the appropriate DOT features (shapes, styles, layout controls, grouping), and apply best practices for clarity and maintainability. With these tools, you can effectively chart any system or process you encounter.
 
 ---
-<!-- 
+
 This deep dive into use cases hopefully illuminates how the features we've discussed translate into practical, communicative diagrams. Our journey through the DOT syntax terrain is nearing its completion.
 
 Perhaps our final landmark could be **Troubleshooting Common DOT Errors** or discussing **Integration with Tools/Scripting** to automate diagram generation?
- -->
 
+
+
+---
 
 <!-- 
 ```mermaid
 %% Current Mermaid version
 info
-```
--->
+```  -->
 
 
 ```mermaid
@@ -376,11 +377,12 @@ info
 title: "CongLeSolutionX"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   theme: base
 ---
+%%%%%%%% Mermaid version v11.4.1-b.14
 %%{
   init: {
     'flowchart': { 'htmlLabels': false },
@@ -406,11 +408,10 @@ My_Meme ~~~ Closing_quote
 
 ```
 
-
 ---
 >**Licenses:**
 >
 >- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
->- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+>- **Creative Commons Attribution-ShareAlike 4.0 International**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) [![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/) - Legal details in [LICENSE-CC-BY-SA-4.0](LICENSE-CC-BY-SA-4.0) and at [Creative Commons official site](https://creativecommons.org/licenses/by-sa/4.0/).
 >
 ---

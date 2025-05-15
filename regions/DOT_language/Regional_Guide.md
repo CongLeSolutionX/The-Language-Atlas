@@ -2,14 +2,14 @@
 created: 2025-05-11 05:31:26
 author: Cong Le
 version: "1.0"
-license(s): MIT, CC BY 4.0
+license(s): MIT, CC BY-SA 4.0
 copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
 # Regional Guide
 > This content is dual-licensed under your choice of the following licenses:
 > 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
-> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
+> 2.  **Creative Commons Attribution 4.0 International License (CC BY-SA 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
 
 
 # DOT Language Region: A Cartographer's Guide
@@ -81,7 +81,7 @@ info
 title: "CongLeSolutionX"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   theme: base
@@ -112,10 +112,11 @@ My_Meme ~~~ Closing_quote
 ```
 // TODO: Add a static image in this repo to prevent the issue loading of the internet.
 
+
 ---
 >**Licenses:**
 >
 >- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
->- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+>- **Creative Commons Attribution-ShareAlike 4.0 International**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) [![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/) - Legal details in [LICENSE-CC-BY-SA-4.0](LICENSE-CC-BY-SA-4.0) and at [Creative Commons official site](https://creativecommons.org/licenses/by-sa/4.0/).
 >
 ---
