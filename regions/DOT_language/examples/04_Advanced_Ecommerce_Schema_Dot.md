@@ -9,11 +9,17 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 # A Simplified Database Schema
-> This content is dual-licensed under your choice of the following licenses:
-> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
-> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
-
+> **Disclaimer:**
+>
+> This document contains my personal notes on the topic,
+> compiled from publicly available documentation and various cited sources.
+> The materials are intended for educational purposes, personal study, and reference.
+> The content is dual-licensed:
+> 1. **MIT License:** Applies to all code implementations (Swift, Mermaid, and other programming languages).
+> 2. **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0):** Applies to all non-code content, including text, explanations, diagrams, and illustrations.
 ---
+
+
 
 
 Okay, Fellow Explorer! Let's create another distinct and practical advanced example using the `dot` engine.
@@ -21,8 +27,18 @@ Okay, Fellow Explorer! Let's create another distinct and practical advanced exam
 This time, we'll visualize a **Simplified Database Schema** for a small E-commerce platform. This will focus on representing tables, columns (with data types), primary keys (PK), foreign keys (FK), and relationships (one-to-many, many-to-many).
 
 
+## Database Schema Diagram
 
 ```dot
+/*
+ * title: Database Schema Diagram
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph Advanced_Ecommerce_Schema {
     // --- Graph Defaults ---
     graph [
@@ -204,7 +220,9 @@ digraph Advanced_Ecommerce_Schema {
 }
 ```
 
-**To Generate this Diagram:**
+----
+
+## To Generate this Diagram
 
 1.  Save the code above as `advanced_ecommerce_schema.gv` (or `.dot`).
 2.  Run Graphviz:
@@ -216,7 +234,10 @@ digraph Advanced_Ecommerce_Schema {
     dot -Tsvg advanced_ecommerce_schema.gv -o advanced_ecommerce_schema.svg
     ```
 
-**Key Advanced Features Used in this Example:**
+---
+
+
+## Key Advanced Features Used in this Example
 
 1.  **HTML-Like Labels for Tables:** This is the core of this example. Each table is defined as a `TABLE` structure, allowing for rich formatting of columns, data types, PK/FK indicators, and constraints.
     *   `BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"`: Standard HTML table attributes for styling.

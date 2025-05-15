@@ -8,11 +8,15 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 
-# A Simplified Order Processing System
-> This content is dual-licensed under your choice of the following licenses:
-> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
-> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
-
+# An Order Processing System
+> **Disclaimer:**
+>
+> This document contains my personal notes on the topic,
+> compiled from publicly available documentation and various cited sources.
+> The materials are intended for educational purposes, personal study, and reference.
+> The content is dual-licensed:
+> 1. **MIT License:** Applies to all code implementations (Swift, Mermaid, and other programming languages).
+> 2. **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0):** Applies to all non-code content, including text, explanations, diagrams, and illustrations.
 ---
 
 Let's craft an advanced example using the `dot` engine, incorporating many of the concepts we've discussed: clusters, record shapes, HTML-like labels, ranking, port connections, and default attributes.
@@ -20,9 +24,18 @@ Let's craft an advanced example using the `dot` engine, incorporating many of th
 
 This example will depict a simplified **Order Processing System** with different services communicating via a message queue.
 
-
+## An Order Processing System Diagram
 
 ```dot
+/*
+ * title: An Order Processing System
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph AdvancedOrderSystem {
     // --- Graph Defaults ---
     graph [
@@ -237,7 +250,10 @@ digraph AdvancedOrderSystem {
 
 ```
 
-**To Generate this Diagram:**
+---
+
+
+## To Generate this Diagram
 
 1.  **Save:** Save the code above as `advanced_order_system.gv` (or `.dot`).
 2.  **Image for Message Queue (Optional):**
@@ -252,7 +268,10 @@ digraph AdvancedOrderSystem {
     dot -Tsvg advanced_order_system.gv -o advanced_order_system.svg
     ```
 
-**Key Advanced Features Used in this Example:**
+---
+
+
+## Key Advanced Features Used in this Example
 
 1.  **Global Defaults (`graph`, `node`, `edge`):** Establishes a consistent base style.
 2.  **HTML-Like Labels (`WebApp`, `MessageQueue`):** Allows for rich formatting, tables, and embedding images (conceptually).

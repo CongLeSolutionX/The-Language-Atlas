@@ -8,11 +8,16 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 # Layout Engine Study: `circo` - The Circular Arranger
-> This content is dual-licensed under your choice of the following licenses:
-> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
-> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
-
+> **Disclaimer:**
+>
+> This document contains my personal notes on the topic,
+> compiled from publicly available documentation and various cited sources.
+> The materials are intended for educational purposes, personal study, and reference.
+> The content is dual-licensed:
+> 1. **MIT License:** Applies to all code implementations (Swift, Mermaid, and other programming languages).
+> 2. **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0):** Applies to all non-code content, including text, explanations, diagrams, and illustrations.
 ---
+
 
 
 The `circo` layout engine in Graphviz is designed to produce circular layouts of graphs. It identifies biconnected components (subgraphs that remain connected if any single vertex is removed) and S-R components (split-rewind components, related to graph planarity), and draws them as circles or ellipses. It's particularly useful for certain network topologies, ring structures, or when highlighting cyclical relationships is important.

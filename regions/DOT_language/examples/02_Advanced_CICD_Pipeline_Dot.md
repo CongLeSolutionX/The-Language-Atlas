@@ -9,21 +9,33 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 # A Simplified CI/CD (Continuous Integration / Continuous Delivery) Pipeline
-> This content is dual-licensed under your choice of the following licenses:
-> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
-> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
-
+> **Disclaimer:**
+>
+> This document contains my personal notes on the topic,
+> compiled from publicly available documentation and various cited sources.
+> The materials are intended for educational purposes, personal study, and reference.
+> The content is dual-licensed:
+> 1. **MIT License:** Applies to all code implementations (Swift, Mermaid, and other programming languages).
+> 2. **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0):** Applies to all non-code content, including text, explanations, diagrams, and illustrations.
 ---
+
 
 Alright, Fellow Explorer, let's chart another practical and advanced example using the `dot` engine!
 
-
-
 This time, we'll model a **Simplified CI/CD (Continuous Integration / Continuous Delivery) Pipeline**. This will allow us to demonstrate stages, parallel tasks, conditional flows, and feedback loops, which are common in such systems.
 
-
+## CI/CD (Continuous Integration / Continuous Delivery) Pipeline Diagram
 
 ```dot
+/*
+ * title: CI/CD (Continuous Integration / Continuous Delivery) Pipeline
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph Advanced_CICD_Pipeline {
     // --- Graph Defaults ---
     graph [
@@ -223,7 +235,9 @@ digraph Advanced_CICD_Pipeline {
 }
 ```
 
-**To Generate this Diagram:**
+---
+
+## To Generate this Diagram
 
 1.  Save the code above as `advanced_cicd_pipeline.gv` (or `.dot`).
 2.  Run Graphviz:
@@ -235,7 +249,9 @@ digraph Advanced_CICD_Pipeline {
     dot -Tsvg advanced_cicd_pipeline.gv -o advanced_cicd_pipeline.svg
     ```
 
-**Key Advanced Features Used in this Example:**
+---
+
+## Key Advanced Features Used in this Example
 
 1.  **`rankdir=LR`:** Essential for visualizing a typical pipeline flow from left to right.
 2.  **Clusters for Stages:** Each major phase of the CI/CD pipeline is encapsulated in a `subgraph cluster_...` which helps organize the diagram visually and also allows for `lhead`/`ltail` connections.

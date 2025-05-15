@@ -9,12 +9,16 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 # Syntax Terrain: Defining Edges in DOT
-
-> This content is dual-licensed under your choice of the following licenses:
-> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
-> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
-
+> **Disclaimer:**
+>
+> This document contains my personal notes on the topic,
+> compiled from publicly available documentation and various cited sources.
+> The materials are intended for educational purposes, personal study, and reference.
+> The content is dual-licensed:
+> 1. **MIT License:** Applies to all code implementations (Swift, Mermaid, and other programming languages).
+> 2. **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0):** Applies to all non-code content, including text, explanations, diagrams, and illustrations.
 ---
+
 
 
 Edges represent the connections or relationships between nodes in a graph. DOT provides distinct syntax for edges in directed (`digraph`) and undirected (`graph`) graphs, along with attributes to customize their appearance and behavior.
@@ -27,7 +31,7 @@ Edges represent the connections or relationships between nodes in a graph. DOT p
  * title: CHANGE_ME_DADDY
  * author: Cong Le
  * version: 1.0
- * license(s): MIT, CC BY 4.0
+ * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
  * 
@@ -46,7 +50,7 @@ digraph DirectedEdges {
  * title: CHANGE_ME_DADDY
  * author: Cong Le
  * version: 1.0
- * license(s): MIT, CC BY 4.0
+ * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
  * 
@@ -65,7 +69,7 @@ graph UndirectedEdges {
  * title: CHANGE_ME_DADDY
  * author: Cong Le
  * version: 1.0
- * license(s): MIT, CC BY 4.0
+ * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
  * 
@@ -89,7 +93,7 @@ Similar to nodes, edges can have attributes specified in square brackets `[]` im
  * title: CHANGE_ME_DADDY
  * author: Cong Le
  * version: 1.0
- * license(s): MIT, CC BY 4.0
+ * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
  * 
@@ -108,7 +112,7 @@ digraph EdgeAttributes {
 title: "Graphviz Processing Pipeline"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   layout: elk
@@ -176,7 +180,7 @@ For nodes with specific connection points (like 'record' shapes or using compass
  * title: CHANGE_ME_DADDY
  * author: Cong Le
  * version: 1.0
- * license(s): MIT, CC BY 4.0
+ * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
  * 
@@ -195,7 +199,7 @@ digraph RecordPorts {
  * title: CHANGE_ME_DADDY
  * author: Cong Le
  * version: 1.0
- * license(s): MIT, CC BY 4.0
+ * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
  * 

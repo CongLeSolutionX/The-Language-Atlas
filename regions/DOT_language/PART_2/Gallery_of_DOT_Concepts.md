@@ -8,9 +8,15 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 # Scenic Visual Tour: Gallery of DOT & Graphviz Concepts
-> This content is dual-licensed under your choice of the following licenses:
-> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
-> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
+> **Disclaimer:**
+>
+> This document contains my personal notes on the topic,
+> compiled from publicly available documentation and various cited sources.
+> The materials are intended for educational purposes, personal study, and reference.
+> The content is dual-licensed:
+> 1. **MIT License:** Applies to all code implementations (Swift, Mermaid, and other programming languages).
+> 2. **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0):** Applies to all non-code content, including text, explanations, diagrams, and illustrations.
+---
 
 
 This gallery provides a quick visual summary of key concepts related to the DOT language and its use with Graphviz, primarily using Mermaid diagrams to illustrate the ideas as discussed throughout this regional guide.
@@ -22,7 +28,7 @@ This gallery provides a quick visual summary of key concepts related to the DOT 
 title: "Basic Graph Components"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   layout: elk
@@ -74,7 +80,7 @@ graph LR
 title: "DOT Attribute Scopes"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   theme: base
@@ -120,7 +126,7 @@ root(("DOT Attributes Scope"))
 title: "Subgraphs vs. Clusters"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   layout: elk
@@ -177,7 +183,7 @@ graph TD
 title: "DOT Syntax Core Structure"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   layout: elk
@@ -220,7 +226,7 @@ graph LR
 title: "Record Shapes and Ports"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   layout: elk
@@ -266,7 +272,7 @@ graph TD
 title: "HTML-Like Labels"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   layout: elk
@@ -308,7 +314,7 @@ graph LR
 title: "Graphviz Processing Pipeline"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   layout: elk
@@ -351,7 +357,7 @@ flowchart TD
 title: "Common Graphviz Layout Engines"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   theme: base

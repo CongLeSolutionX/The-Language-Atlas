@@ -9,10 +9,15 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 # Ecosystem Trade Routes: Tools Generating or Consuming DOT Files
-
-> This content is dual-licensed under your choice of the following licenses:
-> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
-> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
+> **Disclaimer:**
+>
+> This document contains my personal notes on the topic,
+> compiled from publicly available documentation and various cited sources.
+> The materials are intended for educational purposes, personal study, and reference.
+> The content is dual-licensed:
+> 1. **MIT License:** Applies to all code implementations (Swift, Mermaid, and other programming languages).
+> 2. **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0):** Applies to all non-code content, including text, explanations, diagrams, and illustrations.
+---
 
 
 The DOT language and Graphviz form a central hub in a larger ecosystem of tools. Many applications and libraries can either **generate** DOT files as output for visualization, or **consume** DOT files to import graph structures.
@@ -26,7 +31,7 @@ These tools create `.dot` files, allowing users to visualize data or structures 
 title: "Graphviz Processing Pipeline"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   layout: elk
@@ -109,7 +114,7 @@ These tools can read `.dot` files to display, edit, or analyze the graph.
 title: "Tools Consuming or Displaying DOT Files"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   layout: elk

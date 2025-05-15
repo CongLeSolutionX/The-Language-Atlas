@@ -9,11 +9,16 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 # A Simplified Software Component Interaction Diagram
-> This content is dual-licensed under your choice of the following licenses:
-> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
-> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
-
+> **Disclaimer:**
+>
+> This document contains my personal notes on the topic,
+> compiled from publicly available documentation and various cited sources.
+> The materials are intended for educational purposes, personal study, and reference.
+> The content is dual-licensed:
+> 1. **MIT License:** Applies to all code implementations (Swift, Mermaid, and other programming languages).
+> 2. **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0):** Applies to all non-code content, including text, explanations, diagrams, and illustrations.
 ---
+
 
 
 
@@ -22,9 +27,18 @@ Alright, Fellow Explorer, let's embark on illustrating another distinct and prac
 This time, we'll model a **Simplified Software Component Interaction Diagram**, focusing on how different modules or microservices in an application communicate, including synchronous calls, asynchronous messaging, and data dependencies. This will showcase logical grouping and flow rather than physical deployment or detailed internal structure.
 
 
-
+## Software Component Interaction Diagram
 
 ```dot
+/*
+ * title: Software Component Interaction Diagram
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph Advanced_Component_Interaction {
     // --- Graph Defaults ---
     graph [
@@ -230,7 +244,10 @@ digraph Advanced_Component_Interaction {
 }
 ```
 
-**To Generate this Diagram:**
+---
+
+
+## To Generate this Diagram
 
 1.  Save the code above as `advanced_component_interaction.gv` (or `.dot`).
 2.  Run Graphviz:
@@ -242,7 +259,10 @@ digraph Advanced_Component_Interaction {
     dot -Tsvg advanced_component_interaction.gv -o advanced_component_interaction.svg
     ```
 
-**Key Advanced Features Used in this Example:**
+---
+
+
+## Key Advanced Features Used in this Example
 
 1.  **`shape=Mrecord` (Multi-record):** Used for component nodes to define sections (e.g., `{<port_name> Header | Body Text \l More Body Text}`). This allows for named ports (`<iface>`, `<api>`, `<in>`) directly in the label for cleaner edge connections.
 2.  **Clusters for Logical Grouping (`cluster_...`):** Separates frontend, core backend, supporting services, and data stores. `compound=true` is vital for cluster-to-node or cluster-to-cluster edges.

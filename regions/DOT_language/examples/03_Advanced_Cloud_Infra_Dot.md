@@ -9,11 +9,16 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 #  A Simplified Cloud Infrastructure Diagram for a Web Application
-> This content is dual-licensed under your choice of the following licenses:
-> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
-> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
-
+> **Disclaimer:**
+>
+> This document contains my personal notes on the topic,
+> compiled from publicly available documentation and various cited sources.
+> The materials are intended for educational purposes, personal study, and reference.
+> The content is dual-licensed:
+> 1. **MIT License:** Applies to all code implementations (Swift, Mermaid, and other programming languages).
+> 2. **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0):** Applies to all non-code content, including text, explanations, diagrams, and illustrations.
 ---
+
 
 Fellow Explorer! Let's tackle another practical, advanced example using the `dot` engine.
 
@@ -21,9 +26,18 @@ This time, we'll model a **Simplified Cloud Infrastructure Diagram for a Web App
 
 
 
-
+## Cloud Infrastructure Diagram for a Web Application
 
 ```dot
+/*
+ * title: Cloud Infrastructure Diagram for a Web Application
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ * 
+ */
 digraph Advanced_Cloud_Infrastructure {
     // --- Graph Defaults ---
     graph [
@@ -277,7 +291,10 @@ digraph Advanced_Cloud_Infrastructure {
 }
 ```
 
-**To Generate this Diagram:**
+---
+
+
+## To Generate this Diagram
 
 1.  Save the code above as `advanced_cloud_infra.gv` (or `.dot`).
 2.  Run Graphviz:
@@ -289,7 +306,9 @@ digraph Advanced_Cloud_Infrastructure {
     dot -Tsvg advanced_cloud_infra.gv -o advanced_cloud_infra.svg
     ```
 
-**Key Advanced Features Used in this Example:**
+---
+
+## Key Advanced Features Used in this Example
 
 1.  **Nested Clusters:** `cluster_AWS_Region` contains `cluster_VPC`, which in turn contains `cluster_PublicSubnets`, `cluster_PrivateSubnets_App`, and `cluster_PrivateSubnets_Data`. This is powerful for showing hierarchical containment.
 2.  **`compound=true`:** Absolutely essential for drawing edges *to* and *from* clusters (`lhead`, `ltail` implicitly used sometimes, or explicitly if needed).

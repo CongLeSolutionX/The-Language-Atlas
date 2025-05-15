@@ -37,6 +37,14 @@ Here's a DOT structure aiming for this "Blueprint" style:
 ## Engineering Diagram Template
 
 ```dot
+/*
+ * title: Engineering Diagram Template
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph BlueprintStyle_Sized {
     // === GLOBAL BLUEPRINT SETTINGS ===
     graph [
