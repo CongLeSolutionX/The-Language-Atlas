@@ -30,13 +30,13 @@ Think of interfaces from movies like Minority Report, Iron Man's HUD, or general
 
 
 
-![Holographic Interface - Sci-Fi HUD Style](https://g.gravizo.com/source/svg/rendered_code_holographic_interface_sci_fi_hud_template?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FHolographic_Interface_Sci-Fi_HUD_Style.md)
+![Holographic Interface Style](https://g.gravizo.com/source/svg/rendered_code_holographic_interface_sci_fi_hud_template?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FHolographic_Interface_Sci-Fi_HUD_Style.md)
 
   
 
 <details>
 
-<summary>Rendered code for the Holographic Interface - Sci-Fi HUD Style</summary>
+<summary>Rendered code for the Holographic Interface Style</summary>
 rendered_code_holographic_interface_sci_fi_hud_template
 digraph holographic_interface_style {
     graph [
