@@ -141,6 +141,12 @@ synthwave_theme
 
 ---
 
+>![NOTE]
+> I have some note here.
+
+
+---
+
 <details>
 <summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
 
