@@ -64,19 +64,7 @@ digraph holographic_interface_sci_fi_hud_style {
     ];
     HEADER_SYSTEM_STATUS [
         shape=plaintext,
-        label=<
-            <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="transparent" WIDTH="300">
-            <TR>
-                <TD ALIGN="LEFT" WIDTH="33%"><FONT COLOR="#00FFD1" POINT-SIZE="10">SYSTEM: AEGIS_CORE</FONT></TD>
-                <TD ALIGN="CENTER" WIDTH="34%"><FONT COLOR="#FFD700" POINT-SIZE="12" FACE="Orbitron">PROCESS OVERVIEW</FONT></TD>
-                <TD ALIGN="RIGHT" WIDTH="33%"><FONT COLOR="#00FFD1" POINT-SIZE="10">STATUS: ONLINE</FONT></TD>
-            </TR>
-            <TR><TD COLSPAN="3" HEIGHT="5"></TD></TR>
-            <TR>
-                <TD ALIGN="LEFT" COLSPAN="3"><FONT COLOR="#50C878" POINT-SIZE="8">ACTIVE PROTOCOL: P-XYZ-7.3 // SECURITY LEVEL: 5</FONT></TD>
-            </TR>
-            </TABLE>
-        >,
+        label="PLACEHOLDER FOR HEADER_SYSTEM_STATUS",
         fontcolor="#D0D0D0"
     ];
     START_SEQUENCE [
@@ -118,20 +106,7 @@ digraph holographic_interface_sci_fi_hud_style {
             fontname="Consolas",
             fontsize=7,
             fontcolor="#00AFFF80",
-            label=<
-                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="1" CELLPADDING="0" BGCOLOR="transparent" WIDTH="400">
-                <TR>
-                    <TD ALIGN="LEFT" ><FONT COLOR="#00AFFF50">// OP: Cong Le</FONT></TD>
-                    <TD ALIGN="CENTER"><FONT COLOR="#00AFFF50">// SYS_ID: CongLeSolutionX</FONT></TD>
-                    <TD ALIGN="RIGHT"><FONT COLOR="#00AFFF50">// T_STAMP: YYYYMMDD-HHMMSS.μs</FONT></TD>
-                </TR>
-                <TR><TD HEIGHT="3" COLSPAN="3"></TD></TR>
-                <TR>
-                    <TD ALIGN="LEFT" COLSPAN="2"><FONT COLOR="#00AFFF50">// VERSION: H_UI_R7.3.1 // LICENSE: CLASSIFIED (INTERNAL USE)</FONT></TD>
-                    <TD ALIGN="RIGHT"><FONT COLOR="#FF450070">// PWR_LVL: 97.3%</FONT></TD>
-                </TR>
-                </TABLE>
-            >
+            label="PLACEHOLDER FOR FOOTER_TELEMETRY"
         ];
     }
     HEADER_SYSTEM_STATUS -> START_SEQUENCE [style=invis, weight=100, minlen=1.5];
