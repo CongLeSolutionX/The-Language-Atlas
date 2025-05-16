@@ -40,7 +40,7 @@ Here's the DOT code with this aesthetic:
 
 <summary>Rendered code of the Bright and Modern Flat UI Style</summary>
 bright_and_modern_flat_ui_style
-digraph bright_and_modern_flat_ui_style {
+digraph modern_flat_ui_style {
     graph [
         rankdir=TB,
         fontname="Helvetica Neue",
