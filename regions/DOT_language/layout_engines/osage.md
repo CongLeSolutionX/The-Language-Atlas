@@ -130,6 +130,44 @@ digraph G {
 }
 ```
 
+---
+
+
+## Testing number 2
+
+![Alt text](https://g.gravizo.com/source/custom_2?https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md)
+
+```
+![Alt text](https://g.gravizo.com/source/custom_mark21?https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md)
+
+<details> 
+<summary></summary>
+custom_2	
+@startuml
+start
+:init;
+-> test of color;
+if (color?) is (<color:red>red) then
+:print red;
+else 
+:print not red;
+note right: no color
+endif
+partition End {
+:end;
+}
+-> this is the end;
+end
+@enduml
+custom_2
+</details>
+```
+
+
+
+---
+
+
 **Rendering with `dot` (default engine):**
 ```bash
 dot -Tpng nested_clusters.dot -o nested_dot.png

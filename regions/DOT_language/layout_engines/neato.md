@@ -179,8 +179,8 @@ digraph EmbeddedExample1 {
 neato_embedded_diagram
 </details>
 
----
 
+---
 
 **To render this with `neato`:**
 `neato -Tpng social_network.dot -o social_network_neato.png`
