@@ -98,8 +98,8 @@ digraph BlueprintStyle_Sized {
 PROJECT: System Analysis Initiative\n\
 DOC. ID: PF-SYS-001\n\
 DATE: YYYY-MM-DD\n\
-AUTHOR: My Full Name\n\
-ORGANIZATION: My Organization\n\
+AUTHOR: Cong Le\n\
+ORGANIZATION: CongLeSolutionX\n\
 LICENSE: MIT AND CC BY-SA 4.0"
         ];
     }
