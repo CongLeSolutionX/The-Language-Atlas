@@ -78,7 +78,6 @@ Let's consider a DOT file with nested clusters.
 ![nested clusters rendered by osage engine](https://g.gravizo.com/source/svg/osage_nested_clusters_svg?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Flayout_engines%2Fosage.md)
 
 
-```
 <details> 
 <summary>Nested clusters rendered by osage engine</summary>
 osage_nested_clusters_svg
@@ -124,10 +123,10 @@ digraph G {
     nodeB2 -> End;
     nodeA1_2 -> End;
 }
-
 osage_nested_clusters_svg
 </details>
-```
+
+---
 
 
 **`nested_clusters.dot`:**
