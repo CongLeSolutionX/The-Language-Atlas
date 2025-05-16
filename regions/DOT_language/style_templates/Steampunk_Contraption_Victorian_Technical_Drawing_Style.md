@@ -31,13 +31,11 @@ This aesthetic will feature brass, copper, and wood tones, ornate details where 
 
 ---
 
-https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FSteampunk_Contraption_Victorian_Technical_Drawing_Style.md
 
 
 
-![Steampunk Contraption Style](https://g.gravizo.com/source/svg/rendered_code_steampunk_contraption_style_template?
 
-https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Flayout_engines%2Fosage.md)
+![Steampunk Contraption Style](https://g.gravizo.com/source/svg/rendered_code_steampunk_contraption_style_template?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FSteampunk_Contraption_Victorian_Technical_Drawing_Style.md)
 
   
 
