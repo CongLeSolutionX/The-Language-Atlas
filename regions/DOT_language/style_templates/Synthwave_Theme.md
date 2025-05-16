@@ -59,16 +59,13 @@ digraph synthwave_grid_theme {
     ];
     HEADER_TITLE [
         shape="rect",
-        label=<
-            <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="5" BGCOLOR="transparent">
-            <TR><TD ALIGN="CENTER"><FONT POINT-SIZE="18" COLOR="#FF00FF" FACE="Major Mono Display">SYNTHWAVE PROCESSOR</FONT></TD></TR>
-            <TR><TD ALIGN="CENTER"><FONT POINT-SIZE="10" COLOR="#00FFFF" FACE="Monospace">SYSTEM FLOW
-            </TABLE>
-        >,
+        fontname="Major Mono Display",
+        fontsize=18,
+        color="#00FFFF", 
+        fontcolor="#FF00FF",
+        label="SYNTHWAVE PROCESSOR\nSYSTEM FLOW\nGRID V1.0\n"
         style="filled",
-        fillcolor="transparent",
-        color="transparent",
-        fontcolor="#00FFFF"
+        fillcolor="transparent"
     ];
     subgraph cluster_grid_main {
         style="invis";
