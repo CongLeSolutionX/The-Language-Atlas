@@ -169,10 +169,10 @@ https://g.gravizo.com/source/svg
 
 ## Testing number 1 - render to svg image
 
-![Alt text](https://g.gravizo.com/source/svg/custom_svg?https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md)
+![Alt text](https://g.gravizo.com/source/svg/custom_svg?https%3A%2F%2Fgithub.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Fblob%2Fmain%2Fregions%2FDOT_language%2Flayout_engines%2Fosage.md)
 
 ```
-![Alt text](https://g.gravizo.com/source/svg/custom_svg?https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md)
+![Alt text](https://g.gravizo.com/source/svg/custom_svg?https%3A%2F%2Fgithub.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Fblob%2Fmain%2Fregions%2FDOT_language%2Flayout_engines%2Fosage.md)
 
 <details> 
 <summary></summary>
