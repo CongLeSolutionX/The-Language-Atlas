@@ -36,6 +36,163 @@ Here's a DOT structure aiming for this "Blueprint" style:
 
 ## Engineering Diagram Template
 
+
+![Engineering Diagram Template](https://g.gravizo.com/source/svg/rendered_code_engineering_diagram_template?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fexamples%2FEngineering_Diagram_Style.md)
+
+<details>
+<summary>Rendered code for the Engineering Diagram Template</summary>
+rendered_code_engineering_diagram_template
+digraph BlueprintStyle_Sized {
+    graph [
+        rankdir=TB,
+        bgcolor="lightsteelblue1",
+        fontname="Monaco",
+        fontsize=10,
+        nodesep=0.6,
+        ranksep=0.8, 
+        splines=ortho,
+        concentrate=true,
+
+        
+        size="10,15!", 
+        ratio="fill",
+    ];
+
+    node [
+        fontname="Bradley Hand",
+        fontsize=8,
+        style="filled",
+        shape="box",
+        fillcolor="white",
+        color="navyblue",
+        fontcolor="black",
+        margin="0.05,0.05"
+    ];
+
+    edge [
+        fontname="Bradley Hand",
+        fontsize=7, 
+        color="midnightblue",
+        arrowhead="normal"
+    ];
+
+    subgraph cluster_DocInfo {
+        label="DOCUMENT SPECIFICATIONS";
+        style="filled,rounded";
+        fillcolor="aliceblue";
+        color="royalblue4";
+        fontname="Monaco";
+        fontsize=10;
+        margin=15;
+
+        DOC_META [
+            shape="box",
+            style="filled",
+            fillcolor="white",
+            color="navyblue",
+            align="left",
+            label="TITLE: Process Flow Schematic v1.0\n\
+PROJECT: System Analysis Initiative\n\
+DOC. ID: PF-SYS-001\n\
+DATE: YYYY-MM-DD\n\
+AUTHOR: My Full Name\n\
+ORGANIZATION: My Organization\n\
+LICENSE: MIT AND CC BY-SA 4.0"
+        ];
+    }
+
+    subgraph cluster_MainFlow {
+        label="PRIMARY PROCESS LOGIC";
+        style="dashed";
+        color="slategray";
+        fontname="Monaco";
+        fontsize=10;
+        margin=20;
+
+        START_NODE [
+            shape="circle",
+            label="START",
+            fillcolor="lightseagreen",
+            fontcolor="white",
+            style="filled,bold",
+            width=0.7, height=0.7
+        ];
+
+        Statement_0 [ shape=diamond, label="STAGE 0:\nInitial Check", fillcolor="lightgoldenrodyellow", color="darkgoldenrod", width=1.3, height=0.9 ];
+        Statement_1 [ shape=diamond, label="STAGE 1:\nData Validation", fillcolor="lightgoldenrodyellow", color="darkgoldenrod", width=1.3, height=0.9 ];
+        Statement_2 [ shape=diamond, label="STAGE 2:\nResource Query", fillcolor="lightgoldenrodyellow", color="darkgoldenrod", width=1.3, height=0.9 ];
+        Statement_3 [ shape=diamond, label="STAGE 3:\nFinal Confirmation", fillcolor="lightgoldenrodyellow", color="darkgoldenrod", width=1.3, height=0.9 ];
+
+        ERROR_NODE0 [ shape=box, style="filled,rounded", label="TERMINATED:\nConfig Fail (E0)", fillcolor="lightcoral", color="firebrick", fontcolor="white", width=1.5, height=0.6 ];
+        ERROR_NODE1 [ shape=box, style="filled,rounded", label="TERMINATED:\nInvalid Input (E1)", fillcolor="lightcoral", color="firebrick", fontcolor="white", width=1.5, height=0.6 ];
+        ERROR_NODE2 [ shape=box, style="filled,rounded", label="TERMINATED:\nDep. Missing (E2)", fillcolor="lightcoral", color="firebrick", fontcolor="white", width=1.5, height=0.6 ];
+        ERROR_NODE3 [ shape=box, style="filled,rounded", label="TERMINATED:\nTimeout (E3)", fillcolor="lightcoral", color="firebrick", fontcolor="white", width=1.5, height=0.6 ];
+
+        SUCCESS_NODE [
+            shape="doublecircle",
+            label="PASS",
+            fillcolor="mediumspringgreen",
+            fontcolor="black",
+            style="filled,bold",
+            width=0.7, height=0.7
+        ];
+
+        START_NODE -> Statement_0 [minlen=1];
+
+        Statement_0 -> ERROR_NODE0 [label=" [REJECT]", fontcolor="firebrick", color="firebrick", style="dashed"];
+        Statement_0 -> Statement_1 [label=" [ACCEPT]", fontcolor="forestgreen", color="forestgreen"];
+
+        Statement_1 -> ERROR_NODE1 [label=" [REJECT]", fontcolor="firebrick", color="firebrick", style="dashed"];
+        Statement_1 -> Statement_2 [label=" [ACCEPT]", fontcolor="forestgreen", color="forestgreen"];
+
+        Statement_2 -> ERROR_NODE2 [label=" [REJECT]", fontcolor="firebrick", color="firebrick", style="dashed"];
+        Statement_2 -> Statement_3 [label=" [ACCEPT]", fontcolor="forestgreen", color="forestgreen"];
+
+        Statement_3 -> ERROR_NODE3 [label=" [REJECT]", fontcolor="firebrick", color="firebrick", style="dashed"];
+        Statement_3 -> SUCCESS_NODE [label=" [ACCEPT]", fontcolor="forestgreen", color="forestgreen"];
+
+        { rank=same; ERROR_NODE0; ERROR_NODE1; ERROR_NODE2; ERROR_NODE3; SUCCESS_NODE; }
+    }
+
+    subgraph cluster_NotesFooter {
+        label="REMARKS & SIGN-OFF";
+        style="filled,rounded";
+        fillcolor="aliceblue";
+        color="royalblue4";
+        fontname="Monaco";
+        fontsize=7;
+        margin=10;
+
+        FOOTER_TEXT [
+            shape="plaintext",
+            fontsize=7,
+            label="NOTES:\
+            \n1. All stages critical.\
+            \n2. Errors require manual intervention.\
+            \n3. Ref DOC-GUIDE-042 for error handling.\
+            \n------------------------------------------\
+            \nAPPROVED BY: [__________] DATE: [______]\
+            \nREVIEWED BY: [__________] DATE: [______]\
+            \nCONFIDENTIAL - Internal Use Only"
+        ];
+    }
+
+    _main_flow_exit_anchor [shape=point, style=invis];
+
+    DOC_META -> START_NODE [style=invis, weight=100, minlen=1];
+    ERROR_NODE0 -> _main_flow_exit_anchor [style=invis];
+    ERROR_NODE1 -> _main_flow_exit_anchor [style=invis];
+    ERROR_NODE2 -> _main_flow_exit_anchor [style=invis];
+    ERROR_NODE3 -> _main_flow_exit_anchor [style=invis];
+    SUCCESS_NODE -> _main_flow_exit_anchor [style=invis];
+    _main_flow_exit_anchor -> FOOTER_TEXT [style=invis, weight=100, minlen=1];
+}
+rendered_code_engineering_diagram_template
+</details>
+
+---
+
+
 ```dot
 /*
  * title: Engineering Diagram Template

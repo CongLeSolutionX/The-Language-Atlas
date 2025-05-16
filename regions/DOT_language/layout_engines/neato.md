@@ -157,6 +157,31 @@ graph SocialNetwork {
 }
 ```
 
+---
+
+## Testing Embedded Diagram
+
+<!-- https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md -->
+
+![Graphviz Diagram: neato embedded diagram](https://g.gravizo.com/source/neato_embedded_diagram?https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md)
+
+
+<details>
+<summary>View Graphviz DOT Source (Embedded DOT 1)</summary>
+digraph EmbeddedExample1 {
+  rankdir=LR;
+  node [shape=record];
+  struct1 [label="<f0> Left|<f1> Middle|<f2> Right"];
+  struct2 [label="<f0> One|<f1> Two|<f2> Three"];
+  struct1:f1 -> struct2:f0;
+  struct1:f2 -> struct2:f2;
+}
+neato_embedded_diagram
+</details>
+
+
+---
+
 **To render this with `neato`:**
 `neato -Tpng social_network.dot -o social_network_neato.png`
 

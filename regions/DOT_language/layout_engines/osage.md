@@ -74,6 +74,61 @@ It's often a process of experimentation to see how various attributes influence 
 
 Let's consider a DOT file with nested clusters.
 
+
+![nested clusters rendered by osage engine](https://g.gravizo.com/source/svg/osage_nested_clusters_svg?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Flayout_engines%2Fosage.md)
+
+
+<details> 
+<summary>Nested clusters rendered by osage engine</summary>
+osage_nested_clusters_svg
+digraph G {
+    compound=true;
+    graph [fontname="Arial", label="System Modules (Osage Layout)"];
+    node [shape=box, style=filled, fillcolor=white];
+
+    subgraph cluster_A {
+        label="Module A";
+        bgcolor="lightblue";
+        nodeA1;
+        nodeA2;
+
+        subgraph cluster_A_sub1 {
+            label="Sub-Module A1";
+            bgcolor="aliceblue";
+            nodeA1_1;
+            nodeA1_2;
+        }
+        nodeA1 -> nodeA1_1;
+    }
+
+    subgraph cluster_B {
+        label="Module B";
+        bgcolor="lightgreen";
+        nodeB1;
+        nodeB2;
+    }
+    subgraph cluster_C {
+        label="Module C (Utility)";
+        bgcolor="lightgrey";
+        style="filled,rounded";
+        nodeC1;
+        nodeC2;
+    }
+
+    nodeA1 -> nodeB1 [label="uses"];
+    nodeA2 -> nodeA1_2;
+    nodeB1 -> nodeC1 [label="logs via", lhead=cluster_C];
+    nodeA1_1 -> nodeC2;
+    Start -> nodeA1;
+    nodeB2 -> End;
+    nodeA1_2 -> End;
+}
+osage_nested_clusters_svg
+</details>
+
+---
+
+
 **`nested_clusters.dot`:**
 ```dot
 /*
@@ -129,6 +184,11 @@ digraph G {
     nodeA1_2 -> End;
 }
 ```
+
+---
+
+
+
 
 **Rendering with `dot` (default engine):**
 ```bash
