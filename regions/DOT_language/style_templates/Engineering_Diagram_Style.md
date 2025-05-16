@@ -34,6 +34,9 @@ This style will emphasize:
 
 Here's a DOT structure aiming for this "Blueprint" style:
 
+----
+
+
 ## Engineering Diagram Template
 
 
@@ -362,7 +365,7 @@ LICENSE: MIT AND CC BY-SA 4.0"
 ---
 
 
-## Key changes for the "Blueprint" style
+## Key Characteristics of the "Blueprint" style
 
 1.  **`graph` attributes:**
     *   `bgcolor="lightsteelblue1"`: A very light, paper-like blue.
