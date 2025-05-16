@@ -1,7 +1,5 @@
 # The Language Atlas: Charting the World of Code
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY)
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 <!-- Optional: Add a badge for "Exploration Status: Ongoing" or similar -->
 
 
@@ -114,7 +112,7 @@ Feel free to chart an **Issue** in this repository for any of the above. As this
 ## 📜 Explorer's Pact (Licenses)
 
 The maps, charts, textual descriptions, and overall structure of **The Language Atlas** (unless explicitly noted for externally sourced artifacts) are shared under the **[Your Chosen License, e.g., MIT License or Creative Commons Attribution 4.0 International License]**.
-Please consult the [LICENSE](./LICENSE) and [LICENSE-CC-BY](./LICENSE-CC-BY) scroll for full details.
+Please consult the [LICENSE](./LICENSE) and [LICENSE-CC-BY-SA-4.0](./LICENSE-CC-BY-SA-4.0) scroll for full details.
 
 ---
 
@@ -149,7 +147,7 @@ info
 title: "CongLeSolutionX"
 author: "Cong Le"
 version: "1.0"
-license(s): "MIT, CC BY 4.0"
+license(s): "MIT, CC BY-SA 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   theme: base
