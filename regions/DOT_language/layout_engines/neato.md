@@ -157,6 +157,52 @@ graph SocialNetwork {
 }
 ```
 
+---
+
+## Testing Embedded Diagram
+
+<!-- https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md -->
+
+![Graphviz Diagram: neato embedded diagram](https://g.gravizo.com/source/neato_embedded_diagram?https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md)
+
+
+<details>
+<summary>View Graphviz DOT Source (Embedded DOT 1)</summary>
+neato_embedded_diagram
+graph SocialNetwork {
+    graph [
+        overlap=scale,
+        splines=true,
+        sep="+5",
+        esep="+2"
+    ];
+
+    node [shape=circle, style=filled, color=lightblue];
+    edge [color=gray];
+
+    Alice; Bob; Charlie; David; Eve; Frank;
+
+    Alice -- Bob [len=1.5];
+    Alice -- Charlie;
+    Bob -- Charlie [weight=5];
+    Bob -- David;
+    Charlie -- David;
+    David -- Eve [len=0.8];
+    Eve -- Frank;
+    Alice -- Frank [style=dotted];
+
+    subgraph cluster_Group1 {
+        label="Inner Circle";
+        bgcolor=lightyellow;
+        Alice; Bob; Charlie;
+    }
+}
+neato_embedded_diagram
+</details>
+
+---
+
+
 **To render this with `neato`:**
 `neato -Tpng social_network.dot -o social_network_neato.png`
 
