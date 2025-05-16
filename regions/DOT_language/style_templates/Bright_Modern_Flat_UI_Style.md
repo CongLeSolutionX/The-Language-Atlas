@@ -29,8 +29,12 @@ Let's try a **"Bright & Modern Flat UI"** style. This style emphasizes:
 
 Here's the DOT code with this aesthetic:
 
-
 ---
+
+
+## Bright Modern Flat UI Style
+
+
 
 ![Bright and Modern Flat UI Style](https://g.gravizo.com/source/svg/rendered_code_bright_and_modern_flat_ui_template?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FBright_Modern_Flat_UI_Style.md)
 
@@ -147,8 +151,8 @@ rendered_code_bright_and_modern_flat_ui_template
 
 ---
 
-## Bright Modern Flat UI Style
-
+<details>
+<summary>Click to show/hide the full DOT syntax with comment documentation.</summary>
 
 ```dot
 /*
@@ -296,6 +300,7 @@ digraph bright_and_modern_flat_ui_style {
 }
 
 ```
+</details>
 
 ---
 
