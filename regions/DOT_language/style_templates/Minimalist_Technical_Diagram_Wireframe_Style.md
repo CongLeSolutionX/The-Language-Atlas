@@ -29,10 +29,6 @@ This style prioritizes readability and a professional, understated look, suitabl
 
 ----
 
-
-
-
-  
 ![Rendered Wireframe Style](https://g.gravizo.com/source/svg/rendered_code_wireframe_template?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FMinimalist_Technical_Diagram_Wireframe_Style.md)
 
 
@@ -165,7 +161,8 @@ rendered_code_wireframe_template
 
 ----
 
-
+<details>
+<summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
 
 ```dot
 /*
@@ -317,6 +314,7 @@ digraph minimalist_wireframe {
 }
 ```
 
+</details>
 
 ---
 
