@@ -80,7 +80,7 @@ Let's consider a DOT file with nested clusters.
 
 ```
 <details> 
-<summary></summary>
+<summary>Nested clusters rendered by osage engine</summary>
 osage_nested_clusters_svg
 digraph G {
     compound=true;
