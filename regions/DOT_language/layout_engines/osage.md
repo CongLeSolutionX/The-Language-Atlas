@@ -190,53 +190,6 @@ digraph G {
 
 
 
----
-
-
-## Template to render DOT syntax to svg
-
-### Ingredients
-
-https://g.gravizo.com/source/svg
-
-<!-- URL link to the raw content of the md file -->
-<!-- Converted to encoded format using https://www.urlencoder.org -->
-https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Flayout_engines%2Fosage.md
-
-
-## Testing number 1 - render to svg image
-
-
-![Alt text](https://g.gravizo.com/source/svg/custom_svg?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Flayout_engines%2Fosage.md)
-
-```
-![Alt text](https://g.gravizo.com/source/svg/custom_svg?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Flayout_engines%2Fosage.md)
-
-<details> 
-<summary></summary>
-custom_svg	
-@startuml
-start
-:init;
--> test of color;
-if (color?) is (<color:red>red) then
-:print red;
-else 
-:print not red;
-note right: no color
-endif
-partition End {
-:end;
-}
--> this is the end;
-end
-@enduml
-custom_svg
-</details>
-```
-
----
-
 
 **Rendering with `dot` (default engine):**
 ```bash
