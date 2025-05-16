@@ -37,8 +37,7 @@ Here's a DOT structure aiming for this "Blueprint" style:
 ## Engineering Diagram Template
 
 
-![Engineering Diagram Template](https://g.gravizo.com/source/svg/rendered_code_engineering_diagram_template?
-https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fexamples%2FEngineering_Diagram_Style.md)
+![Engineering Diagram Template](https://g.gravizo.com/source/svg/rendered_code_engineering_diagram_template?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fexamples%2FEngineering_Diagram_Style.md)
 
 <details>
 <summary>Rendered code for the Engineering Diagram Template</summary>
