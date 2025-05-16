@@ -138,7 +138,7 @@ digraph G {
 ![Alt text](https://g.gravizo.com/source/custom_2?https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md)
 
 ```
-![Alt text](https://g.gravizo.com/source/custom_mark21?https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md)
+![Alt text](https://g.gravizo.com/source/custom_mark2?https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md)
 
 <details> 
 <summary></summary>
@@ -162,6 +162,60 @@ end
 custom_2
 </details>
 ```
+
+---
+
+## Testing 3 
+
+<img src='https://g.gravizo.com/svg?
+/**
+*Structural Things
+*@opt commentname
+*@note Notes can
+*be extended to
+*span multiple lines
+*/
+class Structural{}
+
+/**
+*@opt all
+*@note Class
+*/
+class Counter extends Structural {
+        static public int counter;
+        public int getCounter%28%29;
+}
+
+/**
+*@opt shape activeclass
+*@opt all
+*@note Active Class
+*/
+class RunningCounter extends Counter{}
+'>
+
+---
+
+## Testing 4 
+
+
+![Alt text](https://g.gravizo.com/svg?
+  digraph G {
+    size ="4,4";
+    main [shape=box];
+    main -> parse [weight=8];
+    parse -> execute;
+    main -> init [style=dotted];
+    main -> cleanup;
+    execute -> { make_string; printf}
+    init -> make_string;
+    edge [color=red];
+    main -> printf [style=bold,label="100 times"];
+    make_string [label="make a string"];
+    node [shape=box,style=filled,color=".7 .3 1.0"];
+    execute -> compare;
+  }
+)
 
 
 
