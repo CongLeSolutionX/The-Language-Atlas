@@ -192,6 +192,14 @@ vintage_parchment_style
 ---
 
 ```dot
+/*
+ * title: Vintage Parchment - Old Manuscript Style
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph vintage_parchment_old_manuscript_style {
     // Global graph attributes for a "Vintage Parchment" feel
     graph [
