@@ -20,6 +20,134 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
 
+![Synthwave theme](https://g.gravizo.com/source/svg/synthwave_theme?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FSynthwave_Theme.md)
+
+<details>
+
+<summary>Synthwave Theme</summary>
+
+synthwave_theme
+
+digraph synthwave_grid_theme {
+    graph [
+        rankdir=TB,
+        fontname="Monaco",
+        fontsize=10,
+        bgcolor="#1A1A2E",
+        nodesep=0.7,
+        ranksep=0.9,
+        splines=polyline
+    ];
+    node [
+        fontname="Monaco",
+        fontsize=10,
+        style="filled,rounded",
+        margin="0.2,0.12",
+        color="#FF00FF", 
+        fillcolor="#2A2A4E",
+        fontcolor="#00FFFF",
+        penwidth=1.5
+    ];
+    edge [
+        fontname="Monaco",
+        fontsize=9,
+        color="#F72585",
+        fontcolor="#FFD700",
+        arrowhead=normal,
+        arrowsize=0.8,
+        penwidth=1.2
+    ];
+    HEADER_TITLE [
+        shape="rect",
+        label=<
+            <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="5" BGCOLOR="transparent">
+            <TR><TD ALIGN="CENTER"><FONT POINT-SIZE="18" COLOR="#FF00FF" FACE="Major Mono Display">SYNTHWAVE PROCESSOR</FONT></TD></TR>
+            <TR><TD ALIGN="CENTER"><FONT POINT-SIZE="10" COLOR="#00FFFF" FACE="Monospace">SYSTEM FLOW
+            </TABLE>
+        >,
+        style="filled",
+        fillcolor="transparent",
+        color="transparent",
+        fontcolor="#00FFFF"
+    ];
+    subgraph cluster_grid_main {
+        style="invis";
+        label="";
+
+        START_NODE [
+            shape=hexagon,
+            label="[ START ]",
+            fillcolor="#3A0CA3",
+            color="#FF00FF",
+            fontcolor="#FFFFFF",
+            style="filled,bold"
+        ];
+        Decision_Gate_A [ label="SCAN FOO\nACCESS?", shape=parallelogram, color="#F72585", fillcolor="#1E1E3E", fontcolor="#00EAD3"];
+        Decision_Gate_B [ label="ANALYZE FOO1\nACTIVE?", shape=parallelogram, color="#F72585", fillcolor="#1E1E3E", fontcolor="#00EAD3" ];
+        Decision_Gate_C [ label="VERIFY FOO2\nINTEGRITY?", shape=parallelogram, color="#F72585", fillcolor="#1E1E3E", fontcolor="#00EAD3" ];
+        Decision_Gate_D [ label="CONFIRM FOO3\nPROTOCOL?", shape=parallelogram, color="#F72585", fillcolor="#1E1E3E", fontcolor="#00EAD3" ];
+
+        ERROR_HALT_A [ label="<FAIL>\nINVALID FOO", shape=octagon, style="filled,dashed", color="#FF3EA5", fillcolor="#4A001F", fontcolor="#FF9E00"];
+        ERROR_HALT_B [ label="<FAIL>\nFOO1 OFFLINE", shape=octagon, style="filled,dashed", color="#FF3EA5", fillcolor="#4A001F", fontcolor="#FF9E00" ];
+        ERROR_HALT_C [ label="<FAIL>\nFOO2 CORRUPT", shape=octagon, style="filled,dashed", color="#FF3EA5", fillcolor="#4A001F", fontcolor="#FF9E00" ];
+        ERROR_HALT_D [ label="<FAIL>\nFOO3 REJECTED", shape=octagon, style="filled,dashed", color="#FF3EA5", fillcolor="#4A001F", fontcolor="#FF9E00" ];
+
+        SUCCESS_TRANSMIT [
+            label="[ END TRANSMISSION ]\nGRID SYNC OK",
+            shape=doubleoctagon,
+            fillcolor="#00EAD3",
+            color="#00FFFF",
+            fontcolor="#1A1A2E",
+            style="filled,bold"
+        ];
+        
+        MAIN_GRID_EXIT [shape=point, style=invis];
+    }
+    subgraph cluster_footer_synth {
+        style="invis"; label=""; rank="sink";
+
+        FOOTER_GRIDLINES [
+            shape=plaintext,
+            fontname="Monospace",
+            fontsize=6,
+            fontcolor="#4CA850",
+            label="- - - - - - - - - - - - - - - - - -- - - - - -\nSYSTEM ONLINE // TERMINAL ACTIVE\n- - - - - - - - - - - - -  - - - - - - - - - -\nDESIGNATION: IO_AGENT_X // SECTOR: ALPHA-7 // \nBUILD: 88.03.21\nLICENSE: R E T R O W A R E (MIT/CC-BY-SA)"
+        ];
+    }
+    HEADER_TITLE -> START_NODE [style=invis, weight=100, minlen=1.5];
+
+    START_NODE -> Decision_Gate_A [style="bold", color="#B5179E", headlabel=">", labelfontcolor="#B5179E", labelfontsize=12];
+
+    Decision_Gate_A -> ERROR_HALT_A [label="REJECT", style="dashed", color="#FF3EA5", fontcolor="#FF60C3"];
+    Decision_Gate_A -> Decision_Gate_B [label="ACCEPT", color="#7209B7", fontcolor="#9D4EDD"];
+
+    Decision_Gate_B -> ERROR_HALT_B [label="REJECT", style="dashed", color="#FF3EA5", fontcolor="#FF60C3"];
+    Decision_Gate_B -> Decision_Gate_C [label="ACCEPT", color="#7209B7", fontcolor="#9D4EDD"];
+
+    Decision_Gate_C -> ERROR_HALT_C [label="REJECT", style="dashed", color="#FF3EA5", fontcolor="#FF60C3"];
+    Decision_Gate_C -> Decision_Gate_D [label="ACCEPT", color="#7209B7", fontcolor="#9D4EDD"];
+
+    Decision_Gate_D -> ERROR_HALT_D [label="REJECT", style="dashed", color="#FF3EA5", fontcolor="#FF60C3"];
+    Decision_Gate_D -> SUCCESS_TRANSMIT [label="ACCEPT", color="#560BAD", fontcolor="#C77DFF", style="bold", taillabel="<", labelangle=-25, labeldistance=1.5];
+
+    ERROR_HALT_A -> MAIN_GRID_EXIT [style=invis];
+    ERROR_HALT_B -> MAIN_GRID_EXIT [style=invis];
+    ERROR_HALT_C -> MAIN_GRID_EXIT [style=invis];
+    ERROR_HALT_D -> MAIN_GRID_EXIT [style=invis];
+    SUCCESS_TRANSMIT -> MAIN_GRID_EXIT [style=invis];
+    
+    MAIN_GRID_EXIT -> FOOTER_GRIDLINES [style=invis, weight=70, minlen=2];
+}
+
+synthwave_theme
+
+</details>
+  
+  
+
+---
+
+
 
 ```dot
 /*
@@ -163,10 +291,7 @@ digraph synthwave_grid_theme {
 
 ```
 
-
-
 ---
-
 
 
 ## Key Characteristics for "Synthwave Grid"
