@@ -142,9 +142,7 @@ synthwave_theme
 ---
 
 > [!NOTE]  
-> GitHub Flavored Markdown's parser ignores embedded HTML within the `label` attribute of DOT diagrams. 
-> For rendering with Gravizo, this `label` attribute also requires standard DOT string syntax, as Gravizo does not interpret embedded HTML. 
-> In contrast, native DOT editors, as demonstrated by the DOT code implementation below, successfully render such embedded HTML content within the `label`.
+> GitHub Flavored Markdown's parser ignores embedded HTML within the `label` attribute of DOT diagrams.<br/>For rendering with Gravizo, this `label` attribute also requires standard DOT string syntax, as Gravizo does not interpret embedded HTML.<br/>In contrast, native DOT editors, as demonstrated by the DOT code implementation below, successfully render such embedded HTML content within the `label`.
 
 ---
 
