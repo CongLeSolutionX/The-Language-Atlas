@@ -168,34 +168,13 @@ graph SocialNetwork {
 
 <details>
 <summary>View Graphviz DOT Source (Embedded DOT 1)</summary>
-neato_embedded_diagram
-graph SocialNetwork {
-    graph [
-        overlap=scale,
-        splines=true,
-        sep="+5",
-        esep="+2"
-    ];
-
-    node [shape=circle, style=filled, color=lightblue];
-    edge [color=gray];
-
-    Alice; Bob; Charlie; David; Eve; Frank;
-
-    Alice -- Bob [len=1.5];
-    Alice -- Charlie;
-    Bob -- Charlie [weight=5];
-    Bob -- David;
-    Charlie -- David;
-    David -- Eve [len=0.8];
-    Eve -- Frank;
-    Alice -- Frank [style=dotted];
-
-    subgraph cluster_Group1 {
-        label="Inner Circle";
-        bgcolor=lightyellow;
-        Alice; Bob; Charlie;
-    }
+digraph EmbeddedExample1 {
+  rankdir=LR;
+  node [shape=record];
+  struct1 [label="<f0> Left|<f1> Middle|<f2> Right"];
+  struct2 [label="<f0> One|<f1> Two|<f2> Three"];
+  struct1:f1 -> struct2:f0;
+  struct1:f2 -> struct2:f2;
 }
 neato_embedded_diagram
 </details>
