@@ -39,7 +39,7 @@ The DOT language, with its versatility and the power of Graphviz, lends itself t
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Microservices Architecture
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -157,7 +157,7 @@ digraph MicroservicesArchitecture {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Finite State Machine (FSM)
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -204,7 +204,7 @@ digraph FiniteStateMachine {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Database Schema (Simplified ERD)
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -283,7 +283,7 @@ digraph DatabaseSchemaERD {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Call Graph or Dependency Graph
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -338,7 +338,7 @@ digraph CallGraph {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Network Topology Diagram
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

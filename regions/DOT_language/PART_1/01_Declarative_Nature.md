@@ -30,7 +30,7 @@ In declarative programming, you describe **what** you want to achieve, or **what
 
 ```mermaid
 ---
-title: "CHANGE_ME_DADDY"
+title: "What is Declarative Programming?"
 author: "Cong Le"
 version: "1.0"
 license(s): "MIT, CC BY 4.0"

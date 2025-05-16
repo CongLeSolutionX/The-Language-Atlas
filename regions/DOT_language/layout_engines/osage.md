@@ -77,7 +77,7 @@ Let's consider a DOT file with nested clusters.
 **`nested_clusters.dot`:**
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: nested clusters
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

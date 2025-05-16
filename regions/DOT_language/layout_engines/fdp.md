@@ -57,7 +57,7 @@ dot -Kfdp -Tpng my_undirected_graph.dot -o my_graph_fdp.png
 Or, within the DOT file itself (though less common nowadays as command-line override is preferred):
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Invoking fdp
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -159,7 +159,7 @@ While many general Graphviz attributes apply, some are particularly relevant or 
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Social Network
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

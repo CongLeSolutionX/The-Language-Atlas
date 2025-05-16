@@ -31,8 +31,8 @@ Clear DOT source code is easier to understand, debug, and modify.
     *   Align attributes for readability if helpful, especially in default `graph`, `node`, `edge` statements.
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
-     * author: Cong Le
+    * title: Indentation and Formatting
+    * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
     * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
@@ -80,7 +80,7 @@ Clear DOT source code is easier to understand, debug, and modify.
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Comments
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -115,7 +115,7 @@ Setting default `graph`, `node`, and `edge` attributes at the beginning of your 
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Leverage Default Attributes Effectively
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

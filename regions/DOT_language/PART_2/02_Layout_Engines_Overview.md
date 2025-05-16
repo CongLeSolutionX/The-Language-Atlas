@@ -32,7 +32,7 @@ The engine is typically chosen by the command used (e.g., `dot`, `neato`) or som
 
 ```mermaid
 ---
-title: "CHANGE_ME_DADDY"
+title: "Common Layout Engines"
 author: "Cong Le"
 version: "1.0"
 license(s): "MIT, CC BY-SA 4.0"

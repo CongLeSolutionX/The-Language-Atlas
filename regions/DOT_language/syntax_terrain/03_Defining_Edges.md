@@ -28,7 +28,7 @@ The syntax for defining an edge depends on whether the graph is directed (`digra
 1.  **Directed Edge (`->`)**: Used in `digraph`. Signifies a connection with a direction from a source node (or "tail") to a target node (or "head").
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: Directed Edge
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -43,7 +43,7 @@ The syntax for defining an edge depends on whether the graph is directed (`digra
 2.  **Undirected Edge (`--`)**: Used in `graph`. Signifies a connection without a specific direction. The relationship between two nodes is mutual.
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: Undirected Edge
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -79,7 +79,7 @@ graph LR
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Basic Edge
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -105,7 +105,7 @@ DOT allows for a concise way to define a sequence of edges:
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Chaining Edges
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -128,7 +128,7 @@ You can group multiple source or target nodes using curly braces `{}` to create 
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Grouping Source/Target Nodes
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -155,7 +155,7 @@ Edges can have attributes to control their appearance and provide additional inf
 *   **`label`**: Text displayed near the edge. Useful for naming relationships or indicating data flow.
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: Common Edge Attributes and Examples
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -326,7 +326,7 @@ Nodes can have defined connection points, called "ports." Edges can connect to t
     *Syntax: `node_id:port_name -> another_node;`*
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: Record and HTML-Like Label Ports
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -354,7 +354,7 @@ Nodes can have defined connection points, called "ports." Edges can connect to t
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: API Call Flow
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -391,7 +391,7 @@ digraph APICallFlow {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Database Schema Relationships
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

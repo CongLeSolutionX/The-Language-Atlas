@@ -34,7 +34,7 @@ Record shapes allow nodes to be displayed as structures with fields, similar to 
 **Syntax for `label` with record shapes:**
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Syntax for 'label' with record shapes
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -119,7 +119,7 @@ For even more advanced formatting within nodes (and sometimes edges or graph lab
 **Example:**
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: HTML-Like Labels Example
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -169,7 +169,7 @@ Syntax: `node_id:compass_point`
 **Example:**
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Node Ports and Compass Points for Edges Example
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -201,7 +201,7 @@ Within a subgraph, the `rank` attribute can influence the vertical or horizontal
 **Example:**
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Ranking Control Example
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

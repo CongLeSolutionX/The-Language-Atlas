@@ -52,7 +52,7 @@ These errors prevent Graphviz from even understanding the structure of your DOT 
     *   **Fix:** Check for balanced pairs of `[]`, `{}`, and `""`. Text editors with syntax highlighting can help.
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: Unmatched Brackets/Braces/Quotes
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -76,7 +76,7 @@ These errors prevent Graphviz from even understanding the structure of your DOT 
     *   **Fix:** Ensure attributes are `name=value`. Quote values with spaces or special characters.
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: Improper Attribute Syntax
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -96,7 +96,7 @@ These errors prevent Graphviz from even understanding the structure of your DOT 
     *   **Fix:** Quote problematic node IDs (e.g., `"My Node"`). Ensure port names in edge definitions exactly match those in node labels (`<port_name>` or `PORT="port_name"`).
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: Invalid Node or Port IDs
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -117,7 +117,7 @@ These errors prevent Graphviz from even understanding the structure of your DOT 
     *   **Fix:** Ensure the correct graph type keyword is present and matches the edge operators used.
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: Using graph/digraph keywords incorrectly
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0

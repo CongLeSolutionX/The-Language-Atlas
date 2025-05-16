@@ -28,7 +28,7 @@ Edges represent the connections or relationships between nodes in a graph. DOT p
 *   **Directed Edges (`digraph`):** Use `->` (an arrow) to indicate direction from a source node to a target node.
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Edge Definition Syntax
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -46,7 +46,7 @@ digraph DirectedEdges {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Undirected Edges
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -64,7 +64,7 @@ graph UndirectedEdges {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Chaining Edges
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -87,7 +87,7 @@ Similar to nodes, edges can have attributes specified in square brackets `[]` im
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Edge Attributes
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -173,7 +173,7 @@ For nodes with specific connection points (like 'record' shapes or using compass
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Record Shapes
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -191,7 +191,7 @@ digraph RecordPorts {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Compass Points
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

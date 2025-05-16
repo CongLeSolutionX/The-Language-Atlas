@@ -118,7 +118,7 @@ Attributes can be set at different levels, forming a hierarchy of defaults:
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Precedence Example
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

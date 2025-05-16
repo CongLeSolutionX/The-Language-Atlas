@@ -79,7 +79,7 @@ Attributes allow you to customize the appearance of nodes. Here are some of the 
 *   **`label`**: The text displayed inside or near the node. If not set, the node's ID is used as the label.
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: label
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -97,7 +97,7 @@ Attributes allow you to customize the appearance of nodes. Here are some of the 
 *   **`shape`**: Determines the geometric shape of the node.
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: shape
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -120,7 +120,7 @@ Attributes allow you to customize the appearance of nodes. Here are some of the 
 *   **`style`**: Modifies the visual style of the node's border and fill. Common values include `filled`, `dashed`, `dotted`, `solid` (default), `bold`, `rounded`, `invis` (invisible).
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: style
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -139,7 +139,7 @@ Attributes allow you to customize the appearance of nodes. Here are some of the 
 *   **`fillcolor`**: Sets the fill color of the node when `style=filled`.
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: solor - fillcolor
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -155,7 +155,7 @@ Attributes allow you to customize the appearance of nodes. Here are some of the 
 *   **`fontname`, `fontsize`, `fontcolor`**: Control the font family, size (in points), and color of the label text.
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: fontname - fontsize - fontcolor
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -171,7 +171,7 @@ Attributes allow you to customize the appearance of nodes. Here are some of the 
 *   **`fixedsize`**: If `true`, the `width` and `height` are treated as fixed dimensions. If `false` (default), they act as minimums, and the node can grow to accommodate its label.
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: width - height - fixedsize
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -187,7 +187,7 @@ Attributes allow you to customize the appearance of nodes. Here are some of the 
 *   **`image`**: Allows you to use an external image file (e.g., PNG, JPG, SVG) as the node's appearance. The `imagescale` attribute can control how the image is scaled. The `label` attribute can be used to place text over or near the image.
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: image
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
@@ -212,7 +212,7 @@ Here are a few illustrative snippets of how nodes might be defined in real-world
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Server Nodes in a Network Diagram
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -253,7 +253,7 @@ digraph NetworkTopology {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: States in a Software State Machine
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -288,7 +288,7 @@ digraph OrderProcessingFSM {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Tasks in a Simple Workflow
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

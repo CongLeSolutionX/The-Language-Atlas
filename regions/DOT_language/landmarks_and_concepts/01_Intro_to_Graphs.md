@@ -101,7 +101,7 @@ A DOT file typically starts by declaring the type of graph:
 ````
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Core Declaration
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

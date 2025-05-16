@@ -34,7 +34,7 @@ Visualizing software components, their interactions, and dependencies is a prime
 **Example Snippet: Microservice Architecture**
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Microservice Architecture
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -93,7 +93,7 @@ DOT can effectively represent database tables, columns, and their relationships 
 **Example Snippet: Simple Blog Schema**
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Simple Blog Schema
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -132,7 +132,7 @@ Visualizing network devices (routers, switches, servers) and their connections.
 **Example Snippet: Simple Office Network**
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Simple Office Network
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -177,7 +177,7 @@ Representing states and transitions in a system or process.
 **Example Snippet: Vending Machine FSM**
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Vending Machine FSM
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -224,7 +224,7 @@ Showing function call relationships in code or dependencies between software pac
 **Example Snippet: Simple Function Call Graph**
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Simple Function Call Graph
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -265,7 +265,7 @@ Representing reporting structures or hierarchical data.
 **Example Snippet: Basic Org Chart**
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Basic Org Chart
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -323,7 +323,7 @@ Visualizing decision-making processes or algorithmic flows.
 **Example Snippet: Simple Decision Tree**
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Simple Decision Tree
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

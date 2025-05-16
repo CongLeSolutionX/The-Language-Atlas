@@ -123,7 +123,7 @@ The general syntax for an attribute definition is:
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Setting Attributes
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -196,7 +196,7 @@ For long labels, you can concatenate strings using the `+` operator. This is use
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Concatenation of Strings for Labels
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

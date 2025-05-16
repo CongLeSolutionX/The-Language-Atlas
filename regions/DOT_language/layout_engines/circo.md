@@ -77,7 +77,7 @@ dot -Kcirco -Tsvg my_graph.dot -o my_graph_circo.svg
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Simple Ring
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -102,7 +102,7 @@ graph SimpleRing {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Ring with a Central Root Node
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -136,7 +136,7 @@ graph CentralRootRing {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Two Biconnected Components (Dumbbell)
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -160,7 +160,7 @@ graph Dumbbell {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: More Complex Structure with a Tree Attached
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

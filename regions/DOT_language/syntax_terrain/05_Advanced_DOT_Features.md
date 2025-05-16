@@ -38,7 +38,7 @@ Record shapes are powerful for representing data structures, objects with fields
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Horizontal and Vertical Layout
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -87,7 +87,7 @@ For even greater control over node (and sometimes edge) label appearance and str
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: HTML-Like Labels
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -134,7 +134,7 @@ Clusters are special subgraphs that group nodes visually and can influence layou
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Clusters
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -207,7 +207,7 @@ Graphviz `dot` (the default layout engine) arranges nodes in discrete ranks (typ
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Ranking Control
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -260,7 +260,7 @@ digraph RankingExample {
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Controlling Edge Appearance and Routing
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -286,7 +286,7 @@ Setting default attributes at the graph, node, or edge level can simplify your D
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Graph, Node, and Edge Default Attributes
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

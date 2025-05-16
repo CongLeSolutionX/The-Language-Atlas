@@ -120,7 +120,7 @@ While `neato` respects many general DOT attributes, some have particular importa
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Example 'neato' DOT File
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

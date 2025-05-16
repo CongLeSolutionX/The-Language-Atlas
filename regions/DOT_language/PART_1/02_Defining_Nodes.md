@@ -30,7 +30,7 @@ The simplest way to define a node is by stating its identifier (ID):
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Basic Node Definition
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -55,7 +55,7 @@ Attributes are assigned to nodes in square brackets `[]` immediately following t
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Node Attributes
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
@@ -157,7 +157,7 @@ Nodes are automatically created if they appear in an edge statement and haven't 
 
 ```dot
 /*
- * title: CHANGE_ME_DADDY
+ * title: Implicit Node Creation
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0

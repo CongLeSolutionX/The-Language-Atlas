@@ -81,7 +81,7 @@ graph TD
         *   `sink`: Similar to `max`, often used for graph "sink" nodes.
     ```dot
     /*
-    * title: CHANGE_ME_DADDY
+    * title: Subgraph Attributes
     * author: Cong Le
     * version: 1.0
     * license(s): MIT, CC BY-SA 4.0
