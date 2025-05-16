@@ -36,7 +36,6 @@ The simplest way to define a node is by stating its identifier (ID):
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
- * 
  */
 digraph NodeDefinition {
     nodeA; // Defines a node with the ID "nodeA"
@@ -61,7 +60,6 @@ Attributes are assigned to nodes in square brackets `[]` immediately following t
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
- * 
  * 
  */
 digraph NodeAttributes {
@@ -164,7 +162,6 @@ Nodes are automatically created if they appear in an edge statement and haven't 
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
- * 
  * 
  */
 digraph ImplicitNodes {

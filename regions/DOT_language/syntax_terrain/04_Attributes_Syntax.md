@@ -122,6 +122,14 @@ The general syntax for an attribute definition is:
 **Example Breakdown:**
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph AttributeExamples {
     // Graph-wide defaults
     graph [
@@ -187,6 +195,14 @@ digraph AttributeExamples {
 For long labels, you can concatenate strings using the `+` operator. This is useful for breaking up long lines in your DOT source without introducing unwanted newlines in the rendered label (unless `\n` is used).
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph StringConcat {
     LongLabelNode [label="This is a very long label " +
                          "that has been split across " +

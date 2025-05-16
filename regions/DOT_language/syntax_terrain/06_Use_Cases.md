@@ -33,6 +33,14 @@ Visualizing software components, their interactions, and dependencies is a prime
 
 **Example Snippet: Microservice Architecture**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph Microservices {
     graph [rankdir=LR, compound=true, label="E-Commerce Platform Architecture", fontsize=16]
     node [shape=box, style="filled,rounded", fontname="Arial"]
@@ -84,6 +92,14 @@ DOT can effectively represent database tables, columns, and their relationships 
 
 **Example Snippet: Simple Blog Schema**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph BlogSchema {
     graph [fontname="Verdana", label="Blog Database Schema", rankdir=LR]
     node [shape=record, style=filled, fillcolor="beige"]
@@ -115,6 +131,14 @@ Visualizing network devices (routers, switches, servers) and their connections.
 
 **Example Snippet: Simple Office Network**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph OfficeNetwork {
     graph [label="Office Network Topology", nodesep=0.5, splines=ortho]
     node [fontname="Arial", shape=box, style="filled,rounded"]
@@ -152,6 +176,14 @@ Representing states and transitions in a system or process.
 
 **Example Snippet: Vending Machine FSM**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph VendingMachineFSM {
     rankdir=TB
     node [shape=ellipse, style=filled, fontname="Helvetica"]
@@ -191,6 +223,14 @@ Showing function call relationships in code or dependencies between software pac
 
 **Example Snippet: Simple Function Call Graph**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph FunctionCalls {
     node [shape=box, style=rounded, fontname="Consolas"]
     edge [fontsize=9]
@@ -224,6 +264,14 @@ Representing reporting structures or hierarchical data.
 
 **Example Snippet: Basic Org Chart**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph OrgChart {
     graph [rankdir=TB, label="Company Structure", nodesep=0.6]
     node [shape=box, style="filled,rounded", fontname="Arial",
@@ -274,6 +322,14 @@ Visualizing decision-making processes or algorithmic flows.
 
 **Example Snippet: Simple Decision Tree**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph LoanApplicationDecision {
     node [fontname="Arial"]
     Start [shape=ellipse]

@@ -34,7 +34,6 @@ Edges represent the connections or relationships between nodes in a graph. DOT p
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
- * 
  */
 digraph DirectedEdges {
     A -> B // Edge from A to B
@@ -53,7 +52,6 @@ digraph DirectedEdges {
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
- * 
  */
 graph UndirectedEdges {
     A -- B // Edge between A and B
@@ -71,7 +69,6 @@ graph UndirectedEdges {
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
- * 
  * 
  */
 digraph ChainedEdges {
@@ -95,7 +92,6 @@ Similar to nodes, edges can have attributes specified in square brackets `[]` im
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
- * 
  * 
  */
 digraph EdgeAttributes {
@@ -183,7 +179,6 @@ For nodes with specific connection points (like 'record' shapes or using compass
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
- * 
  */
 digraph RecordPorts {
     nodeA [shape=record, label="<f0> Field 0 | <f1> Field 1 | <f2> Field 2"]
@@ -201,7 +196,6 @@ digraph RecordPorts {
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
- * 
  * 
  */
 digraph CompassPoints {

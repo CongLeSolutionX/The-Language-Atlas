@@ -119,6 +119,14 @@ While `neato` respects many general DOT attributes, some have particular importa
 ## Example `neato` DOT File:
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 graph SocialNetwork {
     graph [
         overlap=scale, // Try to remove overlaps by scaling

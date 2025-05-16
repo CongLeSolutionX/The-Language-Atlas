@@ -37,7 +37,6 @@ This time, we'll model a **Simplified Software Component Interaction Diagram**, 
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
- * 
  */
 digraph Advanced_Component_Interaction {
     // --- Graph Defaults ---

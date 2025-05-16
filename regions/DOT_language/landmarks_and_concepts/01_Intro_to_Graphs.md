@@ -107,7 +107,6 @@ A DOT file typically starts by declaring the type of graph:
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
- * 
  */
 // Example of a simple directed graph
 digraph MyFirstGraph {

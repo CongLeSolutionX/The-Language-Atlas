@@ -76,6 +76,14 @@ dot -Kcirco -Tsvg my_graph.dot -o my_graph_circo.svg
 ### Example 1: Simple Ring
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 // simple_ring.dot
 graph SimpleRing {
     layout="circo"; // Good practice to specify in the DOT file for clarity
@@ -93,6 +101,14 @@ graph SimpleRing {
 ### Example 2: Ring with a Central Root Node
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 // central_root_ring.dot
 graph CentralRootRing {
     layout="circo";
@@ -119,6 +135,14 @@ graph CentralRootRing {
 ### Example 3: Two Biconnected Components (Dumbbell)
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 // dumbbell.dot
 graph Dumbbell {
     layout="circo";
@@ -135,6 +159,14 @@ graph Dumbbell {
 ### Example 4: More Complex Structure with a Tree Attached
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 // complex_circo.dot
 graph ComplexCirco {
     layout="circo";

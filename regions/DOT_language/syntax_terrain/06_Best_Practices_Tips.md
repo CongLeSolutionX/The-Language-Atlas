@@ -30,6 +30,14 @@ Clear DOT source code is easier to understand, debug, and modify.
     *   Use consistent indentation for subgraphs, node/edge definitions, and attribute lists. This visually structures your code.
     *   Align attributes for readability if helpful, especially in default `graph`, `node`, `edge` statements.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+     * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph ReadableExample {
         graph [
             rankdir=LR,
@@ -71,6 +79,14 @@ Clear DOT source code is easier to understand, debug, and modify.
 *   **Comments:** Use C-style (`// ...` or `/* ... */`) comments liberally to explain complex parts, choices, or sections of your DOT code.
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 graph ExampleGraph {
     // This cluster represents the authentication module
     subgraph cluster_Auth {
@@ -98,6 +114,14 @@ Setting default `graph`, `node`, and `edge` attributes at the beginning of your 
 *   This makes the unique properties of individual nodes/edges stand out.
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph DefaultLeverage {
     graph [fontname="Helvetica", rankdir=TB]
     node  [shape=ellipse, style=filled, color=blue, fillcolor=lightblue, fontcolor=black]

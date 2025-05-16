@@ -27,6 +27,14 @@ The syntax for defining an edge depends on whether the graph is directed (`digra
 
 1.  **Directed Edge (`->`)**: Used in `digraph`. Signifies a connection with a direction from a source node (or "tail") to a target node (or "head").
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph G {
         A -> B; // Edge from Node A to Node B
     }
@@ -34,6 +42,14 @@ The syntax for defining an edge depends on whether the graph is directed (`digra
 
 2.  **Undirected Edge (`--`)**: Used in `graph`. Signifies a connection without a specific direction. The relationship between two nodes is mutual.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     graph G {
         X -- Y; // Edge between Node X and Node Y
     }
@@ -62,6 +78,14 @@ graph LR
 **Example:**
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph MyConnections {
     // Nodes (can be implicitly defined by edges or explicitly)
     SystemA;
@@ -80,6 +104,14 @@ digraph MyConnections {
 DOT allows for a concise way to define a sequence of edges:
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph Chained {
     // Equivalent to: A -> B; B -> C; C -> D;
     A -> B -> C -> D;
@@ -95,6 +127,14 @@ digraph Chained {
 You can group multiple source or target nodes using curly braces `{}` to create multiple edges efficiently:
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph GroupedEdges {
     node_a; node_b; node_c;
     target_x; target_y;
@@ -114,6 +154,14 @@ Edges can have attributes to control their appearance and provide additional inf
 
 *   **`label`**: Text displayed near the edge. Useful for naming relationships or indicating data flow.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph EdgeLabels {
         User -> Action [label="Performs"];
         Database -> Application [label="Returns Data", fontcolor=blue];
@@ -122,6 +170,14 @@ Edges can have attributes to control their appearance and provide additional inf
 
 *   **`style`**: Visual style of the edge line. Common values: `solid` (default), `dashed`, `dotted`, `bold`, `invis` (invisible, useful for layout control without visual clutter).
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+     * author: Cong Le
+     * version: 1.0
+     * license(s): MIT, CC BY-SA 4.0
+     * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+     * 
+     */
     digraph EdgeStyles {
         A -> B [style=dashed, label="Optional"];
         B -> C [style=dotted, label="Infrequent"];
@@ -131,6 +187,14 @@ Edges can have attributes to control their appearance and provide additional inf
 
 *   **`color`**: Sets the color of the edge line and its arrowhead/tail (unless overridden by `arrowheadcolor` etc.).
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+     * license(s): MIT, CC BY-SA 4.0
+     * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+     * 
+    */
     digraph EdgeColors {
         Critical -> System [color=red, penwidth=2.0]; // penwidth for thickness
         Normal -> System [color=blue];
@@ -142,6 +206,14 @@ Edges can have attributes to control their appearance and provide additional inf
     *   Common values: `none`, `normal` (default for digraphs), `dot`, `odot`, `diamond`, `odiamond`, `box`, `obox`, `tee`, `vee`, `curve`, `icurve`, `inv`, `invempty`, `open`, `halfopen`, `empty`.
     *   Can combine multiple shapes (e.g., `arrowhead="dotnormal"`).
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph ArrowShapes {
         A -> B [arrowhead=vee];
         C -> D [arrowhead=dot, arrowtail=dot, dir=both]; // dir=both makes it appear bidirectional
@@ -152,6 +224,14 @@ Edges can have attributes to control their appearance and provide additional inf
 
 *   **`arrowsize`**: A scaling factor for the size of the arrowhead/tail. Default is `1.0`.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph ArrowSizes {
         A -> B [arrowsize=2.0]; // Larger arrow
         C -> D [arrowsize=0.5]; // Smaller arrow
@@ -164,6 +244,14 @@ Edges can have attributes to control their appearance and provide additional inf
     *   `both`: Arrows at both head and tail.
     *   `none`: No arrows.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph EdgeDirections {
         A -> B [dir=both, label="Bidirectional"];
         C -> D [dir=back, label="Flows Back"];
@@ -172,6 +260,14 @@ Edges can have attributes to control their appearance and provide additional inf
 
 *   **`constraint`**: A boolean (`true` or `false`). If `false`, the edge is drawn but does not influence node ranking or positioning in hierarchical layouts (like the default `dot` engine). Useful for annotation edges or secondary relationships that shouldn't affect the main layout.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+     * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph Constraints {
         rankdir=TB;
         A -> B; // Main flow, affects rank
@@ -183,6 +279,14 @@ Edges can have attributes to control their appearance and provide additional inf
 *   **`len`**: Preferred edge length in inches (for layout engines like `neato`, `fdp` that aim for specific lengths). `dot` uses it more as a minimum.
 *   **`weight`**: Higher weight values make edges "shorter" and "straighter" and more important in hierarchical layouts (`dot`). In force-directed layouts (`neato`, `fdp`), higher weights mean stronger attraction between nodes.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph EdgeWeights {
         // In 'dot' layout:
         Source -> CriticalPath1 [weight=100];
@@ -203,6 +307,14 @@ Nodes can have defined connection points, called "ports." Edges can connect to t
 1.  **Compass Points:** Every node implicitly has compass point ports (e.g., `n`, `ne`, `e`, `se`, `s`, `sw`, `w`, `nw`, `c` - center).
     *Syntax: `node_id:compass_point -> another_node:compass_point;`*
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph CompassPorts {
         A [shape=box]; B [shape=box];
         A:e -> B:w [label="East to West"]; // Connect east port of A to west port of B
@@ -213,6 +325,14 @@ Nodes can have defined connection points, called "ports." Edges can connect to t
 2.  **Record and HTML-Like Label Ports:** If a node uses `shape=record` or an HTML-like label, you can define named ports within the label.
     *Syntax: `node_id:port_name -> another_node;`*
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph RecordHTMLPorts {
         nodeA [shape=record, label="<f0> Field 0 | <f1> Field 1 | <f2> Field 2"];
         nodeB [label=<
@@ -233,6 +353,14 @@ Nodes can have defined connection points, called "ports." Edges can connect to t
 **1. API Call Flow:**
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph APICallFlow {
     rankdir=LR;
     node [shape=box, style="filled,rounded", fontname="Segoe UI"];
@@ -262,6 +390,14 @@ digraph APICallFlow {
 **2. Database Schema Relationships:**
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph DatabaseSchema {
     graph [fontname="Verdana", rankdir=LR];
     node [shape=record, style=filled, fillcolor=beige]; // Default for tables

@@ -38,6 +38,14 @@ The DOT language, with its versatility and the power of Graphviz, lends itself t
 *   `style=filled,rounded` for modern node appearance.
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph MicroservicesArchitecture {
     // Graph-wide settings
     graph [
@@ -148,6 +156,14 @@ digraph MicroservicesArchitecture {
 *   An invisible starting node for a clean entry point arrow.
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph FiniteStateMachine {
     rankdir=LR
     label="User Authentication FSM"
@@ -187,6 +203,14 @@ digraph FiniteStateMachine {
 *   Labels on edges describe the relationship type.
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph DatabaseSchemaERD {
     graph [rankdir=TB, label="Simplified Blog Database Schema", fontsize=16, fontname="Verdana"]
     node [shape=record, style=filled, fillcolor=beige, fontname="Verdana", fontsize=10]
@@ -258,6 +282,14 @@ digraph DatabaseSchemaERD {
 *   Color-coding for different scopes or types of calls.
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph CallGraph {
     label="Function Call Graph for Module X";
     node [shape=box, style="filled,rounded", fillcolor=aliceblue, fontname="Consolas"];
@@ -305,6 +337,14 @@ digraph CallGraph {
 *   Clusters for network segments or locations.
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph NetworkTopology {
     graph [label="Simple Office Network Topology", fontsize=16, fontname="Tahoma", layout=neato, overlap=false, splines=true]; // neato or fdp often good for networks
 

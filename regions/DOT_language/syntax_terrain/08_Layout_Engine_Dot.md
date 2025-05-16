@@ -80,6 +80,14 @@ graph TD
         *   `source`: Similar to `min`, often used for graph "source" nodes.
         *   `sink`: Similar to `max`, often used for graph "sink" nodes.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph RankDemo {
         rankdir=LR;
         subgraph { rank=source; A; B; } // A and B will be on the left-most rank

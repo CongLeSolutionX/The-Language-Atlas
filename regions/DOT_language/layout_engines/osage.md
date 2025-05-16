@@ -76,6 +76,14 @@ Let's consider a DOT file with nested clusters.
 
 **`nested_clusters.dot`:**
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph G {
     compound=true; // Important for edges to clusters
     graph [fontname="Arial", label="System Modules (Osage Layout)"];

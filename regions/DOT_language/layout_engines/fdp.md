@@ -56,6 +56,14 @@ dot -Kfdp -Tpng my_undirected_graph.dot -o my_graph_fdp.png
 
 Or, within the DOT file itself (though less common nowadays as command-line override is preferred):
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 graph MyGraph {
     layout=fdp; // Sets the layout engine for this graph
 
@@ -150,6 +158,14 @@ While many general Graphviz attributes apply, some are particularly relevant or 
 ## Example: Social Network
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 graph SocialNetwork {
     layout=fdp; // Or use -Kfdp
     K=0.8;      // Spread nodes out a bit more

@@ -78,15 +78,32 @@ Attributes allow you to customize the appearance of nodes. Here are some of the 
 
 *   **`label`**: The text displayed inside or near the node. If not set, the node's ID is used as the label.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph G {
         n1 [label="Start Process"];
         "User Input" [label="Enter User Data"]; // ID with space, needs quotes
     }
     ```
+    
     For more complex labels with internal structure or formatting, DOT supports HTML-like labels (e.g., `label=<...>`) and record-based shapes, which provide powerful layout capabilities within a single node. These are often explored in more advanced syntax discussions.
 
 *   **`shape`**: Determines the geometric shape of the node.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph Shapes {
         node [fontname="Arial"]; // Default font for all nodes
         s1 [label="Database", shape=cylinder]; // Common for DBs
@@ -102,6 +119,14 @@ Attributes allow you to customize the appearance of nodes. Here are some of the 
 
 *   **`style`**: Modifies the visual style of the node's border and fill. Common values include `filled`, `dashed`, `dotted`, `solid` (default), `bold`, `rounded`, `invis` (invisible).
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph Styles {
         n1 [label="Active", style=filled, fillcolor=lightgreen];
         n2 [label="Deprecated", style="filled,dashed", fillcolor=lightgrey, color=gray];
@@ -113,6 +138,14 @@ Attributes allow you to customize the appearance of nodes. Here are some of the 
 *   **`color`**: Sets the color of the node's border (and text if `fontcolor` isn't set and `style` isn't `filled`).
 *   **`fillcolor`**: Sets the fill color of the node when `style=filled`.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph Colors {
         db_server [label="Primary DB", shape=cylinder, style=filled, color=blue, fillcolor=lightblue];
         app_server [label="App Server", shape=box, style="filled,rounded", color="#FF0000", fillcolor="#FFDDDD"]; // Hex colors
@@ -121,6 +154,14 @@ Attributes allow you to customize the appearance of nodes. Here are some of the 
 
 *   **`fontname`, `fontsize`, `fontcolor`**: Control the font family, size (in points), and color of the label text.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph Fonts {
         critical_alert [label="CRITICAL", fontname="Helvetica-Bold", fontsize=24, fontcolor=red, shape=octagon, style=filled, fillcolor=yellow];
     }
@@ -129,6 +170,14 @@ Attributes allow you to customize the appearance of nodes. Here are some of the 
 *   **`width`, `height`**: Specifies the minimum width and height of the node in inches.
 *   **`fixedsize`**: If `true`, the `width` and `height` are treated as fixed dimensions. If `false` (default), they act as minimums, and the node can grow to accommodate its label.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph Sizing {
         n1 [label="This label determines size"];
         n2 [label="Fixed", width=2, height=1, fixedsize=true, style=filled, fillcolor=beige];
@@ -137,6 +186,14 @@ Attributes allow you to customize the appearance of nodes. Here are some of the 
 
 *   **`image`**: Allows you to use an external image file (e.g., PNG, JPG, SVG) as the node's appearance. The `imagescale` attribute can control how the image is scaled. The `label` attribute can be used to place text over or near the image.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     digraph ImageNode {
         // Ensure 'server_icon.png' is accessible by Graphviz in its image path
         web01 [label="Web Server 01", image="path/to/server_icon.png", labelloc=b, shape=none];
@@ -154,6 +211,14 @@ Here are a few illustrative snippets of how nodes might be defined in real-world
 ### 1. Server Nodes in a Network Diagram
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph NetworkTopology {
     graph [rankdir=LR, splines=ortho, nodesep=0.5];
     node [shape=box, style="filled,rounded", fontname="Arial"];
@@ -187,6 +252,14 @@ digraph NetworkTopology {
 ### 2. States in a Software State Machine
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph OrderProcessingFSM {
     rankdir=LR;
     node [shape=ellipse, style=filled, fontname="Helvetica", color=grey];
@@ -214,6 +287,14 @@ digraph OrderProcessingFSM {
 ### 3. Tasks in a Simple Workflow
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph ProjectWorkflow {
     node [shape=box, style="filled,rounded", fontname="Calibri", color="#333333"]
 

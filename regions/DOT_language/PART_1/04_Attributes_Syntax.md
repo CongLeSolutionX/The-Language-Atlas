@@ -124,7 +124,6 @@ Attributes can be set at different levels, forming a hierarchy of defaults:
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
- * 
  */
 digraph AttributePrecedence {
     // Graph-level defaults

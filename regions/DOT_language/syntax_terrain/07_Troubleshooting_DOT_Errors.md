@@ -31,6 +31,14 @@ These errors prevent Graphviz from even understanding the structure of your DOT 
     *   **Cause:** Forgetting a semicolon at the end of a node definition, edge definition, or attribute statement.
     *   **Fix:** Carefully review lines around the reported error for missing semicolons.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     // Error: Missing semicolon after node A's definition
     digraph G {
         A [label="Node A"] // <-- Missing semicolon
@@ -43,6 +51,14 @@ These errors prevent Graphviz from even understanding the structure of your DOT 
     *   **Cause:** Missing `]`, `}`, or `"` for attribute lists, subgraphs, or string values.
     *   **Fix:** Check for balanced pairs of `[]`, `{}`, and `""`. Text editors with syntax highlighting can help.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     // Error: Unmatched square bracket
     digraph G {
         A [label="Node A", color=blue // <-- Missing ]
@@ -59,6 +75,14 @@ These errors prevent Graphviz from even understanding the structure of your DOT 
     *   **Cause:** Incorrect `name=value` format, missing `=` or using `:` instead of `=`, invalid characters in unquoted attribute names/values.
     *   **Fix:** Ensure attributes are `name=value`. Quote values with spaces or special characters.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     // Error: color:red uses colon instead of equals
     digraph G {
         A [label="Node A", color:red]; // Should be color=red
@@ -71,6 +95,14 @@ These errors prevent Graphviz from even understanding the structure of your DOT 
     *   **Cause:** Node IDs with unquoted spaces, special characters (other than `_`), or starting with a number (if not quoted). Port names in records/HTML not matching.
     *   **Fix:** Quote problematic node IDs (e.g., `"My Node"`). Ensure port names in edge definitions exactly match those in node labels (`<port_name>` or `PORT="port_name"`).
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     // Error: "Node With Spaces" needs quotes
     digraph G {
         Node With Spaces -> B; // Should be "Node With Spaces" -> B;
@@ -84,6 +116,14 @@ These errors prevent Graphviz from even understanding the structure of your DOT 
     *   **Cause:** Missing `graph` or `digraph` keyword at the beginning, or using one when the other is expected (e.g., `->` in a `graph`).
     *   **Fix:** Ensure the correct graph type keyword is present and matches the edge operators used.
     ```dot
+    /*
+    * title: CHANGE_ME_DADDY
+    * author: Cong Le
+    * version: 1.0
+    * license(s): MIT, CC BY-SA 4.0
+    * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+    * 
+    */
     // Error: Using -> in an undirected graph
     graph G {
         A -> B; // Should be A -- B;

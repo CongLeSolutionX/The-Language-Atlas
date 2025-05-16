@@ -35,8 +35,7 @@ This time, we'll model a **Simplified Cloud Infrastructure Diagram for a Web App
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
- * 
- * 
+ *
  */
 digraph Advanced_Cloud_Infrastructure {
     // --- Graph Defaults ---

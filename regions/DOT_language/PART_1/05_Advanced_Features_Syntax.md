@@ -40,7 +40,6 @@ Record shapes allow nodes to be displayed as structures with fields, similar to 
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
- * 
  */
 digraph RecordShapes {
     nodeR [
@@ -126,7 +125,6 @@ For even more advanced formatting within nodes (and sometimes edges or graph lab
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
- * 
  */
 digraph HTMLLabels {
     nodeHTML [
@@ -175,8 +173,7 @@ Syntax: `node_id:compass_point`
  * author: Cong Le
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
- * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
- * 
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved. 
  * 
  */
 digraph NodePorts {
@@ -209,7 +206,6 @@ Within a subgraph, the `rank` attribute can influence the vertical or horizontal
  * version: 1.0
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
- * 
  * 
  */
 digraph RankControl {

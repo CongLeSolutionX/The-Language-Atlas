@@ -137,7 +137,6 @@ Example:
  * license(s): MIT, CC BY-SA 4.0
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
- * 
  */
 digraph HtmlLabel {
     nodeA [label=<

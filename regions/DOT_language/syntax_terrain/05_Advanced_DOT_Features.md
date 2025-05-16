@@ -37,6 +37,14 @@ Record shapes are powerful for representing data structures, objects with fields
 **Example (Horizontal and Vertical Layout):**
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph RecordShapes {
     node [shape=record, fontname="Arial"];
 
@@ -78,6 +86,14 @@ For even greater control over node (and sometimes edge) label appearance and str
 **Example:**
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph HTMLLabels {
     node [fontname="Verdana"];
 
@@ -117,6 +133,14 @@ Clusters are special subgraphs that group nodes visually and can influence layou
 **Example:**
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph Microservices {
     graph [compound=true, rankdir=LR]; // compound=true allows edges to connect to clusters
     node [shape=box, style=filled];
@@ -182,6 +206,14 @@ Graphviz `dot` (the default layout engine) arranges nodes in discrete ranks (typ
 **Example:**
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph RankingExample {
     rankdir=LR; // Layout from Left to Right
 
@@ -227,6 +259,14 @@ digraph RankingExample {
 *   **`headport`, `tailport`**: Edge attributes specifying the compass point on the head/tail node where the edge should connect (e.g., `headport=n`, `tailport=se`).
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph EdgeRouting {
     graph [splines=ortho, nodesep=0.6]; // Orthogonal edges, increased node separation
     node [shape=box];
@@ -245,6 +285,14 @@ digraph EdgeRouting {
 Setting default attributes at the graph, node, or edge level can simplify your DOT source significantly.
 
 ```dot
+/*
+ * title: CHANGE_ME_DADDY
+ * author: Cong Le
+ * version: 1.0
+ * license(s): MIT, CC BY-SA 4.0
+ * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+ * 
+ */
 digraph DefaultsExample {
     // Default graph attributes
     graph [fontname="Arial", fontsize=12, label="System Overview"];
