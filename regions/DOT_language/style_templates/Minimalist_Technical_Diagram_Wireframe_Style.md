@@ -161,7 +161,7 @@ rendered_code_wireframe_template
 
 ----
 
-<details>
+<details open>
 <summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
 
 ```dot

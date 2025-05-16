@@ -176,7 +176,7 @@ rendered_code_steampunk_contraption_style_template
 ----
 
 
-<details>
+<details open>
 <summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
 
 ```dot

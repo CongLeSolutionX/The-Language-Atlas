@@ -184,7 +184,7 @@ vintage_parchment_style
 
 ---
 
-<details>
+<details open>
 <summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
 
 ```dot

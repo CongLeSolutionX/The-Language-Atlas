@@ -164,7 +164,7 @@ rendered_code_holographic_template
 
 ----
 
-<details>
+<details open>
 <summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
 
 ```dot
