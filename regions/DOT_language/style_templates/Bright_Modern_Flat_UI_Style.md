@@ -151,7 +151,7 @@ rendered_code_bright_and_modern_flat_ui_template
 
 ---
 
-<details>
+<details open>
 <summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
 
 ```dot
