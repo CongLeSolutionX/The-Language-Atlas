@@ -152,7 +152,7 @@ rendered_code_bright_and_modern_flat_ui_template
 ---
 
 <details>
-<summary>Click to show/hide the full DOT syntax with comment documentation.</summary>
+<summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
 
 ```dot
 /*

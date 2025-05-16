@@ -195,6 +195,8 @@ rendered_code_engineering_diagram_template
 
 ---
 
+<details>
+<summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
 
 ```dot
 /*
@@ -361,6 +363,10 @@ LICENSE: MIT AND CC BY-SA 4.0"
     _main_flow_exit_anchor -> FOOTER_TEXT [style=invis, weight=100, minlen=1];
 }
 ```
+
+</details>
+
+
 
 ---
 
