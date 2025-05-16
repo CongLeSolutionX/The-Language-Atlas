@@ -27,13 +27,11 @@ Think of interfaces from movies like Minority Report, Iron Man's HUD, or general
 
 ![Holographic Interface Style](https://g.gravizo.com/source/svg/rendered_code_holographic_template?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FHolographic_Interface_Style.md)
 
-  
-
 <details>
 
 <summary>Rendered code for the Holographic Interface Style</summary>
 rendered_code_holographic_template
-digraph holographic_interface_style {
+digraph holographic_interface_sci_fi_hud_style {
     graph [
         rankdir=TB,
         fontname="Roboto Condensed",
@@ -64,7 +62,7 @@ digraph holographic_interface_style {
         penwidth=0.8,
         style=dashed
     ];
-   HEADER_SYSTEM_STATUS [
+    HEADER_SYSTEM_STATUS [
         shape=plaintext,
         label=<
             <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="transparent" WIDTH="300">
@@ -75,7 +73,7 @@ digraph holographic_interface_style {
             </TR>
             <TR><TD COLSPAN="3" HEIGHT="5"></TD></TR>
             <TR>
-                <TD ALIGN="LEFT" COLSPAN="3"><FONT COLOR="#50C878" POINT-SIZE="8">ACTIVE PROTOCOL: P-XYZ-7.3 SECURITY LEVEL: 5</FONT></TD>
+                <TD ALIGN="LEFT" COLSPAN="3"><FONT COLOR="#50C878" POINT-SIZE="8">ACTIVE PROTOCOL: P-XYZ-7.3 // SECURITY LEVEL: 5</FONT></TD>
             </TR>
             </TABLE>
         >,
@@ -111,7 +109,7 @@ digraph holographic_interface_style {
         style="filled,bold"
     ];
     MAIN_INTERFACE_END [shape=point, style=invis];
-    
+
     subgraph cluster_footer_hud {
         style=invis; label=""; rank=sink;
 
@@ -123,14 +121,14 @@ digraph holographic_interface_style {
             label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="1" CELLPADDING="0" BGCOLOR="transparent" WIDTH="400">
                 <TR>
-                    <TD ALIGN="LEFT" ><FONT COLOR="#00AFFF50"> OP: Cong Le</FONT></TD>
-                    <TD ALIGN="CENTER"><FONT COLOR="#00AFFF50"> SYS_ID: CongLeSolutionX</FONT></TD>
-                    <TD ALIGN="RIGHT"><FONT COLOR="#00AFFF50"> T_STAMP: YYYYMMDD-HHMMSS.μs</FONT></TD>
+                    <TD ALIGN="LEFT" ><FONT COLOR="#00AFFF50">// OP: Cong Le</FONT></TD>
+                    <TD ALIGN="CENTER"><FONT COLOR="#00AFFF50">// SYS_ID: CongLeSolutionX</FONT></TD>
+                    <TD ALIGN="RIGHT"><FONT COLOR="#00AFFF50">// T_STAMP: YYYYMMDD-HHMMSS.μs</FONT></TD>
                 </TR>
                 <TR><TD HEIGHT="3" COLSPAN="3"></TD></TR>
                 <TR>
-                    <TD ALIGN="LEFT" COLSPAN="2"><FONT COLOR="#00AFFF50">VERSION: H_UI_R7.3.1 LICENSE: CLASSIFIED (INTERNAL USE)</FONT></TD>
-                    <TD ALIGN="RIGHT"><FONT COLOR="#FF450070"> PWR_LVL: 97.3%</FONT></TD>
+                    <TD ALIGN="LEFT" COLSPAN="2"><FONT COLOR="#00AFFF50">// VERSION: H_UI_R7.3.1 // LICENSE: CLASSIFIED (INTERNAL USE)</FONT></TD>
+                    <TD ALIGN="RIGHT"><FONT COLOR="#FF450070">// PWR_LVL: 97.3%</FONT></TD>
                 </TR>
                 </TABLE>
             >
