@@ -32,15 +32,15 @@ Here's the DOT code with this aesthetic:
 
 ---
 
-![Bright and Modern Flat UI Style](https://g.gravizo.com/source/svg/bright_and_modern_flat_ui_style?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FBright_Modern_Flat_UI_Style.md)
+![Bright and Modern Flat UI Style](https://g.gravizo.com/source/svg/rendered_code_bright_and_modern_flat_ui_template?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FBright_Modern_Flat_UI_Style.md)
 
   
 
 <details>
 
 <summary>Rendered code of the Bright and Modern Flat UI Style</summary>
-bright_and_modern_flat_ui_style
-digraph modern_flat_ui_style {
+rendered_code_bright_and_modern_flat_ui_template
+digraph Modern_flat_ui_style {
     graph [
         rankdir=TB,
         fontname="Helvetica Neue",
@@ -142,7 +142,7 @@ digraph modern_flat_ui_style {
     MAIN_FLOW_END -> LABEL_1 [style=invis, minlen=2];
     LABEL_1 -> FOOTER_BAR [style=invis];
 }
-bright_and_modern_flat_ui_style
+rendered_code_bright_and_modern_flat_ui_template
 </details>
 
 ---
