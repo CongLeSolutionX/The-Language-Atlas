@@ -141,8 +141,8 @@ synthwave_theme
 
 ---
 
->![NOTE]
-> I have some note here.
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
 
 
 ---
