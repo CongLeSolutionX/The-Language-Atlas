@@ -29,6 +29,158 @@ This aesthetic will feature brass, copper, and wood tones, ornate details where 
 
 ## Steampunk Contraption - Victorian Technical Drawing Style
 
+---
+
+https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FSteampunk_Contraption_Victorian_Technical_Drawing_Style.md
+
+
+
+![Steampunk Contraption Style](https://g.gravizo.com/source/svg/rendered_code_steampunk_contraption_style_template?
+
+https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Flayout_engines%2Fosage.md)
+
+  
+
+<details>
+
+<summary>Rendered code for the Steampunk Contraption Drawing Style</summary>
+
+rendered_code_steampunk_contraption_style_template
+
+digraph steampunk_contraption {
+    graph [
+        rankdir=TB,
+        fontname="Georgia",
+        fontsize=10,
+        bgcolor="#F5E6D3",
+        nodesep=0.8,
+        ranksep=1.0,
+        splines=ortho
+    ];
+    node [
+        fontname="Georgia",
+        fontsize=9,
+        style="filled,rounded",
+        shape="rect",
+        margin="0.22,0.11",
+        color="#8B4513",
+        fillcolor="#CD7F32",
+        fontcolor="#4A2C2A",
+        penwidth=1.5
+    ];
+    edge [
+        fontname="Times New Roman",
+        fontsize=8,
+        color="#B87333",
+        fontcolor="#5D4037",
+        arrowhead=normal,
+        arrowsize=0.7,
+        penwidth=2
+    ];
+    HEADER_PLAQUE [
+        shape=plaintext,
+        label=<
+            <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" BGCOLOR="#D4AF37" COLOR="#5C4033"> { }
+            <TR><TD ALIGN="CENTER" COLSPAN="2">
+                <FONT POINT-SIZE="16" FACE="Copperplate Gothic Light" COLOR="#4A2C2A">The Aetheric Process Engine</FONT>
+            </TD></TR>
+            <TR><TD ALIGN="CENTER" COLSPAN="2">
+                <I><FONT POINT-SIZE="9" COLOR="#603913">Schematic Document No. 1888-Alpha</FONT></I>
+            </TD></TR>
+            </TABLE>
+        >,
+        fontcolor="#4A2C2A"
+    ];
+    START_VALVE [
+        shape=cds,
+        label="COMMENCE\nOPERATION",
+        width=1.2, height=1.2, fixedsize=true,
+        fillcolor="#A0522D",
+        color="#4A3B31",
+        fontcolor="#F0E68C",
+        style="filled,bold",
+        peripheries=2
+    ];
+    JUNCTION_BOX_A [ shape=Mrecord, style="filled,bold", color="#654321", fillcolor="#DEB887",
+                     label="<f0> Pressure Check: Foo | <f1> Gauge | <f2> Status: ?" ];
+    JUNCTION_BOX_B [ shape=Mrecord, style="filled,bold", color="#654321", fillcolor="#DEB887",
+                     label="<f0> Flux Modulator: Foo1 | <f1> Meter | <f2> Status: ?" ];
+    JUNCTION_BOX_C [ shape=Mrecord, style="filled,bold", color="#654321", fillcolor="#DEB887",
+                     label="<f0> Cogitator Array: Foo2 | <f1> Monitor | <f2> Status: ?" ];
+    JUNCTION_BOX_D [ shape=Mrecord, style="filled,bold", color="#654321", fillcolor="#DEB887",
+                     label="<f0> Chrono-Synclastor: Foo3 | <f1> Display | <f2> Status: ?" ];
+
+    MALFUNCTION_A [ shape=cylinder, label="VENT:\nPressure High", fillcolor="#800000AA", color="#500000", fontcolor="#FFEBCD"];
+    MALFUNCTION_B [ shape=cylinder, label="VENT:\nNo Flux", fillcolor="#800000AA", color="#500000", fontcolor="#FFEBCD"];
+    MALFUNCTION_C [ shape=cylinder, label="VENT:\nArray Offline", fillcolor="#800000AA", color="#500000", fontcolor="#FFEBCD"];
+    MALFUNCTION_D [ shape=cylinder, label="VENT:\nSync Failed", fillcolor="#800000AA", color="#500000", fontcolor="#FFEBCD"];
+
+    SYSTEM_OPTIMAL [
+        shape=doubleoctagon,
+        label="SYSTEM\nNOMINAL",
+        fillcolor="#556B2F",
+        color="#364522",
+        fontcolor="#FFFFF0",
+        style="filled,bold",
+        penwidth=2
+    ];
+    MAIN_CONTRAPTION_OUTPUT [shape=point, style=invis];
+    subgraph cluster_footer_steampunk {
+        style="rounded";
+        label="Inventor's Log & Specifications";
+        fontname="Garamond";
+        fontsize=8;
+        fontcolor="#704214";
+        color="#B8860B";
+        bgcolor="#FAF0E690";
+
+        FOOTER_NOTES [
+            shape=note,
+            style=filled,
+            fillcolor="#FDF5E6",
+            color="#C19A6B",
+            fontname="Lucida Handwriting",
+            fontsize=7,
+            fontcolor="#5C3317",
+            label="This is a placeholder for for footnotes - TBD"
+        ];
+    }
+    HEADER_PLAQUE -> START_VALVE [style=invis, weight=100, minlen=1.5];
+
+    START_VALVE -> JUNCTION_BOX_A:f0 [dir=both, arrowhead=icurve, arrowtail=icurve, color="#A0522D", label="Main\nSteam\nLine"];
+
+    JUNCTION_BOX_A:f2 -> MALFUNCTION_A [label="OVERLOAD", style="dashed,bold", color="#772222", fontcolor="#8B0000"];
+    JUNCTION_BOX_A:f2 -> JUNCTION_BOX_B:f0 [label="OK", color="#B8860B"];
+
+    JUNCTION_BOX_B:f2 -> MALFUNCTION_B [label="FAILURE", style="dashed,bold", color="#772222", fontcolor="#8B0000"];
+    JUNCTION_BOX_B:f2 -> JUNCTION_BOX_C:f0 [label="OK", color="#B8860B"];
+
+    JUNCTION_BOX_C:f2 -> MALFUNCTION_C [label="ERROR", style="dashed,bold", color="#772222", fontcolor="#8B0000"];
+    JUNCTION_BOX_C:f2 -> JUNCTION_BOX_D:f0 [label="OK", color="#B8860B"];
+
+    JUNCTION_BOX_D:f2 -> MALFUNCTION_D [label="REJECT", style="dashed,bold", color="#772220", fontcolor="#8B0000"];
+    JUNCTION_BOX_D:f2 -> SYSTEM_OPTIMAL [label="OPTIMAL", style=bold, color="#556B2F", fontcolor="#3CB371"];
+
+    MALFUNCTION_A -> MAIN_CONTRAPTION_OUTPUT [style=invis];
+    MALFUNCTION_B -> MAIN_CONTRAPTION_OUTPUT [style=invis];
+    MALFUNCTION_C -> MAIN_CONTRAPTION_OUTPUT [style=invis];
+    MALFUNCTION_D -> MAIN_CONTRAPTION_OUTPUT [style=invis];
+    SYSTEM_OPTIMAL -> MAIN_CONTRAPTION_OUTPUT [style=invis];
+
+    MAIN_CONTRAPTION_OUTPUT -> FOOTER_NOTES [style=invis, weight=50, minlen=2];
+}
+rendered_code_steampunk_contraption_style_template
+
+</details>
+  
+
+
+----
+
+
+<details>
+<summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
+
 ```dot
 /*
  * title: Steampunk Contraption - Victorian Technical Drawing Style
@@ -38,7 +190,7 @@ This aesthetic will feature brass, copper, and wood tones, ornate details where 
  * copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  * 
  */
-digraph testdot_steampunk_contraption {
+digraph steampunk_contraption {
     // Global graph attributes for a Steampunk feel
     graph [
         rankdir=TB,
@@ -191,6 +343,8 @@ digraph testdot_steampunk_contraption {
     MAIN_CONTRAPTION_OUTPUT -> FOOTER_NOTES [style=invis, weight=50, minlen=2];
 }
 ```
+
+</details>
 
 
 ----
