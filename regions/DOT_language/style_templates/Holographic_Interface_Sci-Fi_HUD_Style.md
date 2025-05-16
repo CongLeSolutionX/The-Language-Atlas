@@ -30,15 +30,14 @@ Think of interfaces from movies like Minority Report, Iron Man's HUD, or general
 
 
 
-![Holographic Interface - Sci-Fi HUD Style](https://g.gravizo.com/source/svg/holographic_interface_sci_fi_hud_style?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FHolographic_Interface_Sci-Fi_HUD_Style.md)
+![Holographic Interface - Sci-Fi HUD Style](https://g.gravizo.com/source/svg/rendered_code_holographic_interface_sci_fi_hud_template?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FHolographic_Interface_Sci-Fi_HUD_Style.md)
 
   
 
 <details>
 
 <summary>Rendered code for the Holographic Interface - Sci-Fi HUD Style</summary>
-
-holographic_interface_sci_fi_hud_style
+rendered_code_holographic_interface_sci_fi_hud_template
 digraph holographic_interface_style {
     graph [
         rankdir=TB,
@@ -166,7 +165,7 @@ digraph holographic_interface_style {
 
     MAIN_INTERFACE_END -> FOOTER_TELEMETRY [style=invis, weight=50, minlen=2];
 }
-holographic_interface_sci_fi_hud_style
+rendered_code_holographic_interface_sci_fi_hud_template
 
 </details>
   
