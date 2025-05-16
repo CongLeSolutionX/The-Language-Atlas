@@ -25,14 +25,14 @@ Think of interfaces from movies like Minority Report, Iron Man's HUD, or general
 
 ----
 
-![Holographic Interface Style](https://g.gravizo.com/source/svg/rendered_code_holographic_interface_sci_fi_hud_template?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FHolographic_Interface_Style.md)
+![Holographic Interface Style](https://g.gravizo.com/source/svg/rendered_code_holographic_template?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FHolographic_Interface_Style.md)
 
   
 
 <details>
 
 <summary>Rendered code for the Holographic Interface Style</summary>
-rendered_code_holographic_interface_sci_fi_hud_template
+rendered_code_holographic_template
 digraph holographic_interface_style {
     graph [
         rankdir=TB,
@@ -160,17 +160,14 @@ digraph holographic_interface_style {
 
     MAIN_INTERFACE_END -> FOOTER_TELEMETRY [style=invis, weight=50, minlen=2];
 }
-rendered_code_holographic_interface_sci_fi_hud_template
+rendered_code_holographic_template
 
 </details>
-  
-  
-
-
-
 
 ----
 
+<details>
+<summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
 
 ```dot
 /*
@@ -333,6 +330,8 @@ digraph holographic_interface_sci_fi_hud_style {
     MAIN_INTERFACE_END -> FOOTER_TELEMETRY [style=invis, weight=50, minlen=2];
 }
 ```
+
+</details>
 
 
 ----
