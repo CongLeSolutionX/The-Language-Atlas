@@ -164,8 +164,10 @@ digraph vintage_parchment_old_manuscript_style {
             fontcolor="#696969", // DimGray
             label=<
                 <TABLE BORDER="0" CELLPADDING="2">
-                <TR><TD ALIGN="LEFT">Scribe: My Full Name</TD></TR>
-                <TR><TD ALIGN="LEFT">Guild: My Organization</TD></TR>
+                <!-- <TR><TD ALIGN="LEFT">Scribe: My Full Name</TD></TR> -->
+                <!-- <TR><TD ALIGN="LEFT">Guild: My Organization</TD></TR> -->
+                <TR><TD ALIGN="LEFT">Scribe: Cong Le</TD></TR>
+                <TR><TD ALIGN="LEFT">Guild: CongLeSolutionX</TD></TR>
                 <TR><TD ALIGN="LEFT">Date of Record: YYYY-MM-DD</TD></TR>
                 <TR><TD ALIGN="LEFT">Folio: 1.0c</TD></TR>
                 <TR><TD ALIGN="LEFT">Charter: MIT AND CC BY-SA 4.0</TD></TR>
