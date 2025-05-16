@@ -28,7 +28,7 @@ This time, we'll model a **Simplified CI/CD (Continuous Integration / Continuous
 
 ---
 
-![Alt text](https://g.gravizo.com/source/svg/ci_cd_pipeline_diagram_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fexamples%2F01_Advanced_Order_System_Dot.md)
+![Continuous Integration - Continuous Delivery Pipeline Diagram](https://g.gravizo.com/source/svg/ci_cd_pipeline_diagram_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fexamples%2F02_Advanced_CICD_Pipeline_Dot.md)
 
 
 <details>
@@ -67,7 +67,7 @@ digraph advanced_cicd_pipeline {
         arrowsize=0.7,
         minlen=2
     ];
-    subgraph cluster_SourceControl {
+    subgraph cluster_source_control {
         label="1. Source Control & Trigger";
         bgcolor="lightgoldenrodyellow";
         style="filled,rounded";
@@ -78,7 +78,7 @@ digraph advanced_cicd_pipeline {
         Developer -> GitRepo [label="git push"];
         GitRepo -> Webhook [label="Push Event"];
     }
-    subgraph cluster_Build {
+    subgraph cluster_build {
         label="2. Build & Unit Test";
         bgcolor="lightskyblue";
         style="filled,rounded";
@@ -93,7 +93,7 @@ digraph advanced_cicd_pipeline {
             BuildApp; StaticAnalysis;
         }
     }
-    subgraph cluster_IntegrationTest {
+    subgraph cluster_integration_test {
         label="3. Deploy to Staging & Integration Test";
         bgcolor="lightgreen";
         style="filled,rounded";
@@ -102,7 +102,7 @@ digraph advanced_cicd_pipeline {
         RunIntegrationTests [label="Run Integration Tests\n(API, E2E)", fillcolor=honeydew, height=1.0];
         PerformanceTests [label="Run Performance Tests", fillcolor=honeydew, group=perf];
     }
-    subgraph cluster_Approval {
+    subgraph cluster_approval {
         label="4. Manual Approval (Optional)";
         bgcolor="lightcoral";
         style="filled,rounded";
@@ -116,7 +116,7 @@ digraph advanced_cicd_pipeline {
         ];
         NotifyTeam [label="Notify Team\n(Slack/Email)", shape=note, fillcolor=ivory, constraint=false];
     }
-    subgraph cluster_ProductionDeploy {
+    subgraph cluster_production_deploy {
         label="5. Production Deployment";
         bgcolor="mediumpurple";
         style="filled,rounded";
@@ -130,7 +130,7 @@ digraph advanced_cicd_pipeline {
         { rank=same; DeployProd_Canary; MonitorCanary;}
         { rank=same; RolloutProd_Full; PostDeployChecks;}
     }
-    subgraph cluster_MonitoringFeedback {
+    subgraph cluster_monitoring_feedback {
         label="6. Monitoring & Feedback";
         bgcolor="lightsalmon";
         style="filled,rounded";
@@ -179,8 +179,8 @@ digraph advanced_cicd_pipeline {
     LogAggregation -> FeedbackLoop [label="Logs", weight=2];
     FeedbackLoop -> Developer [label=" Alerts/Insights", color=blue, style=dotted, constraint=false, weight=1, ltail=cluster_MonitoringFeedback, headport=w, tailport=e];
     { rank=sink; MonitoringSystem; LogAggregation; FeedbackLoop; }
-
 }
+
 ci_cd_pipeline_diagram_example
 
 </details>
@@ -191,7 +191,7 @@ ci_cd_pipeline_diagram_example
 
 ---
 
-<details>
+<details open>
 <summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
 
 ```dot
