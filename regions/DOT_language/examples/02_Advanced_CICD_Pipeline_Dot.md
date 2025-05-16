@@ -36,7 +36,7 @@ This time, we'll model a **Simplified CI/CD (Continuous Integration / Continuous
 <summary>Rendered code for CI/CD Pipeline Diagram Example</summary>
 
 ci_cd_pipeline_diagram_example
-digraph Advanced_CICD_Pipeline {
+digraph advanced_cicd_pipeline {
     graph [
         layout=dot,
         rankdir=LR,
