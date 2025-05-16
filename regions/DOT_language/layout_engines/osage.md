@@ -132,6 +132,74 @@ digraph G {
 
 ---
 
+## Test 0
+
+![Another example](https://g.gravizo.com/source/custom_mark10?https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md)
+
+
+```
+![Alt text](https://g.gravizo.com/source/custom_mark10?https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md)
+<details> 
+<summary></summary>
+custom_mark10
+  digraph G {
+    size ="4,4"
+    main [shape=box]
+    main -> parse [weight=8]
+    parse -> execute
+    main -> init [style=dotted]
+    main -> cleanup
+    execute -> { make_string; printf}
+    init -> make_string
+    edge [color=red]
+    main -> printf [style=bold,label="100 times"]
+    make_string [label="make a string"]
+    node [shape=box,style=filled,color=".7 .3 1.0"]
+    execute -> compare
+  }
+custom_mark10
+</details>
+```
+
+
+---
+
+https://g.gravizo.com/source/svg
+
+
+## Testing number 1 - render to svg image
+
+![Alt text](https://g.gravizo.com/source/svg/custom_svg?https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md)
+
+```
+![Alt text](https://g.gravizo.com/source/svg/custom_svg?https%3a%2f%2fraw.githubusercontent.com%2fconglesolutionx%2fthe-language-atlas%2frefs%2fheads%2fmain%2fregions%2fdot_language%2flayout_engines%2fosage.md)
+
+<details> 
+<summary></summary>
+custom_svg	
+@startuml
+start
+:init;
+-> test of color;
+if (color?) is (<color:red>red) then
+:print red;
+else 
+:print not red;
+note right: no color
+endif
+partition End {
+:end;
+}
+-> this is the end;
+end
+@enduml
+custom_svg
+</details>
+```
+
+
+---
+
 
 ## Testing number 2
 
