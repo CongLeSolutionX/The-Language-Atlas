@@ -32,9 +32,7 @@ This time, we'll model a **Simplified CI/CD (Continuous Integration / Continuous
 
 
 <details>
-
 <summary>Rendered code for CI/CD Pipeline Diagram Example</summary>
-
 ci_cd_pipeline_diagram_example
 digraph advanced_cicd_pipeline {
     graph [
@@ -180,14 +178,9 @@ digraph advanced_cicd_pipeline {
     FeedbackLoop -> Developer [label=" Alerts/Insights", color=blue, style=dotted, constraint=false, weight=1, ltail=cluster_MonitoringFeedback, headport=w, tailport=e];
     { rank=sink; MonitoringSystem; LogAggregation; FeedbackLoop; }
 }
-
 ci_cd_pipeline_diagram_example
-
 </details>
   
-
-
-
 
 ---
 
