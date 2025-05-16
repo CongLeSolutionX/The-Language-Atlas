@@ -33,6 +33,12 @@ This aesthetic will aim for:
 Here's the DOT code for this style:
 
 ---
+
+
+## Vintage Parchment - Old Manuscript Style
+
+
+
 ![Vintage Parchment - Old Manuscript Style](https://g.gravizo.com/source/svg/vintage_parchment_style?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FVintage_Parchment_Old_Manuscript_Style.md)
 
 <details>
@@ -41,7 +47,6 @@ Here's the DOT code for this style:
 
 vintage_parchment_style
 digraph vintage_parchment_old_manuscript_style {
-    
     graph [
         rankdir=TB,
         fontname="Palatino Linotype",
@@ -51,7 +56,6 @@ digraph vintage_parchment_old_manuscript_style {
         ranksep=0.8,
         splines=curved
     ];
-    
     node [
         fontname="Palatino Linotype",
         fontsize=10,
@@ -61,8 +65,6 @@ digraph vintage_parchment_old_manuscript_style {
         fillcolor="#FFF8DC",
         fontcolor="#5D4037"
     ];
-
- 
     edge [
         fontname="Palatino Linotype",
         fontsize=9,
@@ -72,7 +74,6 @@ digraph vintage_parchment_old_manuscript_style {
         arrowsize=0.7,
         penwidth=1
     ];
-
     subgraph cluster_header_vintage {
         label="";
         style="invis";
@@ -89,7 +90,6 @@ digraph vintage_parchment_old_manuscript_style {
             fontcolor="#5D4037"
         ];
     }
-    
     subgraph cluster_main_process {
         label="Primary Workflow";
         fontname="Garamond";
@@ -107,7 +107,6 @@ digraph vintage_parchment_old_manuscript_style {
             color="#B8860B",
             style="filled,bold"
         ];
-
         Statement_0 [ shape=cds, label="Initial Scrutiny\n(Condition Foo)", fillcolor="#F0E68C",  color="#8B7355"];
         Statement_1 [ shape=cds, label="Secondary Review\n(Condition Foo1)", fillcolor="#F0E68C", color="#8B7355" ];
         Statement_2 [ shape=cds, label="Tertiary Check\n(Condition Foo2)", fillcolor="#F0E68C", color="#8B7355" ];
@@ -149,10 +148,8 @@ digraph vintage_parchment_old_manuscript_style {
         ERROR_NODE3 -> MAIN_PROCESS_EXIT [style=invis];
         SUCCESS_NODE -> MAIN_PROCESS_EXIT [style=invis];
     }
-    
     subgraph cluster_footer_vintage {
         label=""; style="invis"; margin=0; rank="sink";
-
         LABEL_1 [
             shape=plaintext,
             fontname="Courier New",
@@ -160,8 +157,6 @@ digraph vintage_parchment_old_manuscript_style {
             fontcolor="#696969",
             label=<
                 <TABLE BORDER="0" CELLPADDING="2">
-                <!-- <TR><TD ALIGN="LEFT">Scribe: My Full Name</TD></TR> -->
-                <!-- <TR><TD ALIGN="LEFT">Guild: My Organization</TD></TR> -->
                 <TR><TD ALIGN="LEFT">Scribe: Cong Le</TD></TR>
                 <TR><TD ALIGN="LEFT">Guild: CongLeSolutionX</TD></TR>
                 <TR><TD ALIGN="LEFT">Date of Record: YYYY-MM-DD</TD></TR>
@@ -170,7 +165,6 @@ digraph vintage_parchment_old_manuscript_style {
                 </TABLE>
             >
         ];
-
         FOOTER_SIGIL [
             shape="signature",
             label="Veritas",
@@ -181,7 +175,6 @@ digraph vintage_parchment_old_manuscript_style {
             width=0.6, height=0.4, fixedsize=true
         ];
     }
-
     HEADER -> START_NODE [style=invis, weight=100];
     MAIN_PROCESS_EXIT -> LABEL_1 [style=invis, weight=50, minlen=2];
     LABEL_1 -> FOOTER_SIGIL [style=invis, weight=10, minlen=1];
@@ -191,8 +184,8 @@ vintage_parchment_style
 
 ---
 
-## Vintage Parchment - Old Manuscript Style
-
+<details>
+<summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
 
 ```dot
 /*
@@ -359,6 +352,7 @@ digraph vintage_parchment_old_manuscript_style {
     LABEL_1 -> FOOTER_SIGIL [style=invis, weight=10, minlen=1];
 }
 ```
+</details>
 
 ----
 
@@ -385,9 +379,6 @@ digraph vintage_parchment_old_manuscript_style {
 *   **`splines=curved`**: Curved lines can feel more organic and hand-drawn.
 *   **Cluster `main_process`**: Given a visible `dotted` border in a `Tan` color to subtly group the main workflow.
 *   **Edge Styles**: "Adverse" paths are `dashed` and use a muted red, "Favorable" paths are solid with a muted green.
-
-
-
 
 ---
 

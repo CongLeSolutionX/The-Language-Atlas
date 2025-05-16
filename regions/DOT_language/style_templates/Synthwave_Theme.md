@@ -24,7 +24,7 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 <details>
 
-<summary>Synthwave Theme</summary>
+<summary>Rendered code for Synthwave Theme</summary>
 
 synthwave_theme
 
@@ -138,15 +138,14 @@ digraph synthwave_grid_theme {
     
     MAIN_GRID_EXIT -> FOOTER_GRIDLINES [style=invis, weight=70, minlen=2];
 }
-
 synthwave_theme
 
 </details>
-  
-  
 
 ---
 
+<details>
+<summary>Click to show/hide the full DOT implementation with comment documentation.</summary>
 
 
 ```dot
@@ -288,8 +287,9 @@ digraph synthwave_grid_theme {
     
     MAIN_GRID_EXIT -> FOOTER_GRIDLINES [style=invis, weight=70, minlen=2];
 }
-
 ```
+
+</details>
 
 ---
 
