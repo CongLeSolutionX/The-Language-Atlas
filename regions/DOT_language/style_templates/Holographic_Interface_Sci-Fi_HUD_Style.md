@@ -39,7 +39,7 @@ Think of interfaces from movies like Minority Report, Iron Man's HUD, or general
 <summary>Rendered code for the Holographic Interface - Sci-Fi HUD Style</summary>
 
 holographic_interface_sci_fi_hud_style
-digraph holographic_interface_sci_fi_hud_style {
+digraph holographic_interface_style {
     graph [
         rankdir=TB,
         fontname="Roboto Condensed",
