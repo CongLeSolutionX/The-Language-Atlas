@@ -42,6 +42,173 @@ Here's the DOT code in Markdown format:
 
 ## Submersible Research Drone's Mission Cycle - Aquatic - Undersea Theme
 
+![Undersea Theme](https://g.gravizo.com/source/svg/rendered_code_undersea_theme?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FAquatic_Undersea_Theme.md)
+
+<details>
+
+<summary>Rendered code for Undersea Theme</summary>
+rendered_code_undersea_theme
+digraph SubmersibleDroneMission_Aquatic {
+    graph [
+        rankdir=TD,
+        bgcolor="#0B2447",
+        fontname="Quicksand",
+        fontsize=10,
+        fontcolor="#A5D7E8",
+        nodesep=0.7,
+        ranksep=1.2,
+        splines=curved,
+        label="Submersible Research Drone: Mission Cycle\n(Project Aquarius - Log Alpha-7)",
+        labelloc=t,
+        fontnames="Arial"
+    ];
+    node [
+        fontname="Quicksand",
+        fontsize=9,
+        style="filled,rounded",
+        margin="0.2,0.15",
+        penwidth=1.5,
+        color="#19376D",
+        fontcolor="#F0F8FF"
+    ];
+    node [fillcolor="#576CBC88"];
+    edge [
+        fontname="Quicksand",
+        fontsize=8,
+        color="#87C4FF",
+        fontcolor="#B4E4FF",
+        arrowhead=vee,
+        arrowsize=0.8,
+        penwidth=1.2
+    ];
+    node_surface [
+        shape=ellipse,
+        fillcolor="#A5D7E8",
+        color="#4B82C3",
+        fontcolor="#0A2647"
+    ];
+    node_action [
+        shape=component,
+        fillcolor="#1F6E8CBB",
+        color="#0E8388",
+        fontstyle=bold
+    ];
+    node_data [
+        shape=ellipse,
+        style="filled,radial",
+        fillcolor="#ABE7FF:#5272F2",
+        gradientangle=45,
+        color="#29ADB2",
+        fontcolor="#001C30",
+        penwidth=1.0
+    ];
+    node_hazard [
+        shape=Mdiamond,
+        fillcolor="#FF8B13AA",
+        color="#D95B00",
+        fontcolor="#3D0000"
+    ];
+    node_success [
+        shape=doublecircle,
+        fillcolor="#38E54D",
+        color="#17594A",
+        fontcolor="#002B00",
+        style="filled,bold"
+    ];
+    node_failure [
+        shape=octagon,
+        fillcolor="#D21312AA",
+        color="#8B0000",
+        fontcolor="#FFFFE0"
+    ];
+    subgraph cluster_0_surface_ops {
+        label="Surface Operations & Deployment Zone";
+        style="filled,rounded";
+        bgcolor="#6DA9E960";
+        color="#25629C";
+        fontcolor="#001253";
+        node [fontcolor="#001253"];
+
+        Deploy [label="Launch Drone\n(RV Nautilus)", shape=house, style="filled", fillcolor="#E0F4FF", color="#5C95CE", fontcolor="#10345F", peripheries=2];
+        SystemCheck [label="Pre-Dive Systems\nCheck (All Green)", node_style=node_surface];
+    }
+    subgraph cluster_1_descent_transit {
+        label="Descent & Transit Zone";
+        style="filled,rounded";
+        bgcolor="#3E7CB160";
+        color="#154273";
+        fontcolor="#E3F2FD";
+        Descend [label="Commence Descent\n(Target Depth: 500m)", node_style=node_action, shape=invtrapezium];
+        NavigateTransit [label="Navigate to\nSurvey Area Alpha", node_style=node_action];
+    }
+    subgraph cluster_2_survey_operations {
+        label="Deep Survey & Research Zone (500m - 700m)";
+        style="filled,rounded";
+        bgcolor="#19376D70";
+        color="#08203E";
+        fontcolor="#C9EEFF";
+        ReachSurveyArea [label="Arrive at Survey\nArea Alpha", node_style=node_data, shape=septagon, fillcolor="#61A3BA"];
+        ScanEnvironment [label="Sonar & Lidar Scan\nof Seabed", node_style=node_action];
+        DetectAnomaly [label="Anomaly Detected?\n(Magnetic Signature)", node_style=node_hazard];
+        InvestigateAnomaly [label="Investigate Target\n(Close Proximity Imaging)", node_style=node_action, shape=hexagon];
+        CollectSample [label="Deploy Robotic Arm\n(Sediment Sample)", node_style=node_action];
+        SampleSecured [label="Sample Secured\n(Bio-Sealed Container)", node_style=node_data, shape=cylinder];
+        SensorSweep [label="Conduct Sensor Sweep\n(Temp, Salinity, pH)", node_style=node_action, shape=folder];
+        DataLogged [label="Environmental Data\nLogged", node_style=node_data];
+        EncounterHazard [label="Obstacle/Hazard?\n(Strong Current/Marine Life)", node_style=node_hazard, shape=diamond];
+        EvasiveManeuver [label="Execute Evasive\nManeuver", node_style=node_action, color="#FF6000"];
+        AbortSurvey [label="Abort Survey Area\n(Hazard Persists)", node_style=node_failure, shape=parallelogram];
+    }
+    subgraph cluster_3_ascent_recovery {
+        label="Ascent & Recovery Zone";
+        style="filled,rounded";
+        bgcolor="#306FA460";
+        color="#1A5082";
+        fontcolor="#DAF5FF";
+        MissionCompleteQuery [label="All Survey Objectives Met?", node_style=node_hazard, fillcolor="#FFD700AA", color="#B8860B"];
+        PrepareAscent [label="Prepare for Ascent\n(Ballast Adjust)", node_style=node_action];
+        TransmitDataBuoy [label="Deploy Data Buoy\n(Burst Transmission)", node_style=node_action, shape=triangle, dir=back];
+        DataBuoySurface [label="Data Buoy Reaches Surface\n(Signal Acquired By Ship)", node_style=node_data, fillcolor="#F22BB9"];
+        AscendSurface [label="Ascend to Surface\n(Controlled Rate)", node_style=node_action, shape=invhouse];
+        SurfaceReached [label="Drone Surfaced\n(GPS Beacon Active)", node_style=node_surface];
+        RecoverDrone [label="Recover Drone\n(Aboard RV Nautilus)", node_style=node_success, shape=doubleoctagon, peripheries=3];
+    }
+    Deploy -> SystemCheck [label="Deploy Sequence", arrowhead=normal];
+    SystemCheck -> Descend [label="All Systems Nominal", style=bold, color="#A0E9FF", penwidth=2];
+    Descend -> NavigateTransit [label="Descending...", style=dashed, len=1.5];
+    NavigateTransit -> ReachSurveyArea [label="Transit Complete", arrowhead=open, dir=forward, color="#A0E9FF", style=bold, penwidth=2];
+    ReachSurveyArea -> ScanEnvironment [label="Initiate Survey Protocol", minlen=1.5];
+    ScanEnvironment -> DetectAnomaly [label="Scan Data Analyzed"];
+    DetectAnomaly -> InvestigateAnomaly [label="Anomaly Confirmed\nInvestigate", color="#76ABAE", style="bold"];
+    DetectAnomaly -> SensorSweep [label="No Significant\nAnomalies", style=dashed, color="#B2C8DF"];
+    InvestigateAnomaly -> CollectSample [label="Target Acquired"];
+    CollectSample -> SampleSecured [label="Collection Successful"];
+    SampleSecured -> SensorSweep [label="Proceed with Sweep", style=dotted];
+    SensorSweep -> DataLogged [label="Sweep Complete"];
+    DataLogged -> EncounterHazard [label="Assess Environment", weight=0.5];
+    EncounterHazard -> EvasiveManeuver [label="Hazard Detected!", color="#FF6D28", style=bold, constraint=true];
+    EncounterHazard -> MissionCompleteQuery [label="Area Clear / No Hazard", style=dashed, color="#B2C8DF", weight=0.5];
+    EvasiveManeuver -> EncounterHazard [label="Re-assess Path", style=dotted, constraint=false];
+    EvasiveManeuver -> AbortSurvey [label="Evasion Fails Repeatedly", color="#C70039", style=bold, weight=2];
+    AbortSurvey -> PrepareAscent [label="Emergency Ascent Protocol", style=bold, color="#FF1E1E", penwidth=2.5];
+    MissionCompleteQuery -> PrepareAscent [label="Objectives Met\nOR Survey Aborted", color="#76ABAE", style=bold];
+    MissionCompleteQuery -> ReachSurveyArea [label="Further Objectives\nIn Area Alpha", style=dashed, color="#B2C8DF", constraint=false];
+    PrepareAscent -> TransmitDataBuoy [label="Initiate Ascent Sequence", weight=1];
+    TransmitDataBuoy -> DataBuoySurface [label="Buoy Deployed", style="dashed,bold", color="#3490DE", penwidth=1.8];
+    DataBuoySurface -> AscendSurface [style=invis, weight=0.1];
+    PrepareAscent -> AscendSurface [label="Drone Ascending", style=bold, color="#A0E9FF", penwidth=2, minlen=2];
+    AscendSurface -> SurfaceReached [label="Surface Lock Acquired", style=bold, color="#DFFFD8", penwidth=2.5];
+    SurfaceReached -> RecoverDrone [label="Recovery Initiated", style="bold", color="#B6E2A1", penwidth=3];
+    {rank=same; AbortSurvey; DataLogged;}
+    SystemCheck -> Descend [style=invis, weight=1000];
+    NavigateTransit -> ReachSurveyArea [style=invis, weight=1000];
+    DataLogged -> MissionCompleteQuery [style=invis, weight=1000];
+}
+rendered_code_undersea_theme
+
+</details>
+
+---
 
 
 <details open>
