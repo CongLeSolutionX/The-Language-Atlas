@@ -33,9 +33,7 @@ This DOT code aims to be a single-file, comprehensive example. The success of th
 
 
 <details>
-
 <summary>Rendered code for the Ancient Manuscript - Scroll Style</summary>
-
 rendered_code_ancient_manuscript_template
 digraph ancient_scroll_genealogy_of_houses {
     graph [
@@ -151,11 +149,9 @@ digraph ancient_scroll_genealogy_of_houses {
     {rank=sink; SCRIBE_NOTES; WATERMARK_SYMBOL;}
 }
 rendered_code_ancient_manuscript_template
-
 </details>
   
-
-
+---
 
 
 <details open>
