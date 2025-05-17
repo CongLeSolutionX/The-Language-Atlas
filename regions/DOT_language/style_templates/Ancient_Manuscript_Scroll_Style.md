@@ -37,8 +37,6 @@ This DOT code aims to be a single-file, comprehensive example. The success of th
 <summary>Rendered code for the Ancient Manuscript - Scroll Style</summary>
 
 rendered_code_ancient_manuscript_template
-
-```dot
 digraph ancient_scroll_genealogy_of_houses {
     graph [
         rankdir=TB,
@@ -152,8 +150,6 @@ digraph ancient_scroll_genealogy_of_houses {
     Roric_Whisperwind -> SCRIBE_NOTES [style=invis, weight=10, minlen=2.5];
     {rank=sink; SCRIBE_NOTES; WATERMARK_SYMBOL;}
 }
-```
-
 rendered_code_ancient_manuscript_template
 
 </details>
