@@ -108,7 +108,7 @@ digraph synthwave_grid_theme {
             fontname="Monospace",
             fontsize=6,
             fontcolor="#4CA850",
-            label="- - - - - - - - - - - - - - - - - -- - - - - -\nSYSTEM ONLINE // TERMINAL ACTIVE\n- - - - - - - - - - - - -  - - - - - - - - - -\nDESIGNATION: IO_AGENT_X // SECTOR: ALPHA-7 // \nBUILD: 88.03.21\nLICENSE: R E T R O W A R E (MIT/CC-BY-SA)"
+            label="- - - - - - - - - - - - - - - - - -- - - - - -\nSYSTEM ONLINE // TERMINAL ACTIVE\n- - - - - - - - - - - - -  - - - - - - - - - -\nDESIGNATION: IO_AGENT CONG LE // SECTOR: ALPHA-7 // \nBUILD: 88.03.21\nLICENSE: R E T R O W A R E (MIT/CC-BY-SA)"
         ];
     }
     HEADER_TITLE -> START_NODE [style=invis, weight=100, minlen=1.5];
