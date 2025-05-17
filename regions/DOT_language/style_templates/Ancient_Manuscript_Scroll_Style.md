@@ -28,6 +28,140 @@ This DOT code aims to be a single-file, comprehensive example. The success of th
 
 ## Ancient Manuscript - Scroll Style
 
+
+![Ancient Manuscript - Scroll Style](https://g.gravizo.com/source/svg/rendered_code_ancient_manuscript_template?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FThe-Language-Atlas%2Frefs%2Fheads%2Fmain%2Fregions%2FDOT_language%2Fstyle_templates%2FAncient_Manuscript_Scroll_Style.md)
+
+
+<details>
+
+<summary>Rendered code for the Ancient Manuscript - Scroll Style</summary>
+
+rendered_code_ancient_manuscript_template
+
+```dot
+digraph ancient_scroll_genealogy_of_houses {
+    graph [
+        rankdir=TB,
+        bgcolor="#F5DEB3",
+        fontname="Garamond",
+        fontsize=10,
+        fontcolor="#5C4033",
+        nodesep=0.6,
+        ranksep=1.2,
+        splines=ortho,
+        label="Chronicles of the Exalted Houses\nAbridged Lineage & Alliances\nCirca Third Age, Year of the Crimson Moon",
+        labelloc=t,
+        fontnames="Times New Roman Italic"
+    ];
+    node [
+        fontname="Garamond",
+        fontsize=9,
+        fontcolor="#4A2C2A",
+        shape=rect,
+        style="filled,rounded",
+        color="#8B4513",
+        fillcolor="#FAF0E6",
+        penwidth=1,
+        margin="0.15,0.08"
+    ];
+    edge [
+        fontname="Garamond Italic",
+        fontsize=8,
+        fontcolor="#704214",
+        color="#A0522D",
+        penwidth=1.2,
+        arrowhead=none,
+        arrowtail=none
+    ];
+    subgraph cluster_title_illumination {
+        label="";
+        style=invis;
+        bgcolor="transparent";
+        TITLE_ORNAMENT_TOP [
+            shape=plaintext,
+            label="PLACEHOLDER FOR TITLE_ORNAMENT_TOP"
+        ];
+        TITLE_SEPARATOR [ shape=rect, style=filled, fillcolor="#C19A6B", color="#C19A6B", height=0.02, width=5, label=""];
+    }
+    subgraph cluster_house_sunstone {
+        label="The Noble House of Sunstone";
+        fontname="Blackletter";
+        fontsize=12;
+        fontcolor="#800000";
+        color="#B8860B";
+        style="filled,rounded";
+        bgcolor="#FFF8DC";
+        Elara_Sunstone [label="Lady Elara 'the Radiant'\n(Matriarch, d. 2A 876)", shape=ellipse, style="filled,bold", fillcolor="#FFD700", color="#DAA520"];
+        Corin_Sunstone [label="Lord Corin 'Stonehand'\n(Son of Elara, Current Head)"];
+        Lyra_Sunstone [label="Lady Lyra\n(Daughter of Corin)"];
+        Torvin_Sunstone [label="Ser Torvin 'the Steadfast'\n(Brother of Corin)"];
+    }
+    subgraph cluster_house_shadowvale {
+        label="The Ancient House of Shadowed Vale";
+        fontname="Blackletter";
+        fontsize=12;
+        fontcolor="#2F4F4F";
+        color="#556B2F";
+        style="filled,rounded";
+        bgcolor="#F0FFF0";
+        Malakor_Shadowvale [label="Lord Malakor 'the Old'\n(Patriarch, Est. Age 230)", shape=octagon, style="filled,bold", fillcolor="#A9A9A9", color="#696969"];
+        Seraphina_Shadowvale [label="Lady Seraphina\n(Granddaughter of Malakor)"];
+        Kael_Shadowvale [label="Kael 'the Silent'\n(Son of Seraphina)"];
+    }
+    Aella_Whisperwind [label="Aella of the Whispering Reeds\n(Vassal to Sunstone)", style="filled", fillcolor="#E0FFFF"];
+    Roric_Whisperwind [label="Roric, son of Aella"];
+    Marriage_Corin_Seraphina_Link [shape=point, style=invis, width=0.01, height=0.01];
+    Marriage_Torvin_Aella_Link [shape=point, style=invis, width=0.01, height=0.01];
+    subgraph cluster_colophon {
+        label="Scribal Attestations & Marginalia";
+        fontname="Garamond Italic";
+        fontsize=9;
+        fontcolor="#704214";
+        color="#C19A6B";
+        style="rounded,dashed";
+        bgcolor="#FAF0E6";
+        SCRIBE_NOTES [
+            shape=note,
+            style="filled",
+            fillcolor="#FFFACD",
+            color="#BDB76B",
+            fontname="Segoe Print",
+            fontsize=7,
+            fontcolor="#5C3317",
+            label="PLACEHOLDER FOR SCRIBE_NOTES"
+        ];
+        WATERMARK_SYMBOL [shape=plaintext, label="📜", fontcolor="#D2B48C90", fontsize=24];
+    }
+    TITLE_ORNAMENT_TOP -> TITLE_SEPARATOR [style=invis, minlen=0.1];
+    TITLE_SEPARATOR -> Elara_Sunstone [style=invis, minlen=1.5];
+    Elara_Sunstone -> Corin_Sunstone [label="child", dir=none];
+    Elara_Sunstone -> Torvin_Sunstone [label="child", dir=none];
+    {rank=same; Corin_Sunstone; Torvin_Sunstone;}
+    Corin_Sunstone -> Lyra_Sunstone [label="child", dir=none];
+    Malakor_Shadowvale -> Seraphina_Shadowvale [label="descendant (grandchild)", dir=none, style=dashed, color="#666666"];
+    Seraphina_Shadowvale -> Kael_Shadowvale [label="child", dir=none];
+    Aella_Whisperwind -> Roric_Whisperwind [label="child", dir=none];
+    Corin_Sunstone -> Marriage_Corin_Seraphina_Link [dir=none, constraint=false, style=dotted, color="#4682B4"];
+    Seraphina_Shadowvale -> Marriage_Corin_Seraphina_Link [dir=none, constraint=false, style=dotted, color="#4682B4"];
+    Marriage_Corin_Seraphina_Link -> Lyra_Sunstone [style=invis, label="Parents of Lyra", minlen=0.1];
+    Torvin_Sunstone -> Marriage_Torvin_Aella_Link [dir=none, constraint=false, style=dotted, color="#8FBC8F"];
+    Aella_Whisperwind -> Marriage_Torvin_Aella_Link [dir=none, constraint=false, style=dotted, color="#8FBC8F"];
+    Aella_Whisperwind -> Corin_Sunstone [label="Vassalage", style="bold,dashed", color="#CD853F", constraint=false, dir=forward, arrowhead=empty];
+    Lyra_Sunstone -> SCRIBE_NOTES [style=invis, weight=10, minlen=2.5];
+    Kael_Shadowvale -> SCRIBE_NOTES [style=invis, weight=10, minlen=2.5];
+    Roric_Whisperwind -> SCRIBE_NOTES [style=invis, weight=10, minlen=2.5];
+    {rank=sink; SCRIBE_NOTES; WATERMARK_SYMBOL;}
+}
+```
+
+rendered_code_ancient_manuscript_template
+
+</details>
+  
+
+
+
+
 <details open>
 <summary>Click to show/hide the full native DOT implementation with comment documentation.</summary>
 
